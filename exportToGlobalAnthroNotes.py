@@ -1,9 +1,10 @@
+# coding=utf-8
 import bisect
 import uuid
 import xml.etree.ElementTree as ET
 import json
 import datetime
-
+import csv
 
 def import_ocm_code_data(print_to_console=False, export_to_files=False):
     tree = ET.parse('data/ANQR-Moore.fwdata')
@@ -147,34 +148,52 @@ def export_csv_to_global_anthro_notes():
 
     orc_char = u"\uFFFC"
     comment_list = ET.Element("CommentList")
-    ocm_to_refs = import_ocm_code_data()
-    for pair in ocm_to_refs:
-        thread = str(uuid.uuid4())[:8]
-        ocm = pair['ocm']
-        first_ref = None
-        increment = 0
-        for ref in pair['refs']:
-            comment = ET.SubElement(comment_list, "Comment")
-            ET.SubElement(comment, "Thread").text = thread
-            ET.SubElement(comment, "User").text = "Global Anthro Notes"
-            time = datetime.datetime.now().isoformat()
-            time = time[:-1] + str(increment)
-            increment += 1
-            ET.SubElement(comment, "Date").text = time + "-04:00"
-            if first_ref is None:
-                first_ref = ref
+
+    ocms_to_publish = ['801 Numerology']
+    with open('data/anthroNoteContent.csv', 'rb') as anc_sheet:
+        csv_reader = csv.DictReader(anc_sheet)
+        ocm_choice_processing = ''
+        section_topic_processing = ''
+        for row in csv_reader:
+            ocm_choice = row['ocm_choice']
+            if not ocm_choice or ocm_choice not in ocms_to_publish:
+                continue
+            print(row['refs'], row['ocm_choice'], row['¶_content'])
+            if ocm_choice != ocm_choice_processing:
+                ocm_choice_processing = ocm_choice
+                thread = str(uuid.uuid4())[:8]
+                first_ref = None
+                increment = 0
+                comment = ET.SubElement(comment_list, "Comment")
+                ET.SubElement(comment, "Thread").text = thread
+                ET.SubElement(comment, "User").text = "Global Anthro Notes"
+                ET.SubElement(comment, "StartPosition").text = '0'
+                ET.SubElement(comment, "Status").text = ''
+                ET.SubElement(comment, "Type").text = ''
+                ET.SubElement(comment, "Language").text = 'English'
+                time = datetime.datetime.now().isoformat()
+                time = time[:-1] + str(increment)
+                increment += 1
+                ET.SubElement(comment, "Date").text = time + "-04:00"
                 contents = ET.SubElement(comment, "Contents")
                 p = ET.SubElement(contents, "p")
-                ocm_description = ocm_descriptions.get(ocm['code'])
-                title = ocm['name']
+                ocm_code = ocm_choice.split()[0]
+                title = " ".join(ocm_choice.split()[:1])
                 bold = ET.SubElement(p, "bold")
-                if ocm_description:
-                    bold.tail = " : " + ocm_description['description']
-                bold.text = "{} (OCM {})".format(title, ocm['code'])
-            else:
-                ET.SubElement(comment, "Field", Name="reattached").text = orc_char.join([ref, '', str(0), '', ''])
+                #ocm_description = ocm_descriptions.get(ocm['code'])
+                #if ocm_description:
+                #    bold.tail = " : " + ocm_description['description']
+                bold.text = "{} (OCM {})".format(title, ocm_code)
+            section_topic = row['section_topic']
+            if section_topic != section_topic_processing:
+                section_topic_processing = section_topic
+            if section_topic != '3 Application to Biblical source':
+                continue
+            ref = row['refs']
+            if first_ref is None:
+                first_ref = ref
+            #else:
+            #    ET.SubElement(comment, "Field", Name="reattached").text = orc_char.join([ref, '', str(0), '', ''])
             ET.SubElement(comment, "VerseRef").text = first_ref
-            ET.SubElement(comment, "StartPosition").text = '0'
-            ET.SubElement(comment, "Status").text = ''
-            ET.SubElement(comment, "Type").text = ''
-            ET.SubElement(comment, "Language").text = 'English'
+
+
