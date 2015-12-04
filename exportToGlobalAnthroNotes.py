@@ -150,6 +150,8 @@ def export_csv_to_global_anthro_notes():
     comment_list = ET.Element("CommentList")
 
     ocms_to_publish = ['801 Numerology']
+    section_topics_to_publish = ['2 Description', '3 Application to Biblical source', '5 Research Suggestions']
+
     with open('data/anthroNoteContent.csv', 'rb') as anc_sheet:
         csv_reader = csv.DictReader(anc_sheet)
         ocm_choice_processing = ''
@@ -163,37 +165,54 @@ def export_csv_to_global_anthro_notes():
                 ocm_choice_processing = ocm_choice
                 thread = str(uuid.uuid4())[:8]
                 first_ref = None
-                increment = 0
-                comment = ET.SubElement(comment_list, "Comment")
-                ET.SubElement(comment, "Thread").text = thread
-                ET.SubElement(comment, "User").text = "Global Anthro Notes"
-                ET.SubElement(comment, "StartPosition").text = '0'
-                ET.SubElement(comment, "Status").text = ''
-                ET.SubElement(comment, "Type").text = ''
-                ET.SubElement(comment, "Language").text = 'English'
-                time = datetime.datetime.now().isoformat()
-                time = time[:-1] + str(increment)
-                increment += 1
-                ET.SubElement(comment, "Date").text = time + "-04:00"
-                contents = ET.SubElement(comment, "Contents")
+                main_comment = create_comment(comment_list, thread)
+                contents = ET.SubElement(main_comment, "Contents")
                 p = ET.SubElement(contents, "p")
-                ocm_code = ocm_choice.split()[0]
-                title = " ".join(ocm_choice.split()[:1])
                 bold = ET.SubElement(p, "bold")
                 #ocm_description = ocm_descriptions.get(ocm['code'])
                 #if ocm_description:
                 #    bold.tail = " : " + ocm_description['description']
+                title = " ".join(ocm_choice.split()[:1])
+                ocm_code = ocm_choice.split()[0]
                 bold.text = "{} (OCM {})".format(title, ocm_code)
             section_topic = row['section_topic']
+            if section_topic not in section_topics_to_publish:
+                continue
             if section_topic != section_topic_processing:
                 section_topic_processing = section_topic
-            if section_topic != '3 Application to Biblical source':
+                p = ET.SubElement(contents, "p")
+                bold = ET.SubElement(p, "bold")
+                bold.text = " ".join(section_topic.split()[:1])
+            if row['bullet'] or not row['¶_content']:
                 continue
-            ref = row['refs']
-            if first_ref is None:
-                first_ref = ref
-            #else:
-            #    ET.SubElement(comment, "Field", Name="reattached").text = orc_char.join([ref, '', str(0), '', ''])
-            ET.SubElement(comment, "VerseRef").text = first_ref
+            p = ET.SubElement(contents, "p")
+            p.text = row['¶_content']
+            if section_topic == '3 Application to Biblical source':
+                ref = row['refs']
+                if first_ref is None:
+                    first_ref = ref
+                else:
+                    reattached_comment = create_comment(comment_list, thread)
+                    ET.SubElement(reattached_comment, "Field", Name="reattached").text = orc_char.join([ref, '', str(0), '', ''])
+                ET.SubElement(main_comment, "VerseRef").text = first_ref
+
+    tree = ET.ElementTree(comment_list)
+    tree.write("data/Comments_Global Anthro Repository.xml", encoding="utf-8", xml_declaration=True)
+
+
+def create_comment(comment_list, thread):
+    increment = 0
+    comment = ET.SubElement(comment_list, "Comment")
+    ET.SubElement(comment, "Thread").text = thread
+    ET.SubElement(comment, "User").text = "Global Anthro Notes"
+    ET.SubElement(comment, "StartPosition").text = '0'
+    ET.SubElement(comment, "Status").text = ''
+    ET.SubElement(comment, "Type").text = ''
+    ET.SubElement(comment, "Language").text = 'English'
+    time = datetime.datetime.now().isoformat()
+    time = time[:-1] + str(increment)
+    increment += 1
+    ET.SubElement(comment, "Date").text = time + "-04:00"
+    return comment
 
 
