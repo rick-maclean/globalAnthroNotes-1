@@ -156,6 +156,8 @@ def export_csv_to_global_anthro_notes():
     csv_rows = unicode_utils.load_unicode_csv_file_rows('data/anthroNoteContent.csv')
     ocm_choice_processing = ''
     section_topic_processing = ''
+    bullet_processing = False
+    previously_processed_bullet = False
     for row in csv_rows:
         ocm_choice = row['ocm_choice']
         if not ocm_choice:
@@ -180,15 +182,36 @@ def export_csv_to_global_anthro_notes():
             continue
         if section_topic != section_topic_processing:
             section_topic_processing = section_topic
+            if not previously_processed_bullet:
+                # add some extra spacing
+                # todo change stylesheet to add margin-bottom to ul?
+                p = ET.SubElement(contents, "p")
+            previously_processed_bullet = False
             p = ET.SubElement(contents, "p")
             bold = ET.SubElement(p, "bold")
             bold.text = u" ".join(section_topic.split()[1:])
-        if row['bullet'] or not row['¶_content']:
+        if not row['¶_content']:
             continue
-        p = ET.SubElement(contents, "p")
-        p.text = unicode(row['¶_content'])
+        content = unicode(row['¶_content'])
+        if row['bullet']:
+            if not bullet_processing:
+                ul = ET.SubElement(contents, "ul")
+                bullet_processing = True
+            li = ET.SubElement(ul, "li")
+            li.text = content
+            previously_processed_bullet = True
+            continue
+        else:
+            bullet_processing = False
+        previously_processed_bullet = False
         if section_topic == '3 Application to Biblical source':
             ref = row['refs']
+            p = ET.SubElement(contents, "p")
+            p.attrib['class'] = 'scrtext'
+            span_ref = ET.SubElement(p, "span")
+            span_ref.text = ref
+            span_content = ET.SubElement(p, "span")
+            span_content.text = content
             if first_ref is None:
                 first_ref = ref
                 comment = main_comment
@@ -198,8 +221,11 @@ def export_csv_to_global_anthro_notes():
                 ET.SubElement(reattached_comment, "Field", Name="reattached").text = orc_char.join([ref, '', str(0), '', ''])
                 reattached_comment.find("VerseRef").text = first_ref
             comment.find("VerseRef").text = first_ref
+            continue
+        p = ET.SubElement(contents, "p")
+        p.text = content
     tree = ET.ElementTree(comment_list)
-    tree.write("data/Comments_Global Anthro Repository.xml", encoding="utf-8", xml_declaration=True)
+    tree.write("data/Comments_Global Anthro Demo.xml", encoding="utf-8", xml_declaration=True)
 
 
 def create_comment(comment_list, thread):
