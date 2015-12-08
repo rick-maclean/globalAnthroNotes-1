@@ -157,6 +157,7 @@ def export_csv_to_global_anthro_notes():
 
     csv_rows = unicode_utils.load_unicode_csv_file_rows('data/anthroNoteContent.csv')
     ocm_choice_processing = ''
+    increment = 0
     section_topic_processing = ''
     bullet_processing = False
     previously_processed_bullet = False
@@ -169,7 +170,8 @@ def export_csv_to_global_anthro_notes():
             ocm_choice_processing = ocm_choice
             thread = str(uuid.uuid4())[:8]
             first_ref = None
-            main_comment = create_comment(comment_list, thread)
+            main_comment = create_comment(comment_list, thread, increment)
+            increment += 1
             contents = ET.SubElement(main_comment, "Contents")
             p = ET.SubElement(contents, "p")
             bold = ET.SubElement(p, "bold")
@@ -218,7 +220,8 @@ def export_csv_to_global_anthro_notes():
                 first_ref = ref
                 comment = main_comment
             else:
-                reattached_comment = create_comment(comment_list, thread)
+                reattached_comment = create_comment(comment_list, thread, increment)
+                increment += 1
                 comment = reattached_comment
                 ET.SubElement(reattached_comment, "Field", Name="reattached").text = orc_char.join([ref, '', str(0), '', ''])
                 reattached_comment.find("VerseRef").text = first_ref
@@ -230,8 +233,7 @@ def export_csv_to_global_anthro_notes():
     tree.write("data/Comments_Global Anthro Demo.xml", encoding="utf-8", xml_declaration=True)
 
 
-def create_comment(comment_list, thread):
-    increment = 0
+def create_comment(comment_list, thread, increment):
     comment = ET.SubElement(comment_list, "Comment")
     ET.SubElement(comment, "Thread").text = thread
     ET.SubElement(comment, "User").text = "Global Anthro Notes"
@@ -242,7 +244,6 @@ def create_comment(comment_list, thread):
     ET.SubElement(comment, "Language").text = 'English'
     time = datetime.datetime.now().isoformat()
     time = time[:-1] + str(increment)
-    increment += 1
     ET.SubElement(comment, "Date").text = time + "-04:00"
     return comment
 
