@@ -150,7 +150,9 @@ def export_csv_to_global_anthro_notes():
     orc_char = u"\uFFFC"
     comment_list = ET.Element("CommentList")
 
-    #ocms_to_publish = ['801 Numerology']
+    ocms_to_publish = ['203 Dissemination of News and Information', '801 Numerology', '243 Cereal Agriculture',
+                       '764 Burial Practices and Funerals', '821 Ethnometeorology', '290 Clothing',
+                       '787 Revelation and Divination']
     section_topics_to_publish = ['2 Description', '3 Application to Biblical source', '5 Research Suggestions']
 
     csv_rows = unicode_utils.load_unicode_csv_file_rows('data/anthroNoteContent.csv')
@@ -160,7 +162,7 @@ def export_csv_to_global_anthro_notes():
     previously_processed_bullet = False
     for row in csv_rows:
         ocm_choice = row['ocm_choice']
-        if not ocm_choice:
+        if not ocm_choice or ocm_choice not in ocms_to_publish:
             continue
         print (unicode(row['refs']), unicode(row['ocm_choice']), unicode(row['¶_content']))
         if ocm_choice != ocm_choice_processing:
