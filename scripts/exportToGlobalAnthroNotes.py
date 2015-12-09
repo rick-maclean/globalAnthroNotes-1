@@ -156,7 +156,7 @@ def export_csv_to_global_anthro_notes():
                        '787 Revelation and Divination']
     section_topics_to_publish = ['2 Description', '3 Application to Biblical source', '5 Research Suggestions']
 
-    csv_rows = unicode_utils.load_unicode_csv_file_rows('data/anthroNoteContent.csv')
+    csv_rows = unicode_utils.load_unicode_csv_file_rows('scripts/data/anthroNoteContent.csv')
     ocm_choice_processing = ''
     increment = 0
     section_topic_processing = ''
@@ -231,7 +231,7 @@ def export_csv_to_global_anthro_notes():
         p = ET.SubElement(contents, "p")
         p.text = content
     tree = ET.ElementTree(comment_list)
-    tree.write("data/Comments_Global Anthro Demo.xml", encoding="utf-8", xml_declaration=True)
+    tree.write("scripts/data/Comments_Global Anthro Demo.xml", encoding="utf-8", xml_declaration=True)
 
 
 def create_comment(comment_list, thread, increment):
