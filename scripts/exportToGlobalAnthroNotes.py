@@ -4,8 +4,9 @@ import uuid
 import xml.etree.ElementTree as ET
 import json
 import datetime
-import csv
-import unicode_utils
+
+from scripts import unicode_utils
+
 
 def import_ocm_code_data(print_to_console=False, export_to_files=False):
     tree = ET.parse('data/ANQR-Moore.fwdata')
