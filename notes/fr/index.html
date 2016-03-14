@@ -1,0 +1,1372 @@
+
+<!-- saved from url=(0058)file:///C:/Users/Pylee/AppData/Local/Temp/tmp3C03.tmp.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
+	<style type="text/css">
+		<!-- 
+body {
+	margin: 0px; 
+	padding: 0px;
+    cursor: default;
+}
+
+.content {
+    position: relative;
+	/* overflow: hidden; */
+    width: 100%;
+	height: 100%;
+}
+
+#table, .headertable {
+	position:absolute;
+    top:0px;
+    left:0px;
+}
+
+.headertable {
+    z-index: 1;
+}
+
+.headerrow {
+	background-color: White;
+}
+
+table {
+	border-collapse: collapse;
+    width: 100%;
+}
+
+tr.unselected {
+	color: windowtext;
+	background: window;
+}
+
+tr.selected {
+	color: highlighttext;
+	background: highlight;
+}
+td { 
+	border: none; 
+}
+
+
+*
+{
+    font-size: 100%;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: Verdana, sans-serif; /* default font for note metadata */
+    cursor: auto;
+}
+
+tr.unselected, tr.selected
+{
+    background-color: #FFFFFF; /* white instead of background-color of tr */
+    color: #000000; /* black foreground */
+}
+
+
+/* No notes match the filter */
+/* Might need to improve in a future version for reference links: */
+/* go to the next verse/section/chapter/book with notes which match the filter */
+
+#row0 > td > div
+{
+    min-height: 30px; /* required by assertion in C# code for virtual list */
+    padding-top: 4px; /* outline-width of the selected note */
+    margin-left: 4px;
+    margin-right: 4px;
+    font-size: 0.75rem; /* font-size of metadata */
+}
+
+/* table contains the comments for a note thread */
+/* selector for the Note editing window: table.opened */
+/* selector for the Notes list window: tr table.note */
+/* When printed, the Notes list window is a sequence of tables, not a table of tables. */
+
+table.note
+{
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+tr + tr table.note tr:first-child th
+{
+    border-top: 1px solid #000000; /* black */
+}
+
+
+/* Initially, no note is selected. To select a note, click or press a keyboard shortcut. */
+
+tr.selected table.note
+{
+    outline-width: 4px;
+    outline-style: solid;
+    outline-color: #000000; /* black */
+    outline-offset: -4px; /* negative offset means inside instead of outside */
+}
+
+table.note a,
+table.note a:visited
+{
+    color: #0000FF; /* blue instead of purple for visited */
+}
+
+table.note ul.metadata,
+table.note q,
+table.note div.conflict div > span,
+table.note div.conflict td > span
+{
+    color: #808080; /* gray hsv(0,0,50) */
+}
+
+table.note q[dir="rtl"]
+{
+    text-align: right;
+}
+
+table.note a[href^="toggle:"],
+table.note q span.selectedText
+{
+    color: #000000; /* black instead of blue or gray */
+}
+
+/* The currently selected note has changed and does not match the filter, */
+/* including: Notes Assigned To Me, Unresolved, Date Changed. */
+/* Display with lighter text instead of literally hiding the note. */
+
+table.note[aria-hidden="true"] ul.metadata,
+table.note[aria-hidden="true"] q,
+table.note[aria-hidden="true"] div.conflict div > span,
+table.note[aria-hidden="true"] div.conflict td > span
+{
+    color: #CCCCCC; /* light gray hsv(0,0,80) instead of gray */
+}
+
+table.note[aria-hidden="true"] q span.selectedText,
+table.note[aria-hidden="true"] blockquote
+{
+    color: #808080; /* gray instead of black */
+}
+
+
+/* A collapsed note displays the first row and the first line of the original comment. */
+
+tr table.note:not([aria-expanded="true"]) q, /* first line of context */
+tr table.note:not([aria-expanded="true"]) tr:nth-child(2) p:first-child /* first paragraph of original comment */
+{
+    white-space: nowrap; /* prevents wrapping to multiple lines */
+    overflow: hidden; /* display as one line in the available width */
+}
+
+tr table.anthro.note tr:nth-child(2) td div div {
+    margin-top: 16px;
+}
+
+tr table.anthro.note tr:nth-child(2) td div div ul {
+    margin-top: 10px;
+}
+
+tr table.anthro.note tr:nth-child(2) td div .scrtext span:nth-child(1) {
+    margin-right: 16px;
+}
+
+tr table.anthro.note tr:nth-child(2) td div .scrtext.filter-rejected {
+    display: none;
+}
+
+tr table.note:not([aria-expanded="true"]) tr:nth-child(2) p:not(:first-child), /* additional paragraphs of original comment */
+tr table.note:not([aria-expanded="true"]) tr + tr + tr, /* subsequent comments and interactive area */
+tr table.anthro.note:not([aria-expanded="true"]) tr:nth-child(2) ul,
+tr table.anthro.note:not([aria-expanded="true"]) tr:nth-child(2) td div div,
+tr table.anthro.note ul.metadata .goto :not(:first-child)
+{
+    display: none; /* hide if collapsed */
+}
+
+tr table.anthro.note tr:nth-child(2) ul li {
+    padding-left: 40px;
+}
+
+
+/* cells */
+
+table.note th,
+table.note td
+{
+    padding-top: 4px; /* outline-width of the selected note */
+    padding-right: 4px;
+    border-width: 1px;
+}
+
+table.opened th,
+table.opened td
+{
+    padding-right: 0; /* no outline in the Note editing window */
+}
+
+table.note td
+{
+    padding-bottom: 4px;
+}
+
+table.note th
+{
+    font-weight: normal;
+    text-align: left;
+}
+
+
+/* the first column can display a note tag */
+
+table.note col:first-child
+{
+    width: 20px; /* padding-left of th plus width of div for tag */
+}
+
+table.note th:first-child
+{
+    padding-left: 4px; /* outline-width of the selected note */
+    width: 16px; /* width of div for tag */
+    padding-right: 0;
+    vertical-align: top;
+}
+
+table.note th:first-child div
+{
+    position: relative;
+    width: 16px; /* width of background-image */
+    height: 16px; /* height of background-image */
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+table.note th:first-child div div
+{
+    position: absolute;
+}
+
+tr table.note tr + tr th:first-child > div
+{
+    opacity: 0.25;
+}
+
+table.opened tr + tr th:first-child > div,
+tr.selected table.note tr + tr th:first-child > div
+{
+    opacity: 0.5;
+}
+
+
+/* the second column displays other metadata of the note */
+
+table.note ul.metadata,
+table.note div.conflict div > span,
+table.note div.conflict td > span,
+table.note div.conflict a
+{
+    font-size: 0.75rem; /* 12px */
+}
+
+table.note ul.metadata,
+table.note ul.metadata ul, /* li.byline contains list of user and date */
+table.note q
+{
+    margin-left: 4px;
+    margin-right: 2px;
+}
+
+table.note ul.metadata,
+table.note ul.metadata ul
+{
+    display: flex;
+    align-items: flex-start;
+    list-style: none;
+}
+
+table.note ul.metadata li
+{
+    flex-basis: auto; /* display it at its actual width if possible */
+    flex-shrink: 0; /* do not let it shrink */
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+table.note li.goto
+{
+    min-width: 7em; /* display BBB CCC:VVV as a "column" */
+}
+
+table.note ul.metadata li.byline,
+table.note ul.metadata li.user,
+table.project ul.metadata li.assignedTo
+{
+    flex-shrink: 1; /* let the name shrink */
+}
+
+table.note ul.metadata li + li
+{
+    padding-left: 8px;
+}
+
+table.note th ul.metadata li + li.buttons
+{
+    padding-left: 4px; /* half of padding-left when it follows Open */
+}
+
+table.project li.assignedTo,
+table.note td li:not(.assignedTo) + li.buttons, /* when not preceded by li.assignTo */
+table.consultant th li.open /* when not preceded by li.assignedTo */
+{
+    margin-left: auto; /* "float" right */
+}
+
+table.project li.assignedTo:before
+{
+    content: ">";
+}
+
+table.note li.buttons
+{
+    display: flex;
+    align-items: flex-start;
+}
+
+table.note ul.metadata li.buttons
+{
+    margin-right: -2px; /* negative of margin-right of ul.metadata */
+}
+
+table.note tr + tr + tr ul.metadata li.buttons
+{
+    margin-top: -4px; /* negative of padding-top of td */
+}
+
+table.opened li.byline,
+table.note:not(.opened) tr:nth-child(2) ul.metadata li:not(.assignedTo), /* see @media */
+table.note:not(.opened):not([aria-expanded="true"]) tr:nth-child(2) ul.edit,
+table.global:not(.opened) li.user,
+table.global:not(.opened) li.date
+{
+    display: none;
+}
+
+/* Any note if the window is 399px or narrower: */
+@media (max-width: 399px)
+{
+
+    table.note:not(.opened) tr:nth-child(2) ul.metadata li:not(.assignedTo)
+    {
+        display: block;
+    }
+
+    table.note li.byline
+    {
+        display: none; /* instead of in the first row */
+    }
+
+}
+
+/* Project note if the window is 439px or narrower: */
+@media (max-width: 439px)
+{
+
+    table.project:not(.opened) tr:nth-child(2) ul.metadata li:not(.assignedTo)
+    {
+        display: block;
+    }
+
+    table.project li.byline
+    {
+        display: none; /* instead of in the first row */
+    }
+
+}
+
+
+/* Click a button link at the right of a comment. */
+
+table.note li.buttons a
+{
+    display: block;
+    flex-basis: auto; /* display it at its actual width if possible */
+    flex-shrink: 0; /* do not let it shrink */
+    font-size: 12px;
+    line-height: 16px; /* height of background-image */
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+table.note th a[href^="toggle:"] /* with the number of comments */
+{
+    padding-right: 16px; /* width of background-image */
+}
+
+table.note a[href^="delete:"], /* delete the most recent saved comment */
+table.note a[href^="edit:"], /* edit the most recent saved comment */
+table.note td a[href^="toggle:"] /* only up/down arrow */
+{
+    width: 16px; /* width of background-image */
+}
+
+/* If you wrote the most recent saved comment, you can edit or delete it. */
+
+table.note td > div
+{
+    position: relative;
+}
+
+a.reattach
+{
+    flex-basis: auto; /* display it at its actual width if possible */
+    flex-shrink: 0; /* do not let it shrink */
+}
+
+a.reattach,
+.reattached
+{
+    padding-right: 16px; /* width of background-image */
+    width: 16px; /* width of background-image */
+    font-size: 12px;
+    line-height: 16px; /* height of background-image */
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+a.moved 
+{
+    border: solid 2px red;
+}
+
+table.note ul.edit
+{
+    list-style: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+table ul {
+    list-style-position: inside;
+}
+
+table.note blockquote[dir="rtl"] + ul.edit
+{
+    margin-left: 4px; /* same as margin-left of ul.metadata */
+    right: auto;
+}
+
+table.note blockquote:empty + ul.edit
+{
+    position: static;
+    float: right;
+}
+
+table.note blockquote[dir="rtl"]:empty + ul.edit
+{
+    float: left;
+}
+
+
+/* The first row has a background color if the note has any unread comments. */
+/* A comment cell has a background color if that comment is unread. */
+
+table.note tr.unread:first-child, /* the first row */
+table.note tr.unread td
+{
+    background-color: #FFFFCC; /* fallback : desaturated yellow hsv(60, 20, 100) */
+    background-color: rgb(255,255,206);
+}
+
+table.note q:hover span.selectedText,
+table.note li.buttons a:hover, /* Expand/Collapse Note, Edit, Delete */
+table.note form a:hover /* Resolve, OK, Cancel buttons */
+{
+    background-color: #CCCCCC; /* light gray */
+}
+
+
+/* in other rows, the second column displays a comment */
+
+table.note tr + tr th /* align tag with td, which has border */
+{
+    border-top-style: solid;
+    border-top-color: transparent;
+}
+
+table.note td
+{
+    border-top-style: solid;
+    border-color: #CCCCCC; /* light gray */
+}
+
+table.note tr:nth-child(2) td /* original comment */
+{
+    padding-top: 0;
+    border-top-color: transparent; /* do not separate from note metadata */
+}
+
+/* context where the note was inserted */
+
+table.note q
+{
+    display: block;
+    quotes: none;
+}
+
+table.note q:before
+{
+    content: ""; /* instead of opening quotation mark */
+}
+
+table.note q:after
+{
+    content: ""; /* instead of closing quotation mark */
+}
+
+table.note q span.selectedText
+{
+    font-weight: bold;
+}
+
+table.note q span
+{
+    border-width: 1px;
+    border-color: #000000; /* black "insertion point" if no selectedText */
+}
+
+table.note q span.contextBefore:last-child
+{
+    border-right-style: solid;
+}
+
+table.note q[dir="rtl"] span.contextBefore:last-child
+{
+    border-left-style: solid;
+    border-right-style: none;
+}
+
+table.note q span.contextBefore + span.contextAfter
+{
+    border-left-style: solid;
+}
+
+table.note q[dir="rtl"] span.contextBefore + span.contextAfter
+{
+    border-left-style: none;
+    border-right-style: solid;
+}
+
+/* metadata for a conflict note */
+
+/* The rules for ins and del elements which represent added/deleted text */
+/* are appended by C# code to have consistent formatting with Change Display Style */
+/* on the View menu of the Compare Texts and Verse History windows. */
+
+tr table.note:not([aria-expanded="true"]) div.conflict div.deck
+{
+    height: 1rem; /* show only the first line if collapsed */
+    overflow: hidden;
+}
+
+tr table.note:not([aria-expanded="true"]) div.conflict div.accepted,
+tr table.note:not([aria-expanded="true"]) div.conflict div.rejected > span,
+tr table.note:not([aria-expanded="true"]) div.conflict div.resolutions
+{
+    display: none; /* hide if collapsed */
+}
+
+table.opened div.conflict div + div,
+tr table.note[aria-expanded="true"] div.conflict div + div
+{
+    margin-top: 4px;
+}
+
+table.opened div.conflict div.changes + div,
+tr table.note[aria-expanded="true"] div.conflict div.changes + div
+{
+    border-top: 1px dotted #CCCCCC;
+    padding-top: 2px;
+}
+
+table.note div.conflict div > span,
+table.note div.conflict td > span,
+table.note div.conflict a
+{
+    display: block; /* for line-height */
+    line-height: 1rem; /* 16px */
+    margin-left: 4px; /* same as ul.metadata */
+    margin-right: 2px; /* same as ul.metadata */
+}
+
+table.note div.conflict span.label
+{
+    float: left;
+    margin-right: 4px;
+}
+
+table.note div.conflict div.changes
+{
+    clear: left;
+}
+
+table.note div.conflict a
+{
+    white-space: nowrap;
+}
+
+table.note div.conflict a[href^="history:"] /* View History */
+{
+    float: right;
+}
+
+table.note div.resolutions table td + td
+{
+    width: 100%; /* the rest of the available width to prevent gap following the previous cell */
+}
+
+table.note div.resolutions td
+{
+    border-top-style: none;
+    padding-top: 4px; /* because of padding-top:0 for table.note tr:nth-child(2) td */
+    padding-bottom: 0;
+    vertical-align: baseline;
+}
+
+/* content of a comment */
+
+table.note blockquote
+{
+    overflow: hidden; /* for window narrower than the longest word */
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+table.note tr.interactive blockquote,
+table.note p
+{
+    min-height: 1.25em; /* for empty elements */
+}
+
+table.opened div.conflict + blockquote
+{
+    display: none;  /* displayed as separate panel but reverse XSLT in Note editing window requires it */
+}
+
+table.note p + p
+{
+    margin-top: 4px;
+}
+
+table.global p.metadata + p.metadata
+{
+    margin-top: 0;
+}
+
+table.global p.metadata /* Created By, Project, Categories */
+{
+    font-size: 0.75rem; /* font-size of metadata */
+}
+
+table.note ul.field
+{
+    display: none; /* reverse XSLT in Note editing window requires these elements */
+}
+
+
+/* the last row often provides an interactive area to add a new comment */
+
+table.note tr.interactive td
+{
+    background-color: #E6E6E6; /* lighter gray hsv(0,0,90) */
+}
+
+table.note tr.interactive td.unsaved
+{
+    background-color: #FFBC33; /* orange hsv(40, 80, 100) instead of lighter gray */
+}
+
+table.note td .unsaved /* blockquote, select, or both */
+{
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: #664500; /* brown hsv(40, 100, 40) instead of gray */
+    outline-offset: -2px; /* negative offset means inside instead of outside */
+}
+
+table.note blockquote[contenteditable="true"]
+{
+    background-color: #FFFFFF; /* white instead of lighter gray or orange */
+    white-space: pre-wrap; /* FB33161 */
+}
+
+table.note blockquote[contenteditable="true"],
+table.note form a,
+table.note select
+{
+    border-width: 1px;
+    border-color: #808080; /* gray */
+}
+
+/* optionally change the next user the note will be assigned to, and then click a button */
+
+table.note form ul
+{
+    display: flex;
+    align-items: flex-start;
+    list-style: none;
+}
+
+/* consultant note: OK button, Cancel button */
+
+table.consultant form ul
+{
+    justify-content: flex-end; /* align OK and Cancel at right */
+}
+
+table.note form li + li
+{
+    margin-left: 8px;
+}
+
+table.note form li + li:nth-last-child(3) /* Resolve + Assign To drop-down list */
+{
+    padding-left: 8px; /* same as margin-left */
+}
+
+/* ordinary project note: Resolve button, Assign To list, OK button, Cancel button */
+/* restricted project note: Assign To list, OK button, Cancel button */
+
+table.note form li
+{
+    font-size: 12px;
+    line-height: 17px; /* height of down arrow in select */
+    flex-basis: auto; /* display it at its actual width if possible */
+    flex-shrink: 0; /* do not let it shrink */
+}
+
+table.note form li:nth-last-child(3) /* Assign To drop-down list */
+{
+    margin-left: auto; /* "float" right */
+}
+
+table.note form label
+{
+    padding-right: 4px;
+}
+
+table.note form select
+{
+    vertical-align: top; /* prevent gap between blockquote and select */
+}
+
+table.note form a
+{
+    display: block; /* make the entire button clickable */
+    padding-left: 4px;
+    padding-right: 4px;
+    text-decoration: none;
+    color: #000000; /* black instead of blue */
+    background-color: #FFFFFF; /* white instead of lightest gray */
+}
+
+table.note form a,
+table.note form select
+{
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+}
+
+/* if the window is 399px or narrower: */
+@media (max-width: 399px)
+{
+
+    table.note form label
+    {
+        display: none;
+    }
+
+}
+
+
+/* highlight colors for forward compatibility */
+
+table.note .highlight_yellow
+{
+    background-color: #FFFF00;
+}
+
+table.note .highlight_green
+{
+    background-color: #00FF00;
+}
+
+table.note .highlight_aqua
+{
+    background-color: #00FFFF;
+}
+
+
+/* Paratext replaces placeholders in the following rules */
+
+div.consultant_shared
+{
+    background-image: url("file:///C:/Program Files (x86)/Paratext 7 Test/ProjectComments/Paratext_Notes_consultant_shared.png");
+}
+
+div.globalconsultant_accepted
+{
+    background-image: url("file:///C:/Program Files (x86)/Paratext 7 Test/ProjectComments/Paratext_Notes_globalconsultant_accepted.png");
+}
+
+div.globalconsultant_declined
+{
+    background-image: url("file:///C:/Program Files (x86)/Paratext 7 Test/ProjectComments/Paratext_Notes_globalconsultant_declined.png");
+}
+
+a.reattach, 
+.reattached
+{
+    background-image: url("file:///C:/Program Files (x86)/Paratext 7 Test/ProjectComments/ReattachNote.png");
+}
+
+table.note a[href^="toggle:"]
+{
+    background-image: url("file:///C:/Program Files (x86)/Paratext 7 Test/ProjectComments/Paratext_Notes_collapsible_expand.png");
+}
+
+table.note[aria-expanded="true"] a[href^="toggle:"]
+{
+    background-image: url("file:///C:/Program Files (x86)/Paratext 7 Test/ProjectComments/Paratext_Notes_collapsible_collapse.png");
+}
+
+table.note a[href^="edit:"]
+{
+    background-image: url("file:///C:/Program Files (x86)/Paratext 7 Test/ProjectComments/edit.png");
+}
+
+table.note a[href^="delete:"]
+{
+    background-image: url("file:///C:/Program Files (x86)/Paratext 7 Test/ProjectComments/cancel.png");
+}
+
+.btLabel,
+.btTranslit,
+.btGloss {
+    padding-right: 5px;
+}
+
+.btTranslit::before {
+    content: " (";
+}
+
+.btTranslit::after {
+    content: ")";
+}
+div.tag { background-color: transparent; background-repeat: no-repeat; background-position: center left; width: 16px; height: 16px; margin: 1px; margin-right: 5px; float: left;  }.Color_GANfr_1
+{
+background-image: url("file:///C:/Program Files (x86)/Paratext 7 Test/ProjectComments/TagIcons/globalconsultant2.png");
+}
+.Grayed_GANfr_1
+{
+background-image: url("file:///C:/Program Files (x86)/Paratext 7 Test/ProjectComments/TagIcons/globalconsultant4.png");
+}
+.Resolved_GANfr_1
+{
+background-image: url("file:///C:/Program Files (x86)/Paratext 7 Test/ProjectComments/TagIcons/globalconsultant5.png");
+}
+.Color_GANfr_36862
+{
+background-image: url("file:///C:/Program Files (x86)/Paratext 7 Test/ProjectComments/TagIcons/spelling1.png");
+}
+.Grayed_GANfr_36862
+{
+background-image: url("file:///C:/Program Files (x86)/Paratext 7 Test/ProjectComments/TagIcons/spelling4.png");
+}
+.Resolved_GANfr_36862
+{
+background-image: url("file:///C:/Program Files (x86)/Paratext 7 Test/ProjectComments/TagIcons/spelling5.png");
+}
+.Color_GANfr_36861
+{
+background-image: url("file:///C:/Program Files (x86)/Paratext 7 Test/ProjectComments/TagIcons/biblicalterm1.png");
+}
+.Grayed_GANfr_36861
+{
+background-image: url("file:///C:/Program Files (x86)/Paratext 7 Test/ProjectComments/TagIcons/biblicalterm4.png");
+}
+.Resolved_GANfr_36861
+{
+background-image: url("file:///C:/Program Files (x86)/Paratext 7 Test/ProjectComments/TagIcons/biblicalterm5.png");
+}
+.Color_GANfr_36863
+{
+background-image: url("file:///C:/Program Files (x86)/Paratext 7 Test/ProjectComments/TagIcons/conflict1.png");
+}
+.Grayed_GANfr_36863
+{
+background-image: url("file:///C:/Program Files (x86)/Paratext 7 Test/ProjectComments/TagIcons/conflict4.png");
+}
+.Resolved_GANfr_36863
+{
+background-image: url("file:///C:/Program Files (x86)/Paratext 7 Test/ProjectComments/TagIcons/conflict5.png");
+}
+@font-face {
+    font-family: "Arial";
+    src: local("Arial"), local("Arial Bold"), local("Arial Narrow Bold"), local("Arial Italic"), local("Arial Bold Italic"), local("Arial Narrow Bold Italic"), local("Arial Narrow Italic");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Arial";
+    src: local("Arial Bold");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Arial";
+    src: local("Arial Italic");
+    font-style: italic;
+}
+@font-face {
+    font-family: "Arial";
+    src: local("Arial Bold Italic");
+    font-weight: bold;
+    font-style: italic;
+}
+[lang="x-Danish"] {
+ font-family:"Arial";
+ font-size:12pt;
+text-align: left;
+}
+@font-face {
+    font-family: "Charis SIL";
+    src: local("Charis SIL"), local("Charis SIL Bold"), local("Charis SIL Italic"), local("Charis SIL Bold Italic");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Charis SIL";
+    src: local("Charis SIL Bold");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Charis SIL";
+    src: local("Charis SIL Italic");
+    font-style: italic;
+}
+@font-face {
+    font-family: "Charis SIL";
+    src: local("Charis SIL Bold Italic");
+    font-weight: bold;
+    font-style: italic;
+}
+[lang="x-djk"] {
+ font-family:"Charis SIL";
+ font-size:14pt;
+text-align: left;
+}
+@font-face {
+    font-family: "Gentium Basic";
+    src: local("Gentium Basic"), local("Gentium Basic Regular"), local("Gentium Basic Normal"), local("Gentium Basic Bold");
+    font-weight: normal;
+}
+[lang="x-eng"] {
+ font-family:"Gentium Basic";
+ font-size:14pt;
+text-align: left;
+}
+@font-face {
+    font-family: "Cambria";
+    src: local("Cambria"), local("Cambria &  Math"), local("Cambria Bold"), local("Cambria Italic"), local("Cambria Bold Italic");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Cambria";
+    src: local("Cambria Bold");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Cambria";
+    src: local("Cambria Italic");
+    font-style: italic;
+}
+@font-face {
+    font-family: "Cambria";
+    src: local("Cambria Bold Italic");
+    font-weight: bold;
+    font-style: italic;
+}
+[lang="x-English"] {
+ font-family:"Cambria";
+ font-size:14pt;
+text-align: left;
+}
+@font-face {
+    font-family: "Verdana";
+    src: local("Verdana"), local("Verdana Bold"), local("Verdana Italic"), local("Verdana Bold Italic");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Verdana";
+    src: local("Verdana Bold");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Verdana";
+    src: local("Verdana Italic");
+    font-style: italic;
+}
+@font-face {
+    font-family: "Verdana";
+    src: local("Verdana Bold Italic");
+    font-weight: bold;
+    font-style: italic;
+}
+[lang="x-French"] {
+ font-family:"Verdana";
+ font-size:10pt;
+text-align: left;
+}
+
+.UILanguage {
+ font-family: Arial;
+ font-size: 10pt;
+}
+
+.UILanguageSmall {
+ font-family: Arial;
+ font-size: 7pt;
+}
+table.note ins { background:lightgreen; font-weight: bold; text-decoration: none; color: Black; }
+table.note del { background:pink; text-decoration: none; color: Black; }table.note u { background:lightgreen; font-weight: bold; text-decoration: none; color: Black; }
+table.note s { background:pink; text-decoration: none; color: Black; } -->
+	</style>
+</head>
+<body contenteditable="false"><div class="content" id="content">
+<table class="headertable" cellspacing="0">
+<tbody><tr class="headerrow" id="headerrow"></tr></tbody></table>
+<table style="top: 0px;" id="table" cellspacing="0">
+<tbody><tr id="row0" class="selected"><td><table id="5f9d29ec" class="global consultant anthro note" aria-expanded="true"><colgroup><col><col></colgroup><tbody><tr><th><div class="Color_GANfr_1" title="Anthro Note">&nbsp;</div></th><th><ul class="metadata"><li class="goto"><a href="goto:LUK 7:11-17|5f9d29ec">LUK 7:11-17</a><br><a href="goto:LUK 7:11-17|5f9d29ec">LUK 7:11-17</a><br><a href="goto:LUK 7:11-17|5f9d29ec">LUK 7:11-17</a><br><a href="goto:LUK 7:11-17|5f9d29ec">LUK 7:11-17</a><br><a href="goto:LUK 8:46-48|5f9d29ec">LUK 8:46-48</a><br><a href="goto:LUK 8:49|5f9d29ec">LUK 8:49</a><br><a href="goto:LUK 8:50-56|5f9d29ec">LUK 8:50-56</a><br><a href="goto:LUK 9:57-62|5f9d29ec">LUK 9:57-62</a><br><a href="goto:LUK 9:59-60|5f9d29ec">LUK 9:59-60</a><br><a href="goto:LUK 12:46|5f9d29ec">LUK 12:46</a><br><a href="goto:LUK 16:22-23|5f9d29ec">LUK 16:22-23</a><br><a href="goto:LUK 23:52-53|5f9d29ec">LUK 23:52-53</a><br><a href="goto:LUK 23:54-56|5f9d29ec">LUK 23:54-56</a></li><li class="open"></li><li class="buttons"><a href="toggle:5f9d29ec" title="Collapse note">10/13</a></li></ul><q lang="x-French"></q></th></tr><tr><th>&nbsp;</th><td><div><ul class="metadata"><li class="user">Global Anthro Notes</li><li class="date" title="15:54 -04:00">2016-03-14</li></ul><blockquote lang="x-French"><p><b>Burial Practices and Funerals (OCM 764)</b></p><p></p><p><b>Description</b></p><p>Enterement ou incéneration, les pratiques funerailles varient parmis les cultures. Ces rituelles sont
+                important pour les familles et la communauté. Ces periods mettent de forte pression sociale et familiale
+                car souvent is consiste des pratiques predéterminés que la famille doit suivre. Ils sont aussi des temps
+                de crises et de transition et demande une coopération familiale pour honorer et entérer le défunt.
+            </p><p></p><p><b>Application to Biblical source</b></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 7:11-17|5f9d29ec">LUK 7:11-17</a></span><span class="commentary">Interrompre un funerail était contre la loi et les coutûmes juif. Toucher la
+                    biére a causé impurté pour une journée entiére (Num 19: 21,22); toucher le défunt a causé impurté
+                    pour une semaine (Num 5: 2,3). Mais pour Jésus, la purté revient sur le défunt. (IVP Biblical
+                    Background, trad.)
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 7:11-17|5f9d29ec">LUK 7:11-17</a></span><span class="commentary">On ensevelissait toujours les défunts en-dehors des localités ; c’est pourquoi
+                    Jésus rencontre ce convoi funèbre à la porte de la ville. Il était de coutume que tous ceux qui
+                    avaient connu le mort participent à l’enterrement. Le fait qu’il s’agissait du fils unique d’une
+                    veuve a certainement motivé beaucoup de ceux qui auraient hésité dans un autre cas. Généralement,
+                    quatre hommes portaient la bière sur leurs épaules en se relayant de temps en temps. C’était
+                    considéré comme un honneur de pouvoir accomplir ce service. La bière était constituée par un cadre
+                    en bois ressemblant en partie à nos cercueils. Le mort était revêtu de ses habits, les mains étaient
+                    croisées sur la poitrine et son visage était couvert d’une écharpe. (Encyclopédie difficultés
+                    bibliques)
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 7:11-17|5f9d29ec">LUK 7:11-17</a></span><span class="commentary">Le Sauveur découvre immédiatement la pauvre veuve au milieu de la foule; et, à
+                    sa vue, il est (gr.) ému dans ses entrailles: expression d'un vif et profond sentiment de sympathie.
+                    Cette tendre charité lui fait accomplir un de ses plus grands miracles. Ici, comme à la résurrection
+                    de Lazare, nous voyons en Jésus-Christ la grandeur divine, unie aux sentiments humains les plus
+                    vrais. Ce mot d'une profonde compassion: Ne pleure point, ne serait qu'une ironie si Jésus n'avait
+                    pas eu conscience dés ce moment de ce qu'il allait faire. (NT Annoté)
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 7:11-17|5f9d29ec">LUK 7:11-17</a></span><span class="commentary">Le cercueil était ouvert; le mort y était couché, enveloppé d'un linceul. Jésus
+                    s'en approche; il touche la bière sans crainte de la souillure résultant du contact d'un mort.
+                    C'était une invitation aux porteurs à s'arrêter. Ceux-ci obéissent à ce geste hardi du Prince de la
+                    vie.(NT Annoté)
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 8:46-48|5f9d29ec">LUK 8:46-48</a></span><span class="commentary">D'après le récit de Marc et de Luc, la malade a été guérie par le simple
+                    attouchement des vêtements de Jésus (v. 44) et sans une action consciente et voulue du Sauveur, qui
+                    pourtant a senti qu'une puissance ou une force salutaire était sortie de lui. Marc (Marc 5:30)
+                    mentionne seulement l'impression que Jésus avait eue. D'après Luc, Jésus aurait énoncé cette
+                    impression et réfuté ainsi plus péremptoirement l'objection des disciples. La nature spéciale de ce
+                    miracle a été pour plusieurs interprètes une pierre d'achoppement. (NT Annotté)
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 8:49|5f9d29ec">LUK 8:49</a></span><span class="commentary">Dés qu'un événement est arrivé on ne pouvait plus prier qu'il se révérse. Pqr
+                    exemple, les rabbins disait si on entend une funerail il était trop tard de prier qu'il ne
+                    s'agissait de quelqu'un de la famille. (IVP Biblcal Background trad:)
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 8:50-56|5f9d29ec">LUK 8:50-56</a></span><span class="commentary">Des gens professionelles étaient engagé pour augmenter les lamantations et
+                    larmes pour le défunt; même parmis les plus pauvres. Pour un riche comme ceci, sa maison était plain
+                    des gens. Les corps décomposaient rapidement en Palestine, donc les gens s'assemblaient rapidement.
+                    Ici, ils sont venus avant que le pére avait reçu les nouvelles de la mort de sa fille. (IVP Biblical
+                    Background)
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 9:57-62|5f9d29ec">LUK 9:57-62</a></span><span class="commentary">à cause de son ministère itinérant, Jésus dépendait de l'accueil et de
+                    l'hospitalité des habitants des villes qu'il visitait. (Notes Bible du Sémeur)
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 9:59-60|5f9d29ec">LUK 9:59-60</a></span><span class="commentary">Si son père venait de mourir, cet homme ne serait pas auprès de Jésus, car
+                    l'enterrement se faisait dans la journée même ou le lendemain. Il serait donc pris par les
+                    cérémonies précédant ou suivant l'enterrement. Enterrer les morts faisait partie des bonnes œuvres
+                    des Juifs. Même enterrer un étranger était un acte méritoire - à plus forte raison des membres de sa
+                    famille. On en faisait une application du 5e commandement. Jésus voulait dire par là que l'annonce
+                    de l'Evangile avait priorité sur les obligations religieuses les plus prisées. Ressusciter les morts
+                    (spirituels) est plus important qu'enterrer les morts (physiques). Cet homme pouvait s'appuyer sur
+                    l'exemple d'Elisée (1 Rois 19.19-21), mais la mission de Jésus est plus urgente que celle d'Elie et
+                    d'Elisée. Peut-être existait-il un proverbe soulignant l'importance de regarder droit devant soi
+                    lorsqu'on laboure (v. 62). Dans ce cas, Jésus l'a adapté dans le sens de Matthieu 6.33.
+                    (Encyclopédie difficultés bibliques)
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 12:46|5f9d29ec">LUK 12:46</a></span><span class="commentary">La punition d'étre coupe en morçeax est attesté la literature gréc payen. Le
+                    lecteurs de Luc se considerant plus civilizé, surement trouvaient les details horrifiants. Si l'on
+                    intérprete litéralement, le bannisement parmie les non croyants pourrait dire qu'il n'aurait pas
+                    d'enterrement. Mais le parabole indiaue le bannisement aux Enfers (le Gehinnom) des idolateurs.
+                    (Biblical Background, trad.)
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 16:22-23|5f9d29ec">LUK 16:22-23</a></span><span class="commentary">Dans le contexte juif, ne pas recevoir de funérailles dignes - ou pas de
+                    funérailles du tout (1 Rois 14.13) était le déshonneur suprême. Mais la mort sans honneurs de
+                    Lazare, enterré peut-être à la sauvette dans une tombe collective des pauvres de la communauté, fut
+                    suivie d’honneurs célestes : emporté par les anges auprès d’Abraham. C’était l’expression
+                    traditionnelle du sort réservé aux Israélites fidèles : ils seraient avec le patriarche, auprès de
+                    lui. L’expression grecque reproduisant l’hébraïsme dit littéralement : « dans le sein d’Abraham ».
+                    Elle représente l’au-delà sous la forme d’un banquet où les convives sont à moitié couchés sur des
+                    sortes de divans. Celui qui est le plus près de son voisin touche sa poitrine avec sa tête lorsqu’il
+                    la penche en arrière (cf. Jean 13.23-25) ; être « dans le sein d’Abraham » signifiait donc se
+                    trouver tout près de lui (les places d’honneur dans un banquet étaient celles qui se situaient dans
+                    le voisinage immédiat du personnage le plus important, celui que l’on voulait honorer - comme notre
+                    étiquette actuelle l’a maintenu). (Encyclopedie difficultes bibliques)
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 23:52-53|5f9d29ec">LUK 23:52-53</a></span><span class="commentary">Luc et Jean attachent assez d'importance à ce dernier trait pour ajouter que
+                    personne n'y avait encore été mis. Un tel sépulcre était plus honorable pour le Sauveur en
+                    préservant son corps du contact avec d'autres cadavres, qui, suivant la loi juive, lui auraient fait
+                    contracter une souillure. (NT Annotee)
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 23:54-56|5f9d29ec">LUK 23:54-56</a></span><span class="commentary">Elles firent ces préparatifs le samedi soir après que le sabbat fût passé.
+                    Elles n'auraient pas eu le temps de les faire le vendredi soir, parce que le sabbat commençait au
+                    coucher du soleil. Leurs préparatifs achevés le samedi soir, il était trop tard pour procéder encore
+                    à l'embaumement du corps de Jésus; voilà pourquoi elles ne vinrent au sépulcre que le dimanche
+                    matin. (NT Annotee)
+                </span></p><p></p><p><b>Research Suggestions</b></p><p>Pour rechercher le pratiques sur les funeraill et disposition des corps dan votre region; vous devrez
+                creer une étude de cas. Avant de commencer; il faut assister des obséques et demander à quelqu'un de
+                vous raconter leur experience de la mort d'une personne dans la communauté; ou des funerailles qu'ils
+                ont assisté.
+            </p><p></p><ul><li>Quelles personnes etaient inclues dans les funerailles?</li><li>Que ce que c'est passé avec le corps du défunt?</li><li>Queslles sont les responsabilités de la famille du défunt? Que ce qu'elle doit faire?</li><li>Combien de temps cela dure? Quel est l'order des choses?</li><li>Quelles actions montre le respect ou manque de respect envers le defunt? la famille du defunt?</li><li>Quels endroits sont importants?</li><li>Des différences entre les osbéques pour le riches et les pauvres existent-ils?</li><li>Quelles sont les choses important dans les funerailles? Quelle rôle pourtent-elles?</li></ul><p></p><p class="metadata references">References: <a href="goto:LUK 7:11-17|5f9d29ec">LUK 7:11-17</a>; <a href="goto:LUK 8:46-48|5f9d29ec">LUK 8:46-48</a>; <a href="goto:LUK 8:49|5f9d29ec">LUK 8:49</a>; <a href="goto:LUK 8:50-56|5f9d29ec">LUK 8:50-56</a>; <a href="goto:LUK 9:57-62|5f9d29ec">LUK 9:57-62</a>; <a href="goto:LUK 9:59-60|5f9d29ec">LUK 9:59-60</a>; <a href="goto:LUK 12:46|5f9d29ec">LUK 12:46</a>; <a href="goto:LUK 16:22-23|5f9d29ec">LUK 16:22-23</a>; <a href="goto:LUK 23:52-53|5f9d29ec">LUK 23:52-53</a>; <a href="goto:LUK 23:54-56|5f9d29ec">LUK 23:54-56</a></p></blockquote></div></td></tr></tbody></table></td></tr>
+<tr id="row1" class="unselected"><td><table id="84f8da1f" class="global consultant anthro note" aria-expanded="true"><colgroup><col><col></colgroup><tbody><tr><th><div class="Color_GANfr_1" title="Anthro Note">&nbsp;</div></th><th><ul class="metadata"><li class="goto"><a href="goto:LUK 6:1-11|84f8da1f">LUK 6:1-11</a><br><a href="goto:LUK 9:57-62|84f8da1f">LUK 9:57-62</a></li><li class="open"></li><li class="buttons"><a href="toggle:84f8da1f" title="Collapse note">2</a></li></ul><q lang="x-French"></q></th></tr><tr><th>&nbsp;</th><td><div><ul class="metadata"><li class="user">Global Anthro Notes</li><li class="date" title="15:54 -04:00">2016-03-14</li></ul><blockquote lang="x-French"><p><b>Cereal Agriculture (OCM 243)</b></p><p></p><p><b>Description</b></p><p>Le cycle d'agriculture est une façon de organizer les activités de lannée dans une société. Il inclue les
+                activités de chaque saison associées avec la production de la nuriture dans un endriot spécifique. Ce
+                cycle est central pour la formation de toute société et sa culture, soit les familles cultivent leur
+                nouriture or l'achêtent.
+            </p><p></p><ul><li>Apprendres les langues et les modes de comportement essentielles pour s'adapter à la vie de
+                    l'endroit de votre travail.
+                </li><li>Comprendre les affaires qui sont important à vos voisins, ce qu'ils manges et comment ils
+                    l'obtiennent.
+                </li><li>Etablir une réserve d'informations pour vous préparer à traduire tous les passages de la Bible qui
+                    traite de l'agriculture, soit liéralement soit dans un sense figuré.
+                </li></ul><p></p><p><b>Application to Biblical source</b></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 6:1-11|84f8da1f">LUK 6:1-11</a></span><span class="commentary">Certains rechercheurs disent que "frotter les mains" (v. 1) était vu comme
+                    s'ils moissonaient, une activité defendu durant le sabat. La loie de Moise faisait autorité pour les
+                    experts legals parmi les Juifs, des narratives dans d'autres partie de l'Ancien Testament parfois
+                    illustrent le principe que l'esprit de la loi a la précéence sure les pratiques normales (par
+                    example 2 Chroniques 30: 2,3). Si Jésus prouve son argument par les Ecritures, ses adversaires ne
+                    pouvaient le poursuivre due à la variété des vues sur comment observer le sabat dans Palestine de
+                    l'époche. (IVP Biblical Background trad.)
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 9:57-62|84f8da1f">LUK 9:57-62</a></span><span class="commentary">Les commentateurs disent généralement qu’en regardant derrière lui, le
+                    laboureur imprimait nécessairement une courbe à son sillon - ce qui est exact. Mais les charrues
+                    d’autrefois ne ressemblaient pas aux nôtres et si le laboureur avait regardé derrière lui, il
+                    n’aurait plus fait de sillon du tout. En effet, la charrue consistait généralement en une branche
+                    solide, mais légère, tenue de la main gauche, la droite maniant l’aiguillon pour stimuler les
+                    boeufs. Comme la charrue n’entaillait pas le sol par son propre poids, le laboureur devait peser
+                    dessus de tout le sien pour la faire creuser la terre. Il est évident que s’il se retournait, le soc
+                    se relevait et glissait sur la surface du sol. Peut-être Jésus a-t-il pensé à la vocation d’Elisée
+                    (1 Rois 19.19-21). (Encyclpoédie difficultés bibliaues)
+                </span></p><p></p><p><b>Research Suggestions</b></p><p>Rechercher le cycle d'agriculture dans votre région en observant et notant les saisons de l'année et la
+                météo, et quels plantes poussent dan chaque saison.
+            </p><p>Demander sur les phases des travaux d'agriculture, moissoner, désherbage, semmer, aussi bien que la
+                division de travail, que fait quel partie du travail.
+            </p><p>Apprendres les mots utilisé pour les saisons et les activités associés avec chaqune.</p><p class="metadata references">References: <a href="goto:LUK 6:1-11|84f8da1f">LUK 6:1-11</a>; <a href="goto:LUK 9:57-62|84f8da1f">LUK 9:57-62</a></p></blockquote></div></td></tr></tbody></table></td></tr>
+<tr id="row2" class="unselected"><td><table id="f08d3a0c" class="global consultant anthro note" aria-expanded="true"><colgroup><col><col></colgroup><tbody><tr><th><div class="Color_GANfr_1" title="Anthro Note">&nbsp;</div></th><th><ul class="metadata"><li class="goto"><a href="goto:LUK 2:6|f08d3a0c">LUK 2:6</a><br><a href="goto:LUK 5:33-39|f08d3a0c">LUK 5:33-39</a><br><a href="goto:LUK 8:44-45|f08d3a0c">LUK 8:44-45</a><br><a href="goto:LUK 10:4|f08d3a0c">LUK 10:4</a><br><a href="goto:LUK 10:9|f08d3a0c">LUK 10:9</a><br><a href="goto:LUK 15:20|f08d3a0c">LUK 15:20</a><br><a href="goto:LUK 15:21-22|f08d3a0c">LUK 15:21-22</a><br><a href="goto:LUK 16:19|f08d3a0c">LUK 16:19</a><br><a href="goto:LUK 19:35|f08d3a0c">LUK 19:35</a><br><a href="goto:LUK 23:11|f08d3a0c">LUK 23:11</a><br><a href="goto:LUK 23:34|f08d3a0c">LUK 23:34</a><br><a href="goto:LUK 24:49|f08d3a0c">LUK 24:49</a></li><li class="open"></li><li class="buttons"><a href="toggle:f08d3a0c" title="Collapse note">12</a></li></ul><q lang="x-French"></q></th></tr><tr><th>&nbsp;</th><td><div><ul class="metadata"><li class="user">Global Anthro Notes</li><li class="date" title="15:54 -04:00">2016-03-14</li></ul><blockquote lang="x-French"><p><b>Clothing (OCM 290)</b></p><p><b>Description</b></p><p>Les habits incluent les vêtements et les materiaux utilisés pour couvrir le corp pour utilité,
+                rechauffement et ornamentation.
+            </p><p>Il y a des références generales dans la Bible à les habits, tissue fin, vétements chers, aussi beaucoup
+                de régérences au articles particulier comme tunic, cape, ceinture, sandales.
+            </p><p>Même si les habits ont un usage foncionel de la culture mateirèle, ils portent une signification
+                importnat pour toutes cultures. Ceci est vrai aussi dans la Bible; y se trouve beaucoup de rétérence au
+                vêtements. Il y a troi genres de vêteùents dans la Bible:
+            </p><p></p><ul><li>Sense Litérale. Ce genre inclue les terms spécifiques pour les différent types d'habits, leur usage,
+                    leur création et réparation; ces termes n'ont pas de sense figuré ni symbolique. Quand l'ange di a
+                    Piere de mettre son cape et ses sandales, il n'y a pas de sense symbolique.
+                </li><li>Sense Figuré. Il y a des vétements utilise dans un sense figuré or metaphorique dans la Bible. Le
+                    languafe figuré peut bien fonctioner dans une autre langue, même si les gens le perçoivent
+                    initialement un peu étrange. Par exemple, l'expression 'tu est vétu de spendeur' dan la Psaume 104
+                    requise de l'imagination pour avoir du sense.
+                </li><li>Sense Symbolique. Il y a des termes de vêtements qui représentent des verités ou des thèmes plus
+                    grands. Cela peut incluir des couleurs, l'action de mettre ou enlever un vêtement; l'opposition
+                    symobolique d'être vétu ou nue. Les vêtements sont utilisés dans un sense symbolique de Genèse
+                    jusqu'au les Apocalypses, de les habits d'Adan et Eve aux robes balnches des saints.
+                </li></ul><p></p><p><b>Application to Biblical source</b></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 2:6|f08d3a0c">LUK 2:6</a></span><span class="commentary">Le 'linge' consistait de bandes de tissue qui entourées le bébé pour mantenir
+                    ses memebres droits. (Biblical Background, trad.)
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 5:33-39|f08d3a0c">LUK 5:33-39</a></span><span class="commentary">Les contemporains de Jésus portaient des habits de laine tissés main. La laine
+                    non-décatie rétrécissait au premier lavage. Tout l'habit devenait donc plus petit. Si, par la suite,
+                    un trou apparaissait dans cet habit, il fallait prendre un morceau de laine décati - donc déjà
+                    rétréci - pour le réparer, car si l'on prenait de la laine neuve, non décatie, elle rétrécissait au
+                    premier lavage (ou si elle était mouillée par la pluie) et, tirant sur les morceaux à l'entour, elle
+                    les déchirait. (Encyclopédie difficultés bibliques)
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 8:44-45|f08d3a0c">LUK 8:44-45</a></span><span class="commentary">Jacques Duquesne évoque de manière pittoresque la fabrication de ces franges :
+                    « Voyons les chiffres : on n'a pas fait sept tours de fil par hasard, et le total des fils (tournés
+                    et retournés) et des nœuds fait six cent treize, ce qui correspond aux commandements de la Loi :
+                    trois cent soixante-cinq interdictions, et deux cent quarante-huit recommandations. De même,
+                    l'homme, dit-on, a trois cent soixante-cinq tendons et deux cent quarante-huit organes. Il s'agit de
+                    respecter la parole de Dieu : ‘L'Eternel dit à Moïse : Parle aux fils d'Israël, dis-leur de se faire
+                    une frange sur les bords de leurs vêtements (...) et de mettre un fil d'azur dans la frange qui
+                    borde le vêtement (...). En le voyant, vous vous souviendrez de tous les commandements du Seigneur,
+                    vous les accomplirez et vous ne vous laisserez pas entraîner par vos cœurs et vos yeux qui vous
+                    mèneraient à l'infidélité’ (Nombres 15.37-39) » (Encyclopédie difficultés bibliques)
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 10:4|f08d3a0c">LUK 10:4</a></span><span class="commentary">Jésus dit aux disciples de ne pas porter ni bourse ni sac de voyage pendent
+                    leur voyage.
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 10:9|f08d3a0c">LUK 10:9</a></span><span class="commentary">Les gens n'avaient pas beaucoup de vêtements, donc c'etaient quelquechose de
+                    valeur à voler. (Biblical Background trad.)
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 15:20|f08d3a0c">LUK 15:20</a></span><span class="commentary">Dans la société juive d’alors, la dignité d’un homme de l’âge du père lui
+                    interdisait de courir ; le fait qu’il ait fait passer ses sentiments au-dessus de sa dignité parlait
+                    aux auditeurs de ce temps-là de l’intensité de son amour. Il en donne une autre preuve en embrassant
+                    longuement son fils au lieu d’attendre que celui-ci ait fait acte de contrition et demandé pardon.
+                    (Encyclopédie difficultés bibliqes) Pour courir, le pére a du remonter sa robe; contre sa dignité.
+                    (Biblicql Bqckgrond)
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 15:21-22|f08d3a0c">LUK 15:21-22</a></span><span class="commentary">Honorez-le comme fils et fils bien-aimé d'un père riche et puissant. Un anneau
+                    au doigt et des souliers ou des sandales aux pieds étaient le signe de l'homme libre; les esclaves
+                    allaient nupieds. . La réhabilitation du fils est complète; il reçoit le pardon de ses fautes
+                    gratuitement et tout de suite, sans conditions ni délais; il est réintégré dans la maison et dans
+                    l'amour de son père comme si rien ne s'était passé. Tel est le sens général de ces traits de la
+                    parabole. (NT Annoté)
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 16:19|f08d3a0c">LUK 16:19</a></span><span class="commentary">L'habit de dessus, un vêtement de laine, était teint de pourpre. La substance
+                    colorante était extraite d'un coquillage : le murex. Comme il en fallait de grandes quantités, les
+                    habits de pourpre revenaient très cher, et seuls les riches pouvaient s'en payer (voir Juges 8.26 ;
+                    Esther 8.15 ; Proverbes 31.22 ; Daniel 5.7). Le vêtement de dessous était une tunique de byssus, un
+                    fin lin égyptien. (Encylopdédi difficultés bibliques)*
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 19:35|f08d3a0c">LUK 19:35</a></span><span class="commentary">C’était l’habitude de répandre des fleurs et des branchages, de poser des tapis
+                    et des habits sur le chemin de conquérants, de princes ou de personnes auxquelles on voulait
+                    témoigner un honneur et un respect particuliers. C’est de cette manière que Jéhu fut reconnu roi : «
+                    les officiers s’empressèrent d’étendre leurs manteaux devant lui sur les marches de l’escalier, puis
+                    ils sonnèrent du cor et se mirent à crier : ‘Vive le roi Jéhu’ » (2 Rois 9.13). Lorsque Xerxès a
+                    franchi l’Helléspont, son chemin était parsemé de branches de myrte. Quand Caton a quitté son armée
+                    pour revenir à Rome, on répandit des habits sur son chemin. (Encyclopédi difficultés bibliques)
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 23:11|f08d3a0c">LUK 23:11</a></span><span class="commentary">Le vêtement éclatant dont il revêtit Jésus pouvait être la toge blanche que
+                    portaient les candidats aux grands emplois de l'Etat, ou un manteau royal; dans l'un et l'autre cas,
+                    Hérode parodiait avec mépris l'idée de la royauté de Jésus. (NT Annoté)
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 23:34|f08d3a0c">LUK 23:34</a></span><span class="commentary">Le pluriel qui se lit dans A, et est préféré par la plupart des critiques,
+                    s'explique par le fait que les soldats se partagèrent successivement les diverses pièces du vêtement
+                    de Jésus. (NT Annoté)
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 24:49|f08d3a0c">LUK 24:49</a></span><span class="commentary">Le mot 'revêtu' est utilisé dans un sense figuré dans ce verset.</span></p><p></p><p><b>Research Suggestions</b></p><p>Rechercher les vêtements dans la culture de tradution, et pensez au vêtements dans votre propre culture.
+                L'usage des habits même dans une forme minimal est une pratique unverselle.
+            </p><p></p><ul><li>Les gens ustilisent les habits dans des buts pratiques et symboliques. Par exemple, un prêtre
+                    Catholique porte un col special qui indiqueq sa position et sa rôle dans la société. Il ne sert pas
+                    seulement pour enchauffer son cou.
+                </li><li>Les gens utilisent les habits pour protection, pour montrer la modestie, pour s'identifier à un
+                    group étnique, ou sa condition spirituelle. Les homme de l'ouest porte de combinaisons de trois
+                    pieces pour indiquer qu'ils sont des prodessionels. Par contred, ceux qui travailent dans le sécteur
+                    de l'informatique souvent portent des jeans. Beaucoup de femmes musulmannes courve la tête pour
+                    montrer modéstie et pour se protéger contre le harcélement masculin *dans les lieux publiques.
+                </li><li>Les gens choisisent leurs habits pour indiquer une brêche avec leiur culture traditionelle our les
+                    moeurs socials. Par exemple; certains immigrés portent les styles de leur pays adopté et ne plus
+                    porter les habits de leur pays d'origine.
+                </li><li>Beaucoup de mythes d'origine incluent comment les gens d'une culture ont commençaient à porter des
+                    vêtements. Que ce que dit le Génése sur ce sujet? Quel autre contes connocez-vous?
+                </li><li>Le language qui réfer aux habits peut refléter tous ces facteurs et avoir des implications
+                    sociologiques.
+                </li></ul><p></p><p>Noter le suivant;</p><p></p><ul><li>les vêtements que les gens portent.</li><li>hommes; femmes; garçons; filles, enfants, bébés</li><li>la différence d'habit des gens de différent status socials et de rôles sociales.</li><li>Les anciens; les veuve, les riches; les pauvres; les chefs; les étrangers</li><li>ce que les gens portent pendant les evenements important de la vie, comme</li><li>marriages, funerailles; baptéms, initiations, etc.</li><li>la création et le soin des habits.</li></ul><p></p><p class="metadata references">References: <a href="goto:LUK 2:6|f08d3a0c">LUK 2:6</a>; <a href="goto:LUK 5:33-39|f08d3a0c">LUK 5:33-39</a>; <a href="goto:LUK 8:44-45|f08d3a0c">LUK 8:44-45</a>; <a href="goto:LUK 10:4|f08d3a0c">LUK 10:4</a>; <a href="goto:LUK 10:9|f08d3a0c">LUK 10:9</a>; <a href="goto:LUK 15:20|f08d3a0c">LUK 15:20</a>; <a href="goto:LUK 15:21-22|f08d3a0c">LUK 15:21-22</a>; <a href="goto:LUK 16:19|f08d3a0c">LUK 16:19</a>; <a href="goto:LUK 19:35|f08d3a0c">LUK 19:35</a>; <a href="goto:LUK 23:11|f08d3a0c">LUK 23:11</a>; <a href="goto:LUK 23:34|f08d3a0c">LUK 23:34</a>; <a href="goto:LUK 24:49|f08d3a0c">LUK 24:49</a></p></blockquote></div></td></tr></tbody></table></td></tr>
+<tr id="row3" class="unselected"><td><table id="6ab8fa16" class="global consultant anthro note" aria-expanded="true"><colgroup><col><col></colgroup><tbody><tr><th><div class="Color_GANfr_1" title="Anthro Note">&nbsp;</div></th><th><ul class="metadata"><li class="goto"><a href="goto:LUK 1:1|6ab8fa16">LUK 1:1</a><br><a href="goto:LUK 1:1-4|6ab8fa16">LUK 1:1-4</a><br><a href="goto:LUK 1:2|6ab8fa16">LUK 1:2</a><br><a href="goto:LUK 1:3-4|6ab8fa16">LUK 1:3-4</a><br><a href="goto:LUK 1:63|6ab8fa16">LUK 1:63</a><br><a href="goto:LUK 2:15-18|6ab8fa16">LUK 2:15-18</a><br><a href="goto:LUK 4:14-30|6ab8fa16">LUK 4:14-30</a><br><a href="goto:LUK 4:32|6ab8fa16">LUK 4:32</a><br><a href="goto:LUK 5:12-16|6ab8fa16">LUK 5:12-16</a><br><a href="goto:LUK 5:22-26|6ab8fa16">LUK 5:22-26</a></li><li class="open"></li><li class="buttons"><a href="toggle:6ab8fa16" title="Collapse note">10</a></li></ul><q lang="x-French"></q></th></tr><tr><th>&nbsp;</th><td><div><ul class="metadata"><li class="user">Global Anthro Notes</li><li class="date" title="15:54 -04:00">2016-03-14</li></ul><blockquote lang="x-French"><p><b>Dissemination of News and Information (OCM 203)</b></p><p></p><p><b>Description</b></p><p>L'information se rependre et à l'oral et à l'écrit. Il peut avoir plusieurs niveaux de certitude. témoin
+                oculaire, second main mais crédible, par ouï-dire, des histoires. La diffusion de l’information sur des
+                gens de différent niveau de la société peut se faire par des moyens différents.
+            </p><p></p><p><b>Application to Biblical source</b></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 1:1|6ab8fa16">LUK 1:1</a></span><span class="commentary">Le mot 'récit' fait référence à une narration de plusieurs événements, plutôt
+                    historiques. Les auteurs des ouvres historiques utilisaient une source primaire et ajoutaient
+                    information trouvé dans d‘autres sources. (IVP Background Commentary, translated
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 1:1-4|6ab8fa16">LUK 1:1-4</a></span><span class="commentary">Cette admirable préface de Luc, si précise et si claire dans sa brièveté, si
+                    riche de pensées, du style classique le plus pur, et qui rappelle les prologues des grands
+                    historiens grecs (Hérodote, Thucydide, Polybe), nous apprend que l'évangéliste a eu plusieurs
+                    devanciers (v. l), (NT Annoté)
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 1:2|6ab8fa16">LUK 1:2</a></span><span class="commentary">Il s'agit de chrétiens, aujourd'hui inconnus, qui avaient rédigé des souvenirs
+                    de la prédication apostolique, et dont les écrits ont disparu à mesure que nos quatre évangiles
+                    prévalurent dans l'usage ecclésiastique. Luc a sans doute utilisé ces écrits comme l'une des sources
+                    de sa narration, (NT Annoté)
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 1:3-4|6ab8fa16">LUK 1:3-4</a></span><span class="commentary">enfin qu'il s'est proposé pour but de confirmer les enseignements reçus par
+                    Théophile, à qui il dédie son écrit. (v. 4.) Dès les premiers mots, il nous indique ce qui lui a
+                    inspiré l'idée de son travail: c'est le fait, bien connu alors, que plusieurs avaient déjà entrepris
+                    d'écrire des narrations semblables. (NT Annoté)
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 1:63|6ab8fa16">LUK 1:63</a></span><span class="commentary">Les tablettes des anciens étaient ordinairement des plaques en bois enduites de
+                    cire sur lesquelles on écrivait avec un style ou sorte de poinçon.
+                    (NT Annote)
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 2:15-18|6ab8fa16">LUK 2:15-18</a></span><span class="commentary">San doute les bergers cherchaient dans tous les étables de Bethlehem car
+                    c’était un petit village. (IVP Background Commentary, transl.)
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 4:14-30|6ab8fa16">LUK 4:14-30</a></span><span class="commentary">Il se leva pour lire, c'est-à-dire qu'il montra, en se levant, son intention de
+                    lire et de parler. A l'ordinaire, c'était le président de la synagogue qui invitait à remplir cette
+                    fonction quelqu'un des assistants qu'il y croyait propre (NT Annoté)
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 4:32|6ab8fa16">LUK 4:32</a></span><span class="commentary">L'enseignement des maitres de la loi consistait plutôt d'une explication de la
+                    traduction de l'hébreu; ou bien des traditions. Jésus enseignait autrement qu'eux. (NT Annoté)
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 5:12-16|6ab8fa16">LUK 5:12-16</a></span><span class="commentary">C'était presqu'impossible trouver un endroit solitaire dans les rues étroites
+                    des villes anciens. Souvent (dans les banlieues pauvres) les familles de plus de vient personnes
+                    habitaient ensemble dans une seul chambre. A Capernaum les maisons consistait de quatre chambres
+                    donnant sur une cour: Les villages se trouvaient très prés les uns des autres: On trouvait un
+                    endroit solitaire seulement si on se levait très tôt. (IVP Biblical Background transl:)
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 5:22-26|6ab8fa16">LUK 5:22-26</a></span><span class="commentary">Plusieurs maitres de la loi juifs acceptaient des miracles comme preuve
+                    d'approbation divine. D'autres exigeaient aussi que les enseignements soient en accord avec les
+                    leurs. (IVP Biblical Background; transl)
+                </span></p><p></p><p><b>Research Suggestions</b></p><p>Posez-vous ces questions pour mieux comprendre comment l'information est rependue:</p><p></p><ul><li>Comment le niveau de certitude est-il établi quant l'linformation est donné?</li><li>Commen les événements important de la vie sont-ils rependus?</li><li>Comment l'information sur des gens de différents niveaux de la soceité sont-elles communiques (les
+                    riches, les gens ordinaires, les familles royales)?
+                </li><li>Comment apprent-on informatrion importante?</li><li>Ques sont les moyens de répendre de l'information crédible?</li><li>Que ce qui peut se passé pour rendre de l'information suspicieux ou faux?</li></ul><p></p><p class="metadata references">References: <a href="goto:LUK 1:1|6ab8fa16">LUK 1:1</a>; <a href="goto:LUK 1:1-4|6ab8fa16">LUK 1:1-4</a>; <a href="goto:LUK 1:2|6ab8fa16">LUK 1:2</a>; <a href="goto:LUK 1:3-4|6ab8fa16">LUK 1:3-4</a>; <a href="goto:LUK 1:63|6ab8fa16">LUK 1:63</a>; <a href="goto:LUK 2:15-18|6ab8fa16">LUK 2:15-18</a>; <a href="goto:LUK 4:14-30|6ab8fa16">LUK 4:14-30</a>; <a href="goto:LUK 4:32|6ab8fa16">LUK 4:32</a>; <a href="goto:LUK 5:12-16|6ab8fa16">LUK 5:12-16</a>; <a href="goto:LUK 5:22-26|6ab8fa16">LUK 5:22-26</a></p></blockquote></div></td></tr></tbody></table></td></tr>
+<tr id="row4" class="unselected"><td><table id="24461ad7" class="global consultant anthro note" aria-expanded="true"><colgroup><col><col></colgroup><tbody><tr><th><div class="Color_GANfr_1" title="Anthro Note">&nbsp;</div></th><th><ul class="metadata"><li class="goto"><a href="goto:LUK 8:22-25|24461ad7">LUK 8:22-25</a><br><a href="goto:LUK 9:28-36|24461ad7">LUK 9:28-36</a></li><li class="open"></li><li class="buttons"><a href="toggle:24461ad7" title="Collapse note">2</a></li></ul><q lang="x-French"></q></th></tr><tr><th>&nbsp;</th><td><div><ul class="metadata"><li class="user">Global Anthro Notes</li><li class="date" title="15:54 -04:00">2016-03-14</li></ul><blockquote lang="x-French"><p><b>Ethnometeorology (OCM 821)</b></p><p><b>Description</b></p><p>La météo est souvent une source d'idées et croyances (particulierment sure la cause et effet). Les
+                croyances sur la météo d'un groupe sociale fait partie de leurs culture cognitive, sure les phènoménes
+                de météo, les saisons et le climat, la terre, le soleil; la lune, les étoiles; les éclipses; et d'autres
+                evenements étranges, et le cosmos entier.
+            </p><p>Il y a beaucoup de références dans la Bible à la météo. Il n'exite pas de société qui ne s'interesse aux
+                phénoméne de météo. Les référence dans la Bible inclue;
+            </p><p></p><ul><li>des parables et des paroles de Jésus.</li><li>des descriptions des tempêtes sur la mer dans les Acts.</li><li>des passages prophétiques.</li></ul><p></p><p><b>Application to Biblical source</b></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 8:22-25|24461ad7">LUK 8:22-25</a></span><span class="commentary">Gr. et un tourbillon de vent descendit (des gorges de la montagne) sur le lac,
+                    et ils s'emplissaient (d'eau, métonymie par laquelle les navigateurs sont mis au lieu de la barque)
+                    (NT Annoté)
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 9:28-36|24461ad7">LUK 9:28-36</a></span><span class="commentary">Voir Matt 17: 5; Luk 1. 35; Exo 33. 9; 1 Roi 8. 10; sur l'importance des
+                    nouages dans la Bible. Dieu se présente dans les nouages.
+                </span></p><p></p><p><b>Research Suggestions</b></p><p>Familiarize-vous avec le concept de l'ethnométéologie et avec les passages qui parle de la météo. Voir
+                l'index cumulatif.
+            </p><p></p><ul><li>Lesquelles des ces conceptes concernent les phénoménes trouvé en Israel et le Moyen Orient? Il faut
+                    prendre soin quant on les traduise dans une région ou les gens ont une autre vue de ces choses.
+                    Comment ces phénomènes sont=ils vus dans votre culture? Comment cette vue a-t-elle changée?
+                </li><li>Rechercher le language et les idées que les gens dans la culture ont pour le cosmos, les saison; la
+                    météo, le climat et leurs cycles.
+                </li><li>Que-ce-que les gens de la culture pensent de pourquoi la niut et le jour existentm pourquoi la lune
+                    change d'apparance, le movement des étoiles et des planétes, les cométes et metéorites, the
+                    changement de la météo, la plulie, le vent, la neige, et les saisons? Comment expliquent-t-ils la
+                    météo étrange?
+                </li><li>Que-ce-que les gens pensent est l'effect de la météo sure une personne? L'effect des objects dans le
+                    ciel sure la météo? La nouvelle génération commence-t-elle a changé de vue sur ces idées? Quelles
+                    sont les nouvelles idées? d'où viennent ces idées?
+                </li></ul><p></p><p class="metadata references">References: <a href="goto:LUK 8:22-25|24461ad7">LUK 8:22-25</a>; <a href="goto:LUK 9:28-36|24461ad7">LUK 9:28-36</a></p></blockquote></div></td></tr></tbody></table></td></tr>
+<tr id="row5" class="unselected"><td><table id="f7a09ff4" class="global consultant anthro note" aria-expanded="true"><colgroup><col><col></colgroup><tbody><tr><th><div class="Color_GANfr_1" title="Anthro Note">&nbsp;</div></th><th><ul class="metadata"><li class="goto"><a href="goto:LUK 17:11-19|f7a09ff4">LUK 17:11-19</a></li><li class="open"></li><li class="buttons"><a href="toggle:f7a09ff4" title="Collapse note">1</a></li></ul><q lang="x-French"></q></th></tr><tr id="f7a09ff4last"><th>&nbsp;</th><td><div><ul class="metadata"><li class="user">Global Anthro Notes</li><li class="date" title="15:54 -04:00">2016-03-14</li></ul><blockquote lang="x-French"><p><b>Numerology (OCM 801)</b></p><p><b>Description</b></p><p>L'étude des systéms de conter des choses diverses s'appelle la Numération. La Numérology est l'étude de
+                comment les gens utilsent les numeros pour conter aussi bien que dans des senses symboliques et leur
+                croyances vis à vis les numeros.
+            </p><p></p><p><b>Application to Biblical source</b></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 17:11-19|f7a09ff4">LUK 17:11-19</a></span><span class="commentary">Dix hommes sont guéris de la lépre; un seul revient remercier Jesus.</span></p><p></p><p><b>Research Suggestions</b></p><p>Certains nombres ont des senses symboliques. Les nombres et les mesures ont plusiers usages dans la
+                Bible. Traduire les nombres sans connaitre leurs signification risque communiquer mal ou minimizer
+                l'effect du message. L'usage de la Bible est mis en valeur quand les traducteurs refléchisent bien sur
+                comment preésenter la numeration des produits bibliques. Bien comprendre quels numeros ont des senses
+                negatives ou positives prévoi une mauvaise communication du message.
+            </p><p>Chercher les numeros ou des méthods de conter qui se repetent dans des traditions orale commes des
+                contes, des légends et des histoires folkloriques; dans la music et les chançons; comment les gens
+                interprêtent les songes; dans la organization de la culture matérielle; dans des jeux. Décrouvre la
+                signification symbolique des numéros répétés.
+            </p><p class="metadata references">References: <a href="goto:LUK 17:11-19|f7a09ff4">LUK 17:11-19</a></p></blockquote></div></td></tr></tbody></table></td></tr>
+<tr id="row6" class="unselected"><td><table id="a65ae627" class="global consultant anthro note" aria-expanded="true"><colgroup><col><col></colgroup><tbody><tr><th><div class="Color_GANfr_1" title="Anthro Note">&nbsp;</div></th><th><ul class="metadata"><li class="goto"><a href="goto:LUK 1:5-25|a65ae627">LUK 1:5-25</a><br><a href="goto:LUK 1:18|a65ae627">LUK 1:18</a><br><a href="goto:LUK 1:19|a65ae627">LUK 1:19</a><br><a href="goto:LUK 1:20-21|a65ae627">LUK 1:20-21</a><br><a href="goto:LUK 1:26-27|a65ae627">LUK 1:26-27</a><br><a href="goto:LUK 1:26-38|a65ae627">LUK 1:26-38</a><br><a href="goto:LUK 1:39-45|a65ae627">LUK 1:39-45</a><br><a href="goto:LUK 1:67-80|a65ae627">LUK 1:67-80</a></li><li class="open"></li><li class="buttons"><a href="toggle:a65ae627" title="Collapse note">8</a></li></ul><q lang="x-French"></q></th></tr><tr><th>&nbsp;</th><td><div><ul class="metadata"><li class="user">Global Anthro Notes</li><li class="date" title="15:54 -04:00">2016-03-14</li></ul><blockquote lang="x-French"><p><b>Revelation and Divination (OCM 787)</b></p><p><b>Description</b></p><p>La révélation a plusiers caractéristiques;</p><p></p><ul><li>venant d'une source positive</li><li>venant d'une source négative</li><li>prédire le future</li><li>commentaire sure le présent</li><li>avertissement du jugement sur le comportement ou la situation actuelle</li></ul><p></p><p>Bien comprendre comment une culture intérprète les événements de révélation vous permet à éviter de mal
+                communiquer certains passages crucials de la Bible.
+            </p><p></p><p><b>Application to Biblical source</b></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 1:5-25|a65ae627">LUK 1:5-25</a></span><span class="commentary">Pendent que Zacharie allumait l'incense dans le temple un ange lui parle et dit
+                    qu'il aura un fils.
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 1:18|a65ae627">LUK 1:18</a></span><span class="commentary">La question du sacrificateur, toute semblable à celle d'Abraham (Genèse 15:8),
+                    trahit un doute sur l'accomplissement de ce qui lui est annoncé. (v. 20.) Il demande un signe auquel
+                    il puisse en reconnaître la vérité. (NT Annoté)
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 1:19|a65ae627">LUK 1:19</a></span><span class="commentary">L'ange « ne lui reproche d'ailleurs pas d'avoir douté de Dieu et de sa
+                    puissance, mais annonce que puisque Zacharie ne l'a pas cru sur parole (sa parole à lui, l'ange), il
+                    lui donnera le signe matériel et visible qu'il demande. (NT Annoté)
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 1:20-21|a65ae627">LUK 1:20-21</a></span><span class="commentary">L'apparition de l'ange et son entretien avec le sacrificateur avaient retenu
+                    celui-ci dans le temple beaucoup plus longtemps qu'à l'ordinaire. (NT Annoté)
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 1:26-27|a65ae627">LUK 1:26-27</a></span><span class="commentary">Les juifs avaient developé une longe liste des noms des anges, mais le NT ne
+                    mentionne que duex: Gabriel (Dan 8. 16, 9. 21) et Micheal (Dan 10.13, 21m 12.1). Ces deux sont
+                    devenuent les plus populaires dans les traditions jives. Gabriel a été envoyé en plusiers missions
+                    divines. La litérature jive typiquement représentait le chef des anges devant le throne de Dieu.
+                    (Biblical Background; trad;)
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 1:26-38|a65ae627">LUK 1:26-38</a></span><span class="commentary">Un ange dit à Marie qu'elle aura un fils.</span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 1:39-45|a65ae627">LUK 1:39-45</a></span><span class="commentary">Les Juifs croyaient que les foetus étaient capables de sentiments et de
+                    réactions à divers stimuli. Les rabbins disaient aussi qu’ils pouvaient pécher ou chanter. Des
+                    récits païens parlent d’enfants qui dansaient dans le ventre de leur mère ou qui parlaient, mais ces
+                    faits étaient considérés comme de mauvais présages. Ici, la réaction de Jean-Baptiste est plutôt «
+                    le résultat de sa sensibilité prophétique prénatale » (Keener p. 191). (Encyclopédie difficultés
+                    bibliques)
+                </span></p><p class="scrtext filter-accepted"><span class="verseref"><a href="goto:LUK 1:67-80|a65ae627">LUK 1:67-80</a></span><span class="commentary">Pour comprendre le beau cantique de Zacharie, cette effusion ardente de son
+                    âme, il faut donner à ces deux mots leur pleine signification biblique: rempli de l'Esprit-Saint et:
+                    il prophétisa. En effet, l'Esprit de Dieu lui communiqua en ce moment le don de prophétie, par où il
+                    faut entendre à la fois le don de pénétrer dans l'avenir du règne de Dieu et la faculté d'en
+                    exprimer les mystères dans des discours pleins d'élévation et de lucidité. (NT Annoté)
+                </span></p><p></p><p><b>Research Suggestions</b></p><p class="metadata references">References: <a href="goto:LUK 1:5-25|a65ae627">LUK 1:5-25</a>; <a href="goto:LUK 1:18|a65ae627">LUK 1:18</a>; <a href="goto:LUK 1:19|a65ae627">LUK 1:19</a>; <a href="goto:LUK 1:20-21|a65ae627">LUK 1:20-21</a>; <a href="goto:LUK 1:26-27|a65ae627">LUK 1:26-27</a>; <a href="goto:LUK 1:26-38|a65ae627">LUK 1:26-38</a>; <a href="goto:LUK 1:39-45|a65ae627">LUK 1:39-45</a>; <a href="goto:LUK 1:67-80|a65ae627">LUK 1:67-80</a></p></blockquote></div></td></tr></tbody></table></td></tr>
+</tbody></table>
+</div>
+</body></html>
