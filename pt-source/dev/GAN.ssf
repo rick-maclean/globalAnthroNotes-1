@@ -1,0 +1,34 @@
+﻿<ScriptureText>
+  <BooksPresent>000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</BooksPresent>
+  <TranslationInfo>GlobalAnthropologyNotes::</TranslationInfo>
+  <Versification>4</Versification>
+  <CreatedWithPTW6>T</CreatedWithPTW6>
+  <Name>GAN</Name>
+  <Encoding>65001</Encoding>
+  <Editable>F</Editable>
+  <Language>English</Language>
+  <DefaultFont>Verdana</DefaultFont>
+  <DefaultFontSize>10</DefaultFontSize>
+  <FileNamePrePart />
+  <FileNamePostPart>GAN.SFM</FileNamePostPart>
+  <FileNameBookNameForm>41MAT</FileNameBookNameForm>
+  <FileNameChapterNumberForm />
+  <StyleSheet>usfm.sty</StyleSheet>
+  <ChapterMarker>c</ChapterMarker>
+  <VerseMarker>v</VerseMarker>
+  <AssociatedLexicalProject />
+  <FullName>Global Anthro Notes</FullName>
+  <Copyright />
+  <LanguageIsoCode>en:::</LanguageIsoCode>
+  <EthnologueCode>en</EthnologueCode>
+  <NormalizationForm>NFC</NormalizationForm>
+  <BiblicalTermsListSetting>Project:GAN:ProjectBiblicalTerms.xml</BiblicalTermsListSetting>
+  <AllowReadAccess>F</AllowReadAccess>
+  <AllowAdvancedMorphology>F</AllowAdvancedMorphology>
+  <AllowSharingWithSLDR>F</AllowSharingWithSLDR>
+  <EncodingConverter />
+  <NeedsEnglishLanguageFix>No</NeedsEnglishLanguageFix>
+  <NeedsPortugueseLanguageFix>No</NeedsPortugueseLanguageFix>
+  <Directory>C:\My Paratext Projects\GAN</Directory>
+  <Naming PrePart="" PostPart="GAN.SFM" BookNameForm="41MAT" ChapterNumberForm="" />
+</ScriptureText>

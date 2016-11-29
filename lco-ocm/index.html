@@ -1,0 +1,2262 @@
+﻿<html>
+<head>
+    <title>LCO Categories (with OCM)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="http://www.jqueryscript.net/demo/Filterable-Tree-View-Plugin-with-jQuery-Tree-Filter/src/jquery.treefilter.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://www.jqueryscript.net/demo/Filterable-Tree-View-Plugin-with-jQuery-Tree-Filter/src/jquery.treefilter.js"></script>
+    <style>
+	    body		{background:#fff; padding:0;}
+	    .container	{font-family:"roboto"; font-size:16px; background:#fff; border-radius:3px;
+				    border:1px solid #ddd;}
+	    h1			{color:#08f; font-weight:100; font-size:44px; margin-top:150px;}
+	    input		{background:transparent; font-size:16px; border:1px solid #ddd; border-width:0 0 1px 0; border-radius: 0; line-height:40px; height:40px; width:100%; outline:none;}
+	    ul#my-tree	{margin:0; padding:10px 5px; color:#666;}
+	    ul#my-tree	li		{margin:8px 0;}
+	    div.desc	{margin:20px 0; color:#aaa; font-size:11px; text-align:left;}
+    </style>
+    <script>
+        $(function () {
+
+            var tree = new treefilter($("#my-tree"), {
+                searcher: $("input#my-search"),
+                multiselect: false
+            });
+        });
+</script>
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="content" class="container">
+            <input type="search" id="my-search" placeholder="search">
+            <ul data-role="listview" data-inset="true" data-filter="true" id="my-tree">
+                <li><div>Object ()</div>
+                    <ul>
+                        <li><div>Adornment (300)</div>
+                    
+                            <ul>
+                                <li><div>Ornament (301)</div>
+                            
+                                    <ul>
+                                        <li><div>Charm band ()</div></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><div>Vehicles (493)</div>
+                    
+                            <ul>
+                                <li><div>Boats (501)</div></li>
+                                <li><div>Wheeled throne ()</div></li>
+                            </ul>
+                        </li>
+                        <li><div>Mineral resources (135)</div></li>
+                        <li><div>Substance ()</div>
+                    
+                            <ul>
+                                <li><div>Salt ()</div></li>
+                                <li><div>Eye salve ()</div></li>
+                                <li><div>Medicine ()</div></li>
+                                <li><div>Spice ()</div></li>
+                                <li><div>Animal by-products (237)</div></li>
+                                <li><div>Blood ()</div></li>
+                                <li><div>Potion ()</div></li>
+                                <li><div>Perfume ()</div></li>
+                            </ul>
+                        </li>
+                        <li><div>Person ()</div>
+                    
+                            <ul>
+                                <li><div>Captive ()</div></li>
+                                <li><div>Legal and judicial personnel (693)</div></li>
+                                <li><div>Chosen one ()</div></li>
+                                <li><div>Orphan ()</div></li>
+                                <li><div>Chief executive (643)</div></li>
+                                <li><div>Freedman ()</div></li>
+                                <li><div>Firstborn ()</div></li>
+                                <li><div>Mourner ()</div></li>
+                                <li><div>Magicians and diviners (791)</div></li>
+                                <li><div>Hero ()</div></li>
+                                <li><div>Avenger of blood ()</div></li>
+                                <li><div>Eunuch ()</div></li>
+                                <li><div>Heir ()</div></li>
+                                <li><div>Prophets and ascetics (792)</div></li>
+                                <li><div>Medical personnel (759)</div></li>
+                                <li><div>Wet nurse ()</div></li>
+                                <li><div>Elder ()</div></li>
+                                <li><div>Teachers (875)</div></li>
+                                <li><div>Apostle ()</div></li>
+                                <li><div>Bride ()</div></li>
+                                <li><div>Pastor ()</div></li>
+                                <li><div>Bridegroom ()</div></li>
+                                <li><div>Shamans and psychotherapists (756)</div></li>
+                                <li><div>King ()</div></li>
+                                <li><div>Scribe ()</div>
+                            
+                                    <ul>
+                                        <li><div>Law Scribe ()</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Students (877)</div></li>
+                                <li><div>Antichrist ()</div></li>
+                                <li><div>Martyr ()</div></li>
+                                <li><div>Anointed one ()</div>
+                            
+                                    <ul>
+                                        <li><div>Messiah ()</div>
+                                    
+                                            <ul>
+                                                <li><div>Son of Man ()</div></li>
+                                                <li><div>Son of David ()</div></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><div>Tax collector ()</div></li>
+                                <li><div>Temptress ()</div></li>
+                                <li><div>Official ()</div></li>
+                                <li><div>kinsman-redeemer ()</div></li>
+                            </ul>
+                        </li>
+                        <li><div>Bride compensation ()</div></li>
+                        <li><div>Leather, textiles, and fabrics (280)</div>
+                    
+                            <ul>
+                                <li><div>Woven fabrics (286)</div></li>
+                                <li><div>Clothing (290)</div>
+                            
+                                    <ul>
+                                        <li><div>Special garments (292)</div>
+                                    
+                                            <ul>
+                                                <li><div>Garments of widowhood ()</div></li>
+                                                <li><div>Long sleeved garment ()</div></li>
+                                                <li><div>Ephod ()</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Armor ()</div></li>
+                                        <li><div>Sackcloth ()</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Skins and leather ()</div></li>
+                            </ul>
+                        </li>
+                        <li><div>Furniture (352)</div></li>
+                        <li><div>Spoil ()</div></li>
+                        <li><div>Texts (900)</div>
+                    
+                            <ul>
+                                <li><div>Records (210)</div>
+                            
+                                    <ul>
+                                        <li><div>Divine record ()</div>
+                                    
+                                            <ul>
+                                                <li><div>Book of Life ()</div></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><div>Literature (538)</div>
+                            
+                                    <ul>
+                                        <li><div>Loss and restoration of a man ()</div></li>
+                                        <li><div>Origin of languages ()</div></li>
+                                        <li><div>Prophetic literature ()</div></li>
+                                        <li><div>Flood epic ()</div></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><div>Structures (340)</div>
+                    
+                            <ul>
+                                <li><div>Commercial facilities (366)</div></li>
+                                <li><div>Public structures (344)</div></li>
+                                <li><div>Religious structures (346)</div>
+                            
+                                    <ul>
+                                        <li><div>Temple ()</div></li>
+                                        <li><div>Tabernacle ()</div></li>
+                                        <li><div>Synagogue ()</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Architecture (341)</div></li>
+                                <li><div>Dwellings (342)</div>
+                            
+                                    <ul>
+                                        <li><div>Home ()</div>
+                                    
+                                            <ul>
+                                                <li><div>Residence (591)</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Housing (362)</div></li>
+                                        <li><div>Habitation ()</div></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><div>Weights and measures (804)</div></li>
+                        <li><div>Soil (134)</div></li>
+                        <li><div>Reminder ()</div></li>
+                        <li><div>Hairstyles and Beards ()</div></li>
+                        <li><div>Medium of exchange (436)</div>
+                    
+                            <ul>
+                                <li><div>Public finance (652)</div></li>
+                                <li><div>Coinage ()</div></li>
+                                <li><div>Earnest (pledge) ()</div></li>
+                                <li><div>Wages and salaries (465)</div></li>
+                                <li><div>Tribute ()</div></li>
+                            </ul>
+                        </li>
+                        <li><div>Food (250)</div>
+                    
+                            <ul>
+                                <li><div>Solid Food ()</div></li>
+                                <li><div>Drinks ()</div>
+                            
+                                    <ul>
+                                        <li><div>Alcoholic drinks ()</div>
+                                    
+                                            <ul>
+                                                <li><div>Wine ()</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Non-alcoholic beverages ()</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Dairy Products ()</div></li>
+                                <li><div>Diet (262)</div></li>
+                            </ul>
+                        </li>
+                        <li><div>Location (131)</div>
+                    
+                            <ul>
+                                <li><div>Judgment seat (Greco-Roman) ()</div></li>
+                                <li><div>Settlements (360)</div></li>
+                                <li><div>Divine garden ()</div></li>
+                                <li><div>Cleft of rock ()</div></li>
+                                <li><div>City gate ()</div></li>
+                                <li><div>Towns (632)</div></li>
+                                <li><div>Cities (633)</div>
+                            
+                                    <ul>
+                                        <li><div>City as a prostitute ()</div></li>
+                                        <li><div>Store-Cities ()</div></li>
+                                        <li><div>City of refuge ()</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Grave ()</div>
+                            
+                                    <ul>
+                                        <li><div>Sarcophagus ()</div></li>
+                                        <li><div>Ossuary ()</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Court ()</div></li>
+                                <li><div>Earth ()</div></li>
+                                <li><div>Sacred places ()</div>
+                            
+                                    <ul>
+                                        <li><div>Abode of deity ()</div></li>
+                                        <li><div>Holy ground ()</div>
+                                    
+                                            <ul>
+                                                <li><div>Temple ()</div></li>
+                                                <li><div>Tabernacle ()</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Sanctuary ()</div></li>
+                                        <li><div>Synagogue ()</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Otherworldly location ()</div>
+                            
+                                    <ul>
+                                        <li><div>Hell ()</div></li>
+                                        <li><div>Heaven ()</div></li>
+                                        <li><div>Underworld ()</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Districts (634)</div></li>
+                                <li><div>Provinces (635)</div></li>
+                                <li><div>Sanctuary (place of safety) ()</div></li>
+                                <li><div>Prisons and jails (697)</div></li>
+                                <li><div>Dependencies (636)</div></li>
+                                <li><div>Presence of a deity ()</div>
+                            
+                                    <ul>
+                                        <li><div>Presence of the Lord ()</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>High place ()</div></li>
+                            </ul>
+                        </li>
+                        <li><div>Streets ()</div></li>
+                        <li><div>Scepter ()</div></li>
+                        <li><div>Forest products (314)</div></li>
+                        <li><div>Household objects ()</div>
+                    
+                            <ul>
+                                <li><div>Mats and basketry (285)</div></li>
+                            </ul>
+                        </li>
+                        <li><div>Dowry ()</div></li>
+                        <li><div>Tools and appliances (410)</div>
+                    
+                            <ul>
+                                <li><div>Restraint ()</div></li>
+                                <li><div>Fishing gear (227)</div></li>
+                                <li><div>Seal ()</div></li>
+                                <li><div>Fire-pot ()</div></li>
+                                <li><div>Special tools (413)</div></li>
+                                <li><div>Cordage (283)</div>
+                            
+                                    <ul>
+                                        <li><div>Knots and lashings (284)</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Trap ()</div></li>
+                                <li><div>Apparatus (417)</div></li>
+                                <li><div>Utensils (415)</div></li>
+                                <li><div>Weapons (411)</div>
+                            
+                                    <ul>
+                                        <li><div>Siege device ()</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Machines (400)</div>
+                            
+                                    <ul>
+                                        <li><div>Weighing machinery ()</div></li>
+                                        <li><div>Agricultural machinery (407)</div></li>
+                                        <li><div>Weight-moving machinery (406)</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Tree band ()</div></li>
+                            </ul>
+                        </li>
+                        <li><div>Musical instruments (534)</div></li>
+                        <li><div>Life ()</div>
+                    
+                            <ul>
+                                <li><div>Fauna (136)</div>
+                            
+                                    <ul>
+                                        <li><div>Donkey ()</div></li>
+                                        <li><div>Dog ()</div></li>
+                                        <li><div>Legendary creature ()</div>
+                                    
+                                            <ul>
+                                                <li><div>Serpents in legend ()</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Serpent ()</div>
+                                    
+                                            <ul>
+                                                <li><div>Serpents in legend ()</div></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><div>Flora (137)</div></li>
+                            </ul>
+                        </li>
+                        <li><div>Property (420)</div></li>
+                        <li><div>Sacred objects ()</div>
+                    
+                            <ul>
+                                <li><div>Altar ()</div></li>
+                                <li><div>Devoted items ()</div></li>
+                                <li><div>Atonement cover ()</div></li>
+                                <li><div>Graven image ()</div></li>
+                                <li><div>Urim and thummim ()</div></li>
+                                <li><div>Phylactery ()</div></li>
+                                <li><div>Ephod ()</div></li>
+                                <li><div>Idol ()</div></li>
+                            </ul>
+                        </li>
+                        <li><div>Building interiors and arrangement (353)</div></li>
+                        <li><div>Highways ()</div></li>
+                        <li><div>Cross ()</div></li>
+                    </ul>
+                </li>
+                <li><div>Abstract ()</div>
+            
+                    <ul>
+                        <li><div>Feelings ()</div>
+                    
+                            <ul>
+                                <li><div>Shame ()</div></li>
+                                <li><div>Drives and emotions (152)</div>
+                            
+                                    <ul>
+                                        <li><div>Fear ()</div>
+                                    
+                                            <ul>
+                                                <li><div>Fear of gods or spirits ()</div></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><div>Group ()</div>
+                    
+                            <ul>
+                                <li><div>Family (590)</div>
+                            
+                                    <ul>
+                                        <li><div>Extended families (596)</div></li>
+                                        <li><div>Household (592)</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Service industries (445)</div></li>
+                                <li><div>Group of people ()</div>
+                            
+                                    <ul>
+                                        <li><div>Administrative agencies (647)</div></li>
+                                        <li><div>Local officials (624)</div></li>
+                                        <li><div>Community (620)</div></li>
+                                        <li><div>Chosen people ()</div></li>
+                                        <li><div>Political parties (665)</div></li>
+                                        <li><div>Ecclesiastical organization (790)</div>
+                                    
+                                            <ul>
+                                                <li><div>Religious court ()</div></li>
+                                                <li><div>Religious denominations (795)</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Pharisees ()</div></li>
+                                                        <li><div>Essenes ()</div></li>
+                                                        <li><div>The circumcision ()</div></li>
+                                                        <li><div>Zealots ()</div></li>
+                                                        <li><div>Sadducees ()</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Priesthood (793)</div></li>
+                                                <li><div>Congregations (794)</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Church ()</div></li>
+                                                        <li><div>Church as a bride ()</div></li>
+                                                        <li><div>Church as a body ()</div></li>
+                                                        <li><div>Church Government ()</div></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Community heads (622)</div></li>
+                                        <li><div>Cabinet (645)</div></li>
+                                        <li><div>Kin groups (610)</div>
+                                    
+                                            <ul>
+                                                <li><div>Rule of descent (611)</div></li>
+                                                <li><div>Nation ()</div></li>
+                                                <li><div>Clans (618)</div></li>
+                                                <li><div>Lineages (613)</div></li>
+                                                <li><div>Tribe ()</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Councils (623)</div>
+                                    
+                                            <ul>
+                                                <li><div>Wise men ()</div></li>
+                                                <li><div>Counsel ()</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Harem ()</div></li>
+                                        <li><div>Merchants ()</div></li>
+                                        <li><div>Armed forces (700)</div>
+                                    
+                                            <ul>
+                                                <li><div>Garrison ()</div></li>
+                                                <li><div>Mercenaries ()</div></li>
+                                                <li><div>Navy (706)</div></li>
+                                                <li><div>Ground combat forces (704)</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>War veterans (729)</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Diaspora ()</div></li>
+                                <li><div>Mercantile business (441)</div></li>
+                            </ul>
+                        </li>
+                        <li><div>Time ()</div>
+                    
+                            <ul>
+                                <li><div>Sabbath year ()</div></li>
+                                <li><div>Ordering of months ()</div></li>
+                                <li><div>Annual Cycle (221)</div></li>
+                                <li><div>Hour of Prayer ()</div></li>
+                                <li><div>Jubilee year ()</div></li>
+                                <li><div>Warfare seasons ()</div></li>
+                                <li><div>Birthday ()</div></li>
+                                <li><div>Ordering of time (805)</div>
+                            
+                                    <ul>
+                                        <li><div>Day ()</div></li>
+                                        <li><div>Midnight ()</div></li>
+                                        <li><div>Twilight ()</div></li>
+                                        <li><div>Evening ()</div></li>
+                                        <li><div>Afternoon ()</div></li>
+                                        <li><div>Seasons ()</div>
+                                    
+                                            <ul>
+                                                <li><div>Seasons and seafaring ()</div></li>
+                                                <li><div>Agricultural seasons ()</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Night ()</div></li>
+                                        <li><div>Autumn ()</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Holy days ()</div>
+                            
+                                    <ul>
+                                        <li><div>Sabbath ()</div></li>
+                                        <li><div>Religious feast ()</div>
+                                    
+                                            <ul>
+                                                <li><div>New moon festival ()</div></li>
+                                                <li><div>Passover ()</div></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><div>History and culture change (170)</div>
+                            
+                                    <ul>
+                                        <li><div>History (175)</div></li>
+                                        <li><div>Legend ()</div></li>
+                                        <li><div>Prehistory (172)</div></li>
+                                        <li><div>Traditional history (173)</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Day of judgment ()</div></li>
+                                <li><div>Life cycle ()</div>
+                            
+                                    <ul>
+                                        <li><div>Mortality (165)</div></li>
+                                        <li><div>Infancy (850)</div></li>
+                                        <li><div>Old age (886)</div></li>
+                                        <li><div>Childhood ()</div></li>
+                                        <li><div>Adolescence ()</div></li>
+                                        <li><div>Development and maturation (856)</div>
+                                    
+                                            <ul>
+                                                <li><div>Physical Appearance and Growth ()</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Adulthood (885)</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Last days ()</div></li>
+                            </ul>
+                        </li>
+                        <li><div>Cause ()</div>
+                    
+                            <ul>
+                                <li><div>In-group antagonisms (578)</div>
+                            
+                                    <ul>
+                                        <li><div>Rivalry ()</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Instigation of war (721)</div>
+                            
+                                    <ul>
+                                        <li><div>Invasion ()</div></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><div>Production and supply (433)</div></li>
+                        <li><div>Identification ()</div></li>
+                        <li><div>Processes ()</div>
+                    
+                            <ul>
+                                <li><div>Acculturation and culture contact (177)</div></li>
+                                <li><div>Cultural revitalization and ethnogenesis (1710)</div></li>
+                                <li><div>Light (373)</div></li>
+                                <li><div>Fire (372)</div></li>
+                            </ul>
+                        </li>
+                        <li><div>Social relationships ()</div>
+                    
+                            <ul>
+                                <li><div>Interpersonal relations (570)</div>
+                            
+                                    <ul>
+                                        <li><div>Kissing ()</div></li>
+                                        <li><div>Friendships (572)</div></li>
+                                        <li><div>Patronage ()</div></li>
+                                        <li><div>Inter-community relations (628)</div></li>
+                                        <li><div>Gender roles and issues (890)</div>
+                                    
+                                            <ul>
+                                                <li><div>Division of labor by gender (462)</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Economic relations ()</div></li>
+                                        <li><div>Age roles ()</div></li>
+                                        <li><div>Inter-ethnic relations (629)</div>
+                                    
+                                            <ul>
+                                                <li><div>Jewish and Gentile relations ()</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Inter-faith relations ()</div>
+                                    
+                                            <ul>
+                                                <li><div>Christian and pagan relations ()</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Race and racial identification ()</div></li>
+                                        <li><div>Tribal relationships ()</div></li>
+                                        <li><div>Royal relations ()</div></li>
+                                        <li><div>Slavery (567)</div></li>
+                                        <li><div>Royal and commoner relations ()</div></li>
+                                        <li><div>Family relationships (593)</div>
+                                    
+                                            <ul>
+                                                <li><div>Kinship (600)</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Grandparents and grandchildren (603)</div></li>
+                                                        <li><div>Cousins (605)</div></li>
+                                                        <li><div>In-Law relationships (606)</div></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Marriage relationship ()</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>International relations (648)</div>
+                            
+                                    <ul>
+                                        <li><div>National fear of a foreign god ()</div></li>
+                                        <li><div>Suzerain-vassal relationship ()</div></li>
+                                        <li><div>Alliances ()</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Social roles ()</div></li>
+                            </ul>
+                        </li>
+                        <li><div>Political organization and behavior ()</div>
+                    
+                            <ul>
+                                <li><div>Territorial organization (630)</div>
+                            
+                                    <ul>
+                                        <li><div>Towns (632)</div></li>
+                                        <li><div>Cities (633)</div>
+                                    
+                                            <ul>
+                                                <li><div>City as a prostitute ()</div></li>
+                                                <li><div>Store-Cities ()</div></li>
+                                                <li><div>City of refuge ()</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Boundary marker ()</div></li>
+                                        <li><div>Districts (634)</div></li>
+                                        <li><div>Provinces (635)</div></li>
+                                        <li><div>Dependencies (636)</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Political state (640)</div></li>
+                            </ul>
+                        </li>
+                        <li><div>Liability (672)</div></li>
+                        <li><div>Ownership and control of capital (471)</div></li>
+                        <li><div>Social control (626)</div></li>
+                        <li><div>Attribute ()</div>
+                    
+                            <ul>
+                                <li><div>State ()</div>
+                            
+                                    <ul>
+                                        <li><div>Prosperity ()</div></li>
+                                        <li><div>Darkness ()</div></li>
+                                        <li><div>Health ()</div>
+                                    
+                                            <ul>
+                                                <li><div>Sickness (750)</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Skin Disorders ()</div></li>
+                                                        <li><div>Leprosy ()</div></li>
+                                                        <li><div>Bodily injuries (752)</div></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Status ()</div>
+                                    
+                                            <ul>
+                                                <li><div>Aftermath of combat (727)</div></li>
+                                                <li><div>Royalty ()</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Kingship ()</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Nakedness ()</div></li>
+                                                <li><div>Citizenship (641)</div></li>
+                                                <li><div>Polygamy (595)</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Concubinage ()</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Individuation and mobility (550)</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Status role and prestige ()</div></li>
+                                                        <li><div>Status of being at the left hand ()</div></li>
+                                                        <li><div>Status of being at the right hand ()</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Monogamy ()</div></li>
+                                                <li><div>Drunkenness ()</div></li>
+                                                <li><div>Apostleship ()</div></li>
+                                                <li><div>Status of children (858)</div></li>
+                                                <li><div>Status and treatment of the aged (888)</div></li>
+                                                <li><div>Captivity ()</div></li>
+                                                <li><div>Ritual purity ()</div></li>
+                                                <li><div>Bloodguilt ()</div></li>
+                                                <li><div>Widowhood ()</div></li>
+                                                <li><div>Pregnancy (843)</div></li>
+                                                <li><div>Asylum ()</div></li>
+                                                <li><div>Virginity ()</div></li>
+                                                <li><div>Ceremonial Holiness ()</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Poverty (735)</div></li>
+                                        <li><div>Illegitimacy (848)</div></li>
+                                        <li><div>Baldness ()</div></li>
+                                        <li><div>Blindness ()</div></li>
+                                        <li><div>Deformity ()</div></li>
+                                        <li><div>Paralysis ()</div></li>
+                                        <li><div>Beauty ()</div></li>
+                                        <li><div>War ()</div></li>
+                                        <li><div>Muteness ()</div></li>
+                                        <li><div>Barrenness ()</div></li>
+                                        <li><div>Deafness ()</div></li>
+                                        <li><div>Color ()</div>
+                                    
+                                            <ul>
+                                                <li><div>Purple ()</div></li>
+                                                <li><div>White ()</div></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><div>Quality ()</div>
+                            
+                                    <ul>
+                                        <li><div>Judicial authority (692)</div></li>
+                                        <li><div>Alcoholism ()</div></li>
+                                        <li><div>Ability ()</div>
+                                    
+                                            <ul>
+                                                <li><div>Manipulative mobility (557)</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Talent mobility (555)</div></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Characteristic ()</div>
+                                    
+                                            <ul>
+                                                <li><div>Evil ()</div></li>
+                                                <li><div>Holiness ()</div></li>
+                                                <li><div>Hypocrisy ()</div></li>
+                                                <li><div>Virtue ()</div></li>
+                                                <li><div>Honor ()</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Celibacy (589)</div></li>
+                                        <li><div>Blemish ()</div></li>
+                                        <li><div>Price and value (435)</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Physical property ()</div>
+                            
+                                    <ul>
+                                        <li><div>Heat (374)</div></li>
+                                        <li><div>Climate (132)</div></li>
+                                        <li><div>Topography and geology (133)</div></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><div>Right ()</div>
+                    
+                            <ul>
+                                <li><div>Birthright ()</div></li>
+                                <li><div>Divine right to land ()</div></li>
+                                <li><div>Marital Rights ()</div></li>
+                                <li><div>Divine right of the firstborn ()</div></li>
+                            </ul>
+                        </li>
+                        <li><div>Event ()</div>
+                    
+                            <ul>
+                                <li><div>Resurrection ()</div>
+                            
+                                    <ul>
+                                        <li><div>Death and resurrection of a god ()</div>
+                                    
+                                            <ul>
+                                                <li><div>The resurrection of Jesus ()</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>The resurrection ()</div>
+                                    
+                                            <ul>
+                                                <li><div>The resurrection of God’s people ()</div></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><div>Celebration ()</div>
+                            
+                                    <ul>
+                                        <li><div>Triumphal Procession ()</div></li>
+                                        <li><div>Coronation ()</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Childbirth (844)</div>
+                            
+                                    <ul>
+                                        <li><div>Foretold Birth ()</div></li>
+                                        <li><div>Difficult and unusual births (845)</div></li>
+                                        <li><div>Miraculous birth ()</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>The Exodus ()</div></li>
+                                <li><div>Castration ()</div></li>
+                                <li><div>Spectacles ()</div>
+                            
+                                    <ul>
+                                        <li><div>Contests of courage ()</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Wedding ()</div>
+                            
+                                    <ul>
+                                        <li><div>Marriage Feast ()</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Ceremony during infancy and childhood ()</div>
+                            
+                                    <ul>
+                                        <li><div>Uncircumcision ()</div></li>
+                                        <li><div>Names and naming (552)</div>
+                                    
+                                            <ul>
+                                                <li><div>Personal names (551)</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Circumcision ()</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Menstruation (841)</div></li>
+                                <li><div>Blessings and Curses ()</div></li>
+                                <li><div>Termination of marriage (586)</div>
+                            
+                                    <ul>
+                                        <li><div>Divorce ()</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Orgies ()</div></li>
+                                <li><div>Funeral ()</div></li>
+                                <li><div>Parousia (political) ()</div></li>
+                                <li><div>The creation ()</div></li>
+                                <li><div>Moral corruption ()</div>
+                            
+                                    <ul>
+                                        <li><div>Origin of sin and evil ()</div>
+                                    
+                                            <ul>
+                                                <li><div>Corruption of humanity ()</div></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><div>Conception (842)</div>
+                            
+                                    <ul>
+                                        <li><div>Supernatural conception ()</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Disasters (731)</div>
+                            
+                                    <ul>
+                                        <li><div>Famine ()</div></li>
+                                        <li><div>Drought ()</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Death (760)</div>
+                            
+                                    <ul>
+                                        <li><div>Suicide (762)</div></li>
+                                        <li><div>Death in childbirth ()</div></li>
+                                        <li><div>Death of a protagonist ()</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Creation of humankind ()</div>
+                            
+                                    <ul>
+                                        <li><div>Creating a person out of soil ()</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Latter Rain ()</div></li>
+                                <li><div>Dream ()</div>
+                            
+                                    <ul>
+                                        <li><div>Theophanic dream ()</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Sensation and perception (151)</div></li>
+                                <li><div>Deliverance ()</div></li>
+                                <li><div>Abortion and infanticide (847)</div></li>
+                                <li><div>Trial ()</div></li>
+                                <li><div>Parousia ()</div></li>
+                                <li><div>Religious experience (781)</div>
+                            
+                                    <ul>
+                                        <li><div>Angel visitation ()</div></li>
+                                        <li><div>Second death ()</div></li>
+                                        <li><div>Conversion ()</div></li>
+                                        <li><div>Theophany ()</div></li>
+                                        <li><div>Vision ()</div>
+                                    
+                                            <ul>
+                                                <li><div>Visionary creature ()</div></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><div>Feast ()</div>
+                            
+                                    <ul>
+                                        <li><div>Religious feast ()</div>
+                                    
+                                            <ul>
+                                                <li><div>New moon festival ()</div></li>
+                                                <li><div>Passover ()</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Marriage Feast ()</div></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><div>Knowledge ()</div>
+                    
+                            <ul>
+                                <li><div>Cult of the dead (769)</div></li>
+                                <li><div>Etiquette (576)</div></li>
+                                <li><div>Teaching (content) ()</div>
+                            
+                                    <ul>
+                                        <li><div>Teaching as a yoke ()</div></li>
+                                        <li><div>False teaching ()</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Military knowledge ()</div>
+                            
+                                    <ul>
+                                        <li><div>Military organization (701)</div></li>
+                                        <li><div>Tactics (725)</div></li>
+                                        <li><div>Strategy (723)</div>
+                                    
+                                            <ul>
+                                                <li><div>Siege ()</div></li>
+                                                <li><div>Bringing holy objects into battle ()</div></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><div>Ideas about nature and people (820)</div>
+                            
+                                    <ul>
+                                        <li><div>Ethnogeography (823)</div></li>
+                                        <li><div>Vault of the sky ()</div></li>
+                                        <li><div>Ethnozoology (825)</div></li>
+                                        <li><div>Ethnometeorology (821)</div>
+                                    
+                                            <ul>
+                                                <li><div>Signs of weather ()</div></li>
+                                                <li><div>Four winds ()</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Ethnobotany (824)</div></li>
+                                        <li><div>Ethnoanatomy (826)</div></li>
+                                        <li><div>Ethnoastronomy ()</div>
+                                    
+                                            <ul>
+                                                <li><div>Constellations ()</div></li>
+                                                <li><div>Morning star ()</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Ethnopsychology (828)</div></li>
+                                        <li><div>Ethnosociology (829)</div></li>
+                                        <li><div>Water as chaos ()</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Nutrition (146)</div></li>
+                                <li><div>Sciences and Humanities (810)</div>
+                            
+                                    <ul>
+                                        <li><div>Philosophy (812)</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Language (190)</div></li>
+                                <li><div>Innovation (176)</div></li>
+                                <li><div>Occupational specialization (463)</div></li>
+                                <li><div>Attitude ()</div>
+                            
+                                    <ul>
+                                        <li><div>Religious intolerance (798)</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Racial identification ()</div></li>
+                                <li><div>Regulation of marriage (582)</div></li>
+                                <li><div>Religious beliefs (770)</div>
+                            
+                                    <ul>
+                                        <li><div>Animism (774)</div></li>
+                                        <li><div>Divine assembly ()</div></li>
+                                        <li><div>Divine authority through dominance ()</div></li>
+                                        <li><div>Fate and chance (777)</div>
+                                    
+                                            <ul>
+                                                <li><div>Fortune ()</div></li>
+                                                <li><div>Fate ()</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Foreign faith in God ()</div></li>
+                                        <li><div>Death as shepherd ()</div></li>
+                                        <li><div>Tree of Life ()</div></li>
+                                        <li><div>Kings as gods ()</div>
+                                    
+                                            <ul>
+                                                <li><div>Kings as sons of a god ()</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Mythology (773)</div></li>
+                                        <li><div>Divinity riding on clouds ()</div></li>
+                                        <li><div>Christians as foreigners ()</div></li>
+                                        <li><div>Trust in God ()</div></li>
+                                        <li><div>New birth ()</div></li>
+                                        <li><div>Eschatology (775)</div></li>
+                                        <li><div>World system ()</div></li>
+                                        <li><div>Cosmology (772)</div>
+                                    
+                                            <ul>
+                                                <li><div>Creation by deicide ()</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Eternal life ()</div></li>
+                                        <li><div>Gods and land ()</div></li>
+                                        <li><div>Theological systems (779)</div>
+                                    
+                                            <ul>
+                                                <li><div>Polemics against gods ()</div></li>
+                                                <li><div>Monotheism ()</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Religious follower as slave ()</div></li>
+                                        <li><div>Kingdom of God ()</div></li>
+                                        <li><div>Supernatural being (776)</div>
+                                    
+                                            <ul>
+                                                <li><div>Deity ()</div>
+                                            
+                                                    <ul>
+                                                        <li><div>God as husband ()</div></li>
+                                                        <li><div>God as king ()</div></li>
+                                                        <li><div>God as master ()</div></li>
+                                                        <li><div>God as shepherd ()</div></li>
+                                                        <li><div>God (Biblical) ()</div></li>
+                                                        <li><div>God as mother ()</div></li>
+                                                        <li><div>God as father ()</div></li>
+                                                        <li><div>National god ()</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Indwelling spirit ()</div></li>
+                                                <li><div>Supernatural creature ()</div></li>
+                                                <li><div>Satan ()</div></li>
+                                                <li><div>Demigod ()</div></li>
+                                                <li><div>Demons and evil spirits ()</div></li>
+                                                <li><div>Incarnation ()</div></li>
+                                                <li><div>Angel ()</div></li>
+                                                <li><div>gods as animals ()</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Afterlife ()</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Numbers and Measures (800)</div>
+                            
+                                    <ul>
+                                        <li><div>Weights and measures (804)</div></li>
+                                        <li><div>Numerology (801)</div>
+                                    
+                                            <ul>
+                                                <li><div>Six Hundred and Sixty Six ()</div></li>
+                                                <li><div>Seven ()</div></li>
+                                                <li><div>Twelve ()</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Mathematics (803)</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Ethics (577)</div></li>
+                                <li><div>Tradition ()</div>
+                            
+                                    <ul>
+                                        <li><div>Succession ()</div>
+                                    
+                                            <ul>
+                                                <li><div>Son succession ()</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Traditional Metaphors ()</div>
+                                    
+                                            <ul>
+                                                <li><div>Elders as fathers ()</div></li>
+                                                <li><div>Leaders as shepherds ()</div></li>
+                                                <li><div>Kings as shepherds ()</div></li>
+                                                <li><div>Rome as Babylon ()</div></li>
+                                                <li><div>Kings as fathers ()</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Basis of marriage (581)</div></li>
+                                        <li><div>National pride ()</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Knowledge as eyes ()</div></li>
+                                <li><div>Nations as plants ()</div></li>
+                                <li><div>Sexuality (831)</div>
+                            
+                                    <ul>
+                                        <li><div>Gender roles and issues (890)</div>
+                                    
+                                            <ul>
+                                                <li><div>Division of labor by gender (462)</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Homosexuality ()</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Theory of disease (753)</div></li>
+                            </ul>
+                        </li>
+                        <li><div>Social Problems (730)</div>
+                    
+                            <ul>
+                                <li><div>Poverty (735)</div></li>
+                                <li><div>Alcoholism ()</div></li>
+                                <li><div>Disasters (731)</div>
+                            
+                                    <ul>
+                                        <li><div>Famine ()</div></li>
+                                        <li><div>Drought ()</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Disabilities (732)</div></li>
+                            </ul>
+                        </li>
+                        <li><div>Standard of living (511)</div></li>
+                        <li><div>Community structure (621)</div></li>
+                        <li><div>Act ()</div>
+                    
+                            <ul>
+                                <li><div>Homage ()</div></li>
+                                <li><div>Testing ()</div></li>
+                                <li><div>Justice (690)</div></li>
+                                <li><div>Betrayal ()</div></li>
+                                <li><div>Body alterations (304)</div>
+                            
+                                    <ul>
+                                        <li><div>Uncircumcision ()</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Defection ()</div></li>
+                                <li><div>Emancipation ()</div></li>
+                                <li><div>Sign ()</div>
+                            
+                                    <ul>
+                                        <li><div>Signs of weather ()</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Group action ()</div>
+                            
+                                    <ul>
+                                        <li><div>Socialization (860)</div>
+                                    
+                                            <ul>
+                                                <li><div>Transmission of beliefs (869)</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Teaching ()</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Weaning and food training (862)</div></li>
+                                                <li><div>Transmission of skills (868)</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Teaching ()</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Independence training (866)</div></li>
+                                                <li><div>Transmission of cultural norms (867)</div></li>
+                                                <li><div>Cleanliness training (863)</div></li>
+                                                <li><div>Aggression training (865)</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Economy ()</div>
+                                    
+                                            <ul>
+                                                <li><div>Business and industrial organization (470)</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Finance (450)</div>
+                                    
+                                            <ul>
+                                                <li><div>Saving and investment (454)</div></li>
+                                                <li><div>Accounting (451)</div></li>
+                                                <li><div>Credit (452)</div></li>
+                                                <li><div>Banking (453)</div></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><div>Adoption (597)</div></li>
+                                <li><div>Execution of justice (696)</div>
+                            
+                                    <ul>
+                                        <li><div>Judging ()</div>
+                                    
+                                            <ul>
+                                                <li><div>Death sentence ()</div></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><div>Activity ()</div>
+                            
+                                    <ul>
+                                        <li><div>Sounding ()</div></li>
+                                        <li><div>Garment care (296)</div></li>
+                                        <li><div>Age related activity ()</div>
+                                    
+                                            <ul>
+                                                <li><div>Adolescent activities (883)</div></li>
+                                                <li><div>Activities of the aged (887)</div></li>
+                                                <li><div>Nurture ()</div></li>
+                                                <li><div>Puberty and initiation (881)</div></li>
+                                                <li><div>Childhood activities (857)</div></li>
+                                                <li><div>Infant care (854)</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Infant feeding (853)</div></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Arts (530)</div>
+                                    
+                                            <ul>
+                                                <li><div>Visual arts (5311)</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Plays ()</div></li>
+                                                        <li><div>Dance (535)</div></li>
+                                                        <li><div>Decorative art (531)</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Music (533)</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Singing ()</div></li>
+                                                        <li><div>Musical influence ()</div></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Food processes ()</div>
+                                    
+                                            <ul>
+                                                <li><div>Food collection (222)</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Hunting ()</div></li>
+                                                        <li><div>Fishing (226)</div></li>
+                                                        <li><div>Agriculture (240)</div></li>
+                                                        <li><div>Tillage (241)</div></li>
+                                                        <li><div>Harvest ()</div>
+                                                    
+                                                            <ul>
+                                                                <li><div>Gleaning ()</div></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><div>Water collecting ()</div></li>
+                                                        <li><div>Winnowing ()</div></li>
+                                                        <li><div>Animal husbandry (230)</div></li>
+                                                        <li><div>Dairying (234)</div></li>
+                                                        <li><div>Pastoral activity (233)</div>
+                                                    
+                                                            <ul>
+                                                                <li><div>Herding ()</div></li>
+                                                                <li><div>Shearing ()</div></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Food preparation (252)</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Food dismemberment ()</div></li>
+                                                        <li><div>Slaughtering ()</div></li>
+                                                        <li><div>Grinding ()</div></li>
+                                                        <li><div>Cooking ()</div></li>
+                                                        <li><div>Baking ()</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Eating (264)</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Eating a meal ()</div></li>
+                                                        <li><div>Eating a scroll ()</div></li>
+                                                        <li><div>Eating blood ()</div></li>
+                                                        <li><div>Drinking ()</div></li>
+                                                        <li><div>Drinking alcoholic beverages ()</div></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Rest ()</div></li>
+                                        <li><div>Crying ()</div></li>
+                                        <li><div>Settlement patterns (361)</div></li>
+                                        <li><div>Religious practices (780)</div>
+                                    
+                                            <ul>
+                                                <li><div>Cultic Prostitution ()</div></li>
+                                                <li><div>Fasting ()</div></li>
+                                                <li><div>Atonement (783)</div></li>
+                                                <li><div>Redemption ()</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Firstborn redemption ()</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Ritual (788)</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Marriage (580)</div></li>
+                                                        <li><div>Secondary marriages (587)</div></li>
+                                                        <li><div>Intermarriage ()</div></li>
+                                                        <li><div>Levirate marriage ()</div></li>
+                                                        <li><div>Cutting ()</div></li>
+                                                        <li><div>Divination ()</div></li>
+                                                        <li><div>Extispicy ()</div></li>
+                                                        <li><div>Astrology ()</div></li>
+                                                        <li><div>Casting of Lots ()</div></li>
+                                                        <li><div>Initiation ritual ()</div></li>
+                                                        <li><div>Consecration ()</div></li>
+                                                        <li><div>Anointing ()</div></li>
+                                                        <li><div>Laying of hands ()</div></li>
+                                                        <li><div>Organized ceremonial (796)</div></li>
+                                                        <li><div>Sabbath ()</div></li>
+                                                        <li><div>Passover ()</div></li>
+                                                        <li><div>Baptism ()</div>
+                                                    
+                                                            <ul>
+                                                                <li><div>Substitute baptism ()</div></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><div>Dedication ()</div></li>
+                                                        <li><div>Purification ()</div></li>
+                                                        <li><div>Communion ()</div></li>
+                                                        <li><div>Blessing ()</div></li>
+                                                        <li><div>Parental Blessing ()</div></li>
+                                                        <li><div>Inheritance blessing ()</div></li>
+                                                        <li><div>Circumcision ()</div></li>
+                                                        <li><div>Rituals of childbirth ()</div></li>
+                                                        <li><div>Uncircumcision ()</div></li>
+                                                        <li><div>Names and naming (552)</div>
+                                                    
+                                                            <ul>
+                                                                <li><div>Personal names (551)</div></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><div>Firstborn redemption ()</div></li>
+                                                        <li><div>Circumcision ()</div></li>
+                                                        <li><div>Sacrifice ()</div></li>
+                                                        <li><div>Burnt offering ()</div>
+                                                    
+                                                            <ul>
+                                                                <li><div>Sin offering ()</div></li>
+                                                                <li><div>Guilt offering ()</div></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><div>Offering food to a god ()</div>
+                                                    
+                                                            <ul>
+                                                                <li><div>Grain offering ()</div></li>
+                                                                <li><div>Libation ()</div></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><div>Incense offering ()</div></li>
+                                                        <li><div>Wave offering ()</div></li>
+                                                        <li><div>Scapegoat ()</div></li>
+                                                        <li><div>Human Sacrifice ()</div>
+                                                    
+                                                            <ul>
+                                                                <li><div>Child sacrifice ()</div></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><div>Fellowship offering ()</div>
+                                                    
+                                                            <ul>
+                                                                <li><div>Freewill offering ()</div></li>
+                                                                <li><div>Thank offering ()</div></li>
+                                                                <li><div>Votive offering ()</div></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Breaking down idols ()</div></li>
+                                                <li><div>Avoidance and taboo (784)</div></li>
+                                                <li><div>Repentance ()</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Penance ()</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Curse ()</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Salt curse ()</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Religious service ()</div></li>
+                                                <li><div>Miracle ()</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Miraculous feeding ()</div></li>
+                                                        <li><div>Healing ()</div></li>
+                                                        <li><div>Exorcism ()</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Confession ()</div></li>
+                                                <li><div>Apostasy ()</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Apostasy as adultery ()</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Household religion ()</div></li>
+                                                <li><div>Magic (789)</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Apotropaic magic ()</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Worship ()</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Pagan worship ()</div></li>
+                                                        <li><div>Pagan worship as whoring ()</div></li>
+                                                        <li><div>Pagan worship as adultery ()</div></li>
+                                                        <li><div>Idol worship ()</div></li>
+                                                        <li><div>Illegitimate worship ()</div></li>
+                                                        <li><div>Idol worship ()</div></li>
+                                                        <li><div>Pious living ()</div></li>
+                                                        <li><div>Ancestor Worship ()</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Abstinence ()</div></li>
+                                                <li><div>Prophesying ()</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Ecstatic Prophecy ()</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Desecration ()</div></li>
+                                                <li><div>Asceticism (785)</div></li>
+                                                <li><div>Planting mixed seeds ()</div></li>
+                                                <li><div>Tithe ()</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Daily routine (512)</div>
+                                    
+                                            <ul>
+                                                <li><div>Sleeping (513)</div></li>
+                                                <li><div>Soldiering ()</div></li>
+                                                <li><div>Recreation (520)</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Humor (522)</div></li>
+                                                        <li><div>Games ()</div></li>
+                                                        <li><div>Athletic sports (526)</div></li>
+                                                        <li><div>Gambling (525)</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Elimination (514)</div></li>
+                                                <li><div>Personal hygiene (515)</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Washing ()</div></li>
+                                                        <li><div>Handwashing ()</div></li>
+                                                        <li><div>Foot washing ()</div></li>
+                                                        <li><div>Ritual immersion ()</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Athlete life ()</div></li>
+                                                <li><div>Farmer life ()</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Property administration ()</div></li>
+                                        <li><div>Equipment and maintenance of buildings (350)</div>
+                                    
+                                            <ul>
+                                                <li><div>Housekeeping (356)</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Litigation (691)</div></li>
+                                        <li><div>Names and naming (552)</div>
+                                    
+                                            <ul>
+                                                <li><div>Personal names (551)</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Building and construction (330)</div>
+                                    
+                                            <ul>
+                                                <li><div>Masonry (333)</div></li>
+                                                <li><div>Shipbuilding (396)</div></li>
+                                                <li><div>Water redirection ()</div></li>
+                                                <li><div>Carpentry (335)</div></li>
+                                                <li><div>Fortification ()</div></li>
+                                                <li><div>Building stone reminders ()</div></li>
+                                                <li><div>Building an altar ()</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Obedience ()</div></li>
+                                        <li><div>Divine activity ()</div>
+                                    
+                                            <ul>
+                                                <li><div>Divine punishment ()</div></li>
+                                                <li><div>Providence ()</div></li>
+                                                <li><div>Divine teleportation ()</div></li>
+                                                <li><div>Divine opposition in battle ()</div></li>
+                                                <li><div>Divine assistance in battle ()</div></li>
+                                                <li><div>Divine judgment ()</div></li>
+                                                <li><div>Divine cannibalism ()</div></li>
+                                                <li><div>Divine control of weather ()</div></li>
+                                                <li><div>Divine repentance ()</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Interpersonal activities ()</div>
+                                    
+                                            <ul>
+                                                <li><div>Arranging a marriage (584)</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Betrothal ()</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Behavior toward non-relatives (609)</div></li>
+                                                <li><div>Mourning (765)</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Wailing ()</div></li>
+                                                        <li><div>Putting on ashes ()</div></li>
+                                                        <li><div>Breast beating ()</div></li>
+                                                        <li><div>Lamentation ()</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Social stratification (560)</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Classes (565)</div></li>
+                                                        <li><div>Royal family ()</div></li>
+                                                        <li><div>Ethnic stratification (563)</div></li>
+                                                        <li><div>Age stratification (561)</div></li>
+                                                        <li><div>Gender status (562)</div></li>
+                                                        <li><div>Kneeling ()</div></li>
+                                                        <li><div>Slavery (567)</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Banishment ()</div></li>
+                                                <li><div>Behavior toward strangers ()</div></li>
+                                                <li><div>Revelry ()</div></li>
+                                                <li><div>Communication (200)</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Interpreting dreams ()</div></li>
+                                                        <li><div>Conversation (521)</div></li>
+                                                        <li><div>Appeal ()</div></li>
+                                                        <li><div>Farewell ()</div></li>
+                                                        <li><div>Riddle ()</div></li>
+                                                        <li><div>Writing ()</div></li>
+                                                        <li><div>Engraving ()</div></li>
+                                                        <li><div>Letter writing ()</div></li>
+                                                        <li><div>Songwriting ()</div></li>
+                                                        <li><div>Mocking ()</div></li>
+                                                        <li><div>Contracts (675)</div></li>
+                                                        <li><div>Will ()</div></li>
+                                                        <li><div>Promise ()</div>
+                                                    
+                                                            <ul>
+                                                                <li><div>Divine promise ()</div></li>
+                                                                <li><div>Oath ()</div></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><div>Covenant ()</div></li>
+                                                        <li><div>Names and naming (552)</div></li>
+                                                        <li><div>Personal names (551)</div></li>
+                                                        <li><div>Slander ()</div></li>
+                                                        <li><div>Blasphemy ()</div></li>
+                                                        <li><div>Proverbs ()</div></li>
+                                                        <li><div>Greeting ()</div></li>
+                                                        <li><div>Kissing ()</div></li>
+                                                        <li><div>Handshake ()</div></li>
+                                                        <li><div>Prophetic fulfillment ()</div></li>
+                                                        <li><div>Revelation ()</div></li>
+                                                        <li><div>Theophanic dream ()</div></li>
+                                                        <li><div>Speaking in tongues ()</div></li>
+                                                        <li><div>Sign ()</div>
+                                                    
+                                                            <ul>
+                                                                <li><div>Signs of weather ()</div></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><div>Vision ()</div>
+                                                    
+                                                            <ul>
+                                                                <li><div>Visionary creature ()</div></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><div>Casting of Lots ()</div></li>
+                                                        <li><div>Parable ()</div></li>
+                                                        <li><div>Juridical parable ()</div></li>
+                                                        <li><div>Ten commandments ()</div></li>
+                                                        <li><div>Messages ()</div></li>
+                                                        <li><div>Intercession ()</div></li>
+                                                        <li><div>Witness ()</div></li>
+                                                        <li><div>Disseminating information (203)</div></li>
+                                                        <li><div>Preaching ()</div></li>
+                                                        <li><div>Marker ()</div></li>
+                                                        <li><div>Posting documents ()</div></li>
+                                                        <li><div>Blessing ()</div></li>
+                                                        <li><div>Parental Blessing ()</div></li>
+                                                        <li><div>Inheritance blessing ()</div></li>
+                                                        <li><div>Command ()</div></li>
+                                                        <li><div>Royal charge ()</div></li>
+                                                        <li><div>Command to break down idols ()</div></li>
+                                                        <li><div>Command to honor parents ()</div></li>
+                                                        <li><div>Law (670)</div>
+                                                    
+                                                            <ul>
+                                                                <li><div>Regulations ()</div>
+                                                            
+                                                                    <ul>
+                                                                        <li><div>Regulations about feasts ()</div></li>
+                                                                        <li><div>Regulations about killing and murder ()</div>
+                                                                    
+                                                                            <ul>
+                                                                                <li><div>Regulations about capital punishment ()</div></li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li><div>Regulations about tithe ()</div></li>
+                                                                        <li><div>Regulations about families ()</div>
+                                                                    
+                                                                            <ul>
+                                                                                <li><div>Regulations about inheritance ()</div></li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li><div>Regulations about plundering ()</div></li>
+                                                                        <li><div>Regulations about oil and incense ()</div></li>
+                                                                        <li><div>Regulations about marriage ()</div>
+                                                                    
+                                                                            <ul>
+                                                                                <li><div>Regulations about levirate marriage ()</div></li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li><div>Regulations about agriculture ()</div></li>
+                                                                        <li><div>Regulations about kings ()</div></li>
+                                                                        <li><div>Regulations about blood avengers ()</div></li>
+                                                                        <li><div>Regulations about building and construction ()</div></li>
+                                                                        <li><div>Regulations about interacting with nature ()</div></li>
+                                                                        <li><div>Regulations about sacrifices ()</div></li>
+                                                                        <li><div>Regulations about property ()</div></li>
+                                                                        <li><div>Regulations about altar building ()</div></li>
+                                                                        <li><div>Regulations about borrowing and lending ()</div></li>
+                                                                        <li><div>Regulations about cleanness and uncleanness ()</div>
+                                                                    
+                                                                            <ul>
+                                                                                <li><div>Regulations about skin diseases and injuries ()</div></li>
+                                                                                <li><div>Regulations about sexual activity (834)</div></li>
+                                                                                <li><div>Restrictions on sex relations with kin (835)</div></li>
+                                                                                <li><div>Restrictions on bestiality ()</div></li>
+                                                                                <li><div>Restrictions on extra-marital sex relations (837)</div></li>
+                                                                                <li><div>Restrictions on homosexual activity (838)</div></li>
+                                                                                <li><div>Restrictions on sex relations before marriage (836)</div></li>
+                                                                                <li><div>Regulations about childbirth ()</div></li>
+                                                                                <li><div>Regulations about dead bodies and carcasses ()</div></li>
+                                                                                <li><div>Regulations about fungus ()</div></li>
+                                                                                <li><div>Regulations about blood ()</div></li>
+                                                                                <li><div>Regulations about bodily discharges ()</div></li>
+                                                                                <li><div>Regulations about clean and unclean animals ()</div></li>
+                                                                                <li><div>Regulations about unclean animals ()</div>
+                                                                            
+                                                                                    <ul>
+                                                                                        <li><div>Unclean meats ()</div></li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                                <li><div>Regulations about clean animals ()</div>
+                                                                            
+                                                                                    <ul>
+                                                                                        <li><div>Clean meats ()</div></li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li><div>Regulations about warfare and battles ()</div>
+                                                                    
+                                                                            <ul>
+                                                                                <li><div>Regulations about captives ()</div></li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li><div>Regulations about work ()</div>
+                                                                    
+                                                                            <ul>
+                                                                                <li><div>Regulations about the Sabbath ()</div></li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li><div>Regulations about cities of refuge ()</div></li>
+                                                                        <li><div>Regulations about clothing ()</div></li>
+                                                                        <li><div>Regulations about special groups of people ()</div>
+                                                                    
+                                                                            <ul>
+                                                                                <li><div>Regulations about the assembly of the Lord ()</div></li>
+                                                                                <li><div>Regulations about public meetings ()</div></li>
+                                                                                <li><div>Regulations about nazirites ()</div></li>
+                                                                                <li><div>Regulations about prophets ()</div></li>
+                                                                                <li><div>Regulations about foreigners ()</div></li>
+                                                                                <li><div>Regulations about the priests ()</div></li>
+                                                                                <li><div>Regulations about the food of priests ()</div></li>
+                                                                                <li><div>Regulations about deformities and the priesthood ()</div></li>
+                                                                                <li><div>Regulations about slaves ()</div></li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li><div>Regulations about the holiness of God ()</div></li>
+                                                                        <li><div>Regulations about justice ()</div></li>
+                                                                        <li><div>Regulations about witnesses ()</div></li>
+                                                                        <li><div>Regulations about oaths ()</div></li>
+                                                                        <li><div>Regulations about sacred places ()</div>
+                                                                    
+                                                                            <ul>
+                                                                                <li><div>Regulations about the Temple ()</div></li>
+                                                                                <li><div>Regulations about the Tabernacle ()</div></li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li><div>Regulations about census taking ()</div></li>
+                                                                        <li><div>Regulations about personal offenses ()</div></li>
+                                                                        <li><div>Regulations about people in need ()</div></li>
+                                                                        <li><div>Regulations about commerce ()</div></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li><div>Levitical Law ()</div></li>
+                                                                <li><div>Rule of reciprocity ()</div></li>
+                                                                <li><div>Prohibitions ()</div>
+                                                            
+                                                                    <ul>
+                                                                        <li><div>Prohibitions about using God’s name vainly ()</div></li>
+                                                                        <li><div>Prohibitions against adultery ()</div></li>
+                                                                        <li><div>Prohibition against eating any animals ()</div></li>
+                                                                        <li><div>Prohibitions against intermarriage ()</div></li>
+                                                                        <li><div>Prohibitions against images ()</div></li>
+                                                                        <li><div>Prohibitions against murder ()</div></li>
+                                                                        <li><div>Prohibitions against divination and magic ()</div></li>
+                                                                        <li><div>Prohibitions against theft ()</div></li>
+                                                                        <li><div>Prohibitions against coveting ()</div></li>
+                                                                        <li><div>Prohibitions against injustice ()</div></li>
+                                                                        <li><div>Prohibitions against false testimony ()</div></li>
+                                                                        <li><div>Prohibitions against prostitution ()</div></li>
+                                                                        <li><div>Prohibitions against worshipping other gods ()</div></li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><div>Invocation ()</div></li>
+                                                        <li><div>Prayer ()</div></li>
+                                                        <li><div>Intercession (prayer) ()</div></li>
+                                                        <li><div>Decree ()</div></li>
+                                                        <li><div>Pardon ()</div></li>
+                                                        <li><div>Transmitting messages ()</div></li>
+                                                        <li><div>Reading letters ()</div></li>
+                                                        <li><div>Speech ()</div></li>
+                                                        <li><div>Speech as a weapon ()</div></li>
+                                                        <li><div>Oratory (537)</div>
+                                                    
+                                                            <ul>
+                                                                <li><div>Rhetoric ()</div>
+                                                            
+                                                                    <ul>
+                                                                        <li><div>Encomium ()</div></li>
+                                                                        <li><div>Vituperation ()</div></li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><div>Charge ()</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Reading letters ()</div></li>
+                                                <li><div>Burial practices and funerals (764)</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Special burials, burial practices, and funerals (766)</div></li>
+                                                        <li><div>Royal burial ()</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Offenses ()</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Offenses against the state (687)</div></li>
+                                                        <li><div>Treason ()</div></li>
+                                                        <li><div>Offenses against life (682)</div></li>
+                                                        <li><div>Murder ()</div>
+                                                    
+                                                            <ul>
+                                                                <li><div>Matricide ()</div></li>
+                                                                <li><div>Fratricide ()</div></li>
+                                                                <li><div>Regicide ()</div></li>
+                                                                <li><div>Patricide ()</div></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><div>Property offenses (685)</div></li>
+                                                        <li><div>Theft ()</div></li>
+                                                        <li><div>Robbery ()</div></li>
+                                                        <li><div>Banditry ()</div></li>
+                                                        <li><div>Extortion ()</div></li>
+                                                        <li><div>nonfulfillment of obligations (686)</div></li>
+                                                        <li><div>Offenses against the person (683)</div></li>
+                                                        <li><div>Kidnapping ()</div></li>
+                                                        <li><div>Slander ()</div></li>
+                                                        <li><div>Rape ()</div></li>
+                                                        <li><div>Sex and marital offenses (684)</div></li>
+                                                        <li><div>Fornication ()</div></li>
+                                                        <li><div>Adultery ()</div></li>
+                                                        <li><div>Rape ()</div></li>
+                                                        <li><div>Social offenses (689)</div></li>
+                                                        <li><div>Religious offenses (688)</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>International and interethnic activities ()</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Raiding ()</div></li>
+                                                        <li><div>Surrender ()</div></li>
+                                                        <li><div>Peacemaking (728)</div></li>
+                                                        <li><div>Warfare (720)</div></li>
+                                                        <li><div>Holy War ()</div></li>
+                                                        <li><div>Single combat ()</div></li>
+                                                        <li><div>Battle ()</div></li>
+                                                        <li><div>Conquest ()</div></li>
+                                                        <li><div>Plundering ()</div></li>
+                                                        <li><div>Diplomacy ()</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Reconciliation ()</div></li>
+                                                <li><div>Brawls, riots, and banditry ()</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Banditry ()</div></li>
+                                                        <li><div>Riot ()</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Visiting and hospitality (574)</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Hospitality ()</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Treatment of prisoners ()</div></li>
+                                                <li><div>Handshake ()</div></li>
+                                                <li><div>Sexual activity (833)</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Kissing ()</div></li>
+                                                        <li><div>Sexual immorality ()</div></li>
+                                                        <li><div>Fornication ()</div></li>
+                                                        <li><div>Incest ()</div></li>
+                                                        <li><div>Rape ()</div></li>
+                                                        <li><div>Prostitution ()</div>
+                                                    
+                                                            <ul>
+                                                                <li><div>Cultic Prostitution ()</div></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Medical activities ()</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Magical and mental therapy (755)</div></li>
+                                                        <li><div>Medical care (758)</div></li>
+                                                        <li><div>Health Care ()</div></li>
+                                                        <li><div>Medicine ()</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Education (870)</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Teaching ()</div></li>
+                                                        <li><div>Vocational education (874)</div></li>
+                                                        <li><div>Education system (871)</div></li>
+                                                        <li><div>Discipline ()</div></li>
+                                                        <li><div>Discipleship ()</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Wrongs (673)</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Disobedience ()</div></li>
+                                                        <li><div>Deception ()</div></li>
+                                                        <li><div>False testimony ()</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Missions (797)</div></li>
+                                                <li><div>Persecution ()</div></li>
+                                                <li><div>Warfare activities ()</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Spying ()</div></li>
+                                                        <li><div>Razing ()</div></li>
+                                                        <li><div>Military discipline (703)</div></li>
+                                                        <li><div>Wartime adjustments (722)</div></li>
+                                                        <li><div>Dismemberment ()</div></li>
+                                                        <li><div>Battle preparations ()</div></li>
+                                                        <li><div>Fortification ()</div></li>
+                                                        <li><div>Consulting prophets ()</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Religious activities ()</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Meditation ()</div></li>
+                                                        <li><div>Fellowship ()</div></li>
+                                                        <li><div>Minister ()</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Political activities (660)</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Appointing a ruler ()</div></li>
+                                                        <li><div>Divine appointment of rulers ()</div></li>
+                                                        <li><div>Sanctions (680)</div></li>
+                                                        <li><div>Divine punishment ()</div></li>
+                                                        <li><div>Dismemberment ()</div></li>
+                                                        <li><div>Scourging ()</div></li>
+                                                        <li><div>Imprisonment ()</div></li>
+                                                        <li><div>Execution ()</div>
+                                                    
+                                                            <ul>
+                                                                <li><div>Beheading ()</div></li>
+                                                                <li><div>Execution by wild beasts ()</div></li>
+                                                                <li><div>Stoning ()</div></li>
+                                                                <li><div>Hanging ()</div></li>
+                                                                <li><div>Capital punishment ()</div>
+                                                            
+                                                                    <ul>
+                                                                        <li><div>Crucifixion ()</div></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li><div>Impalement ()</div></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><div>Torture ()</div></li>
+                                                        <li><div>Revolt ()</div></li>
+                                                        <li><div>Revolution (669)</div></li>
+                                                        <li><div>Pressure politics (664)</div></li>
+                                                        <li><div>Usurpation ()</div></li>
+                                                        <li><div>Public service (663)</div></li>
+                                                        <li><div>Government activities (650)</div></li>
+                                                        <li><div>Taxation and public income (651)</div>
+                                                    
+                                                            <ul>
+                                                                <li><div>Temple Tax ()</div></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><div>Government regulation (656)</div></li>
+                                                        <li><div>Conscription and draft ()</div></li>
+                                                        <li><div>Census ()</div></li>
+                                                        <li><div>Prisoner release ()</div></li>
+                                                        <li><div>Public works (653)</div></li>
+                                                        <li><div>Exploitation (661)</div></li>
+                                                        <li><div>Deserting ()</div></li>
+                                                        <li><div>Political intrigue (662)</div></li>
+                                                        <li><div>Bribery ()</div></li>
+                                                        <li><div>Coup ()</div></li>
+                                                        <li><div>Nepotism ()</div></li>
+                                                        <li><div>Diplomacy ()</div></li>
+                                                        <li><div>Public health and sanitation (744)</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Lawsuit ()</div></li>
+                                                <li><div>Informal in-group justice (627)</div></li>
+                                                <li><div>Economic activities ()</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Make Restitution ()</div></li>
+                                                        <li><div>Economic planning and development (179)</div></li>
+                                                        <li><div>Stewardship ()</div></li>
+                                                        <li><div>Accumulation of wealth (556)</div></li>
+                                                        <li><div>Exchange (430)</div></li>
+                                                        <li><div>Gift giving (431)</div>
+                                                    
+                                                            <ul>
+                                                                <li><div>Reward ()</div></li>
+                                                                <li><div>Bribery ()</div></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><div>Buying and selling (432)</div></li>
+                                                        <li><div>Renting and leasing ()</div></li>
+                                                        <li><div>Trade ()</div>
+                                                    
+                                                            <ul>
+                                                                <li><div>Foreign trade (439)</div></li>
+                                                                <li><div>Domestic trade (438)</div></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><div>Production and creation of goods ()</div></li>
+                                                        <li><div>Wool production (236)</div>
+                                                    
+                                                            <ul>
+                                                                <li><div>Shearing ()</div></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><div>Social work (748)</div></li>
+                                                        <li><div>Exploitative activities (310)</div></li>
+                                                        <li><div>Land use (311)</div>
+                                                    
+                                                            <ul>
+                                                                <li><div>Allotment of the Land ()</div></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><div>Irrigation ()</div></li>
+                                                        <li><div>Mining and quarrying (316)</div></li>
+                                                        <li><div>Forest products (314)</div></li>
+                                                        <li><div>Posting bail ()</div></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Thanksgiving ()</div></li>
+                                        <li><div>Exaltation ()</div></li>
+                                        <li><div>Refuse disposal ()</div></li>
+                                        <li><div>Reproduction (840)</div></li>
+                                        <li><div>Movement (480)</div>
+                                    
+                                            <ul>
+                                                <li><div>Taking possession of land ()</div></li>
+                                                <li><div>Transportation (489)</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Animal transport (492)</div></li>
+                                                        <li><div>Weight moving (483)</div></li>
+                                                        <li><div>Transference to God’s presence ()</div></li>
+                                                        <li><div>Highway transport (494)</div></li>
+                                                        <li><div>Water crossing ()</div></li>
+                                                        <li><div>Water transport (505)</div>
+                                                    
+                                                            <ul>
+                                                                <li><div>Seafaring ()</div></li>
+                                                                <li><div>Water navigation ()</div></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><div>Miraculous water crossing ()</div></li>
+                                                        <li><div>Land transport (490)</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Resettlement ()</div></li>
+                                                <li><div>Locomotion (481)</div></li>
+                                                <li><div>Travel (484)</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Fleeing ()</div></li>
+                                                        <li><div>Travel services (485)</div></li>
+                                                        <li><div>Guide ()</div></li>
+                                                        <li><div>Journeying ()</div></li>
+                                                        <li><div>Pilgrimage (religious) ()</div></li>
+                                                        <li><div>Travel routes ()</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Exile ()</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Behavior processes and personality (150)</div>
+                                    
+                                            <ul>
+                                                <li><div>Personality traits (157)</div></li>
+                                                <li><div>Behavior toward non-relatives (609)</div></li>
+                                                <li><div>Behavior toward strangers ()</div></li>
+                                                <li><div>Personality disorders (158)</div></li>
+                                                <li><div>Modification of behavior (153)</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Rebuke ()</div></li>
+                                                        <li><div>Discipline ()</div></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Logistics (724)</div></li>
+                                        <li><div>Crime (674)</div></li>
+                                        <li><div>Cannibalism ()</div></li>
+                                        <li><div>Recruitment and training (702)</div></li>
+                                        <li><div>Weaving ()</div></li>
+                                        <li><div>Influence of gods or spirits ()</div></li>
+                                        <li><div>Sin ()</div></li>
+                                        <li><div>Lodging ()</div></li>
+                                        <li><div>Manufacturing ()</div>
+                                    
+                                            <ul>
+                                                <li><div>Processing of basic materials (320)</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Bone technology ()</div></li>
+                                                        <li><div>Horn technology ()</div></li>
+                                                        <li><div>Woodworking (322)</div></li>
+                                                        <li><div>Ceramic technology (323)</div></li>
+                                                        <li><div>Metallurgy (325)</div></li>
+                                                        <li><div>Metalworking ()</div></li>
+                                                        <li><div>Smelting ()</div></li>
+                                                        <li><div>Stone technology ()</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Jewelry manufacture (306)</div></li>
+                                                <li><div>Manufacture of toilet accessories (303)</div></li>
+                                                <li><div>Cloth Manufacturing ()</div></li>
+                                                <li><div>Labor (460)</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Corvée ()</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Pottery ()</div></li>
+                                                <li><div>Clothing manufacturing ()</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Hygiene ()</div>
+                                    
+                                            <ul>
+                                                <li><div>Bathing ()</div></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><div>Acts of emotion ()</div>
+                            
+                                    <ul>
+                                        <li><div>Strike one’s thigh ()</div></li>
+                                        <li><div>Gnashing teeth ()</div></li>
+                                        <li><div>Tearing clothes ()</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Slave-wife substitution ()</div></li>
+                                <li><div>Property transfer ()</div>
+                            
+                                    <ul>
+                                        <li><div>Inheritance (428)</div>
+                                    
+                                            <ul>
+                                                <li><div>Birthright ()</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Borrowing and lending (426)</div>
+                                    
+                                            <ul>
+                                                <li><div>Redemption ()</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Firstborn redemption ()</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Usury ()</div></li>
+                                                <li><div>Lending ()</div></li>
+                                                <li><div>Exaction ()</div></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><div>Attack ()</div>
+                            
+                                    <ul>
+                                        <li><div>Vengeance ()</div></li>
+                                        <li><div>Killing ()</div>
+                                    
+                                            <ul>
+                                                <li><div>Suicide (762)</div></li>
+                                                <li><div>Mass killing ()</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Genocide ()</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Murder ()</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Matricide ()</div></li>
+                                                        <li><div>Fratricide ()</div></li>
+                                                        <li><div>Regicide ()</div></li>
+                                                        <li><div>Patricide ()</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Execution ()</div>
+                                            
+                                                    <ul>
+                                                        <li><div>Beheading ()</div></li>
+                                                        <li><div>Execution by wild beasts ()</div></li>
+                                                        <li><div>Stoning ()</div></li>
+                                                        <li><div>Hanging ()</div></li>
+                                                        <li><div>Capital punishment ()</div></li>
+                                                        <li><div>Crucifixion ()</div></li>
+                                                        <li><div>Impalement ()</div></li>
+                                                    </ul>
+                                                </li>
+                                                <li><div>Assassination ()</div></li>
+                                            </ul>
+                                        </li>
+                                        <li><div>Blind ()</div></li>
+                                        <li><div>Ambush ()</div></li>
+                                        <li><div>Arson ()</div></li>
+                                        <li><div>Flogging ()</div></li>
+                                    </ul>
+                                </li>
+                                <li><div>Bribery ()</div></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
