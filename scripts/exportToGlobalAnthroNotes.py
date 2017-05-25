@@ -1,11 +1,10 @@
 # coding=utf-8
-import uuid
 import xml.etree.ElementTree as ET
 import datetime
 import unicode_utils
 
 
-def export_csv_to_global_anthro_notes(language='English'):
+def export_csv_to_global_anthro_notes(language='en'):
     orc_char = u"\uFFFC"
     comment_list = ET.Element("CommentList")
 
@@ -27,7 +26,7 @@ def export_csv_to_global_anthro_notes(language='English'):
         print (unicode(row['refs']), unicode(row['ocm_choice']), unicode(row['¶_content_' + language]))
         if ocm_choice != ocm_choice_processing:
             ocm_choice_processing = ocm_choice
-            thread = str(uuid.uuid4())[:8]
+            thread = 'OCM ' + ocm_choice.split()[0]
             first_ref = None
             main_comment = create_comment(comment_list, thread, increment, language)
             increment += 1
@@ -35,8 +34,7 @@ def export_csv_to_global_anthro_notes(language='English'):
             p = ET.SubElement(contents, "p")
             bold = ET.SubElement(p, "bold")
             title = " ".join(ocm_choice.split()[1:])
-            ocm_code = ocm_choice.split()[0]
-            bold.text = u"{} (OCM {})".format(title, ocm_code)
+            bold.text = u"{}".format(title)
         section_topic = row['section_topic']
         if section_topic not in section_topics_to_publish:
             continue
@@ -84,7 +82,7 @@ def export_csv_to_global_anthro_notes(language='English'):
         p = ET.SubElement(contents, "p")
         p.text = content
     tree = ET.ElementTree(comment_list)
-    filepath = "scripts/data/Comments_Global Anthro Demo {}.xml".format(language)
+    filepath = "scripts/data/Notes_Global Anthro Notes_{}.xml".format(language)
     tree.write(filepath, encoding="utf-8", xml_declaration=True)
     print "Output: " + filepath
 
