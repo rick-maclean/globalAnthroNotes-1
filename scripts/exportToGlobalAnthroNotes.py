@@ -76,7 +76,7 @@ def export_csv_to_global_anthro_notes(language='en'):
                 reattached_comment = create_comment(comment_list, thread, increment, language, first_ref)
                 increment += 1
                 comment = reattached_comment
-                ET.SubElement(reattached_comment, "Field", Name="reattached").text = orc_char.join([ref, '', str(0), '', ''])
+                ET.SubElement(reattached_comment, "Reattached").text = ref
             comment.set("VerseRef", first_ref)
             continue
         p = ET.SubElement(contents, "p")
