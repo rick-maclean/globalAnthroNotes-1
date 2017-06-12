@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <CommentList>
-    <Comment Date="2017-06-12T15:44:51.878000-04:00" Language="en" Thread="OCM 152" User="Biblical Culture Notes_en" VerseRef="">
+    <Comment Date="2017-06-12T15:48:00.107000-04:00" Language="en" Thread="OCM 152" User="Biblical Culture Notes_en" VerseRef="RUT 1:6-10">
         <StartPosition>0</StartPosition>
         <Status />
         <Type />
@@ -18,8 +18,14 @@
             <p>
                 <bold>Application to biblical source</bold>
             </p>
-            <p>Crying was usually from grief or sadness, as when someone died (GEN 23:2). Orpha and Ruth probably cried because they didn’t want to leave Naomi.</p>
-            <p>Crying was usually from grief or sadness, as when someone died (GEN 23:2) or when something bad happened (1SA 1:8). The psalmist cried when asking for God to save him from his enemies (PSA 6:6). Orpha and Ruth probably cried because they didn’t want to leave Naomi.</p>
+            <p class="scrtext">
+                <span class="verseref">RUT 1:6-10</span>
+                <span class="commentary">Crying was usually from grief or sadness, as when someone died (GEN 23:2). Orpha and Ruth probably cried because they didn’t want to leave Naomi.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 1:11-14</span>
+                <span class="commentary">Crying was usually from grief or sadness, as when someone died (GEN 23:2) or when something bad happened (1SA 1:8). The psalmist cried when asking for God to save him from his enemies (PSA 6:6). Orpha and Ruth probably cried because they didn’t want to leave Naomi.</span>
+            </p>
             <p />
             <p>
                 <bold>Research suggesions</bold>
@@ -34,7 +40,13 @@
             </ul>
         </Contents>
     </Comment>
-    <Comment Date="2017-06-12T15:44:51.879001-04:00" Language="en" Thread="OCM 201" User="Biblical Culture Notes_en" VerseRef="">
+    <Comment Date="2017-06-12T15:48:00.108001-04:00" Language="en" Thread="OCM 152" User="Biblical Culture Notes_en" VerseRef="RUT 1:6-10">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 1:11-14</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.108002-04:00" Language="en" Thread="OCM 201" User="Biblical Culture Notes_en" VerseRef="RUT 1:6-10">
         <StartPosition>0</StartPosition>
         <Status />
         <Type />
@@ -50,7 +62,10 @@
             <p>
                 <bold>Application to biblical source</bold>
             </p>
-            <p>Greetings and farewells in Hebrew usually include the words ‘peace’ and ‘blessing’, *shalom* and *barakh*. Greeting could include kissing and bowing to each other (EXO 18:7; 1SA 1:17; PSA 129:8).</p>
+            <p class="scrtext">
+                <span class="verseref">RUT 1:6-10</span>
+                <span class="commentary">Greetings and farewells in Hebrew usually include the words ‘peace’ and ‘blessing’, *shalom* and *barakh*. Greeting could include kissing and bowing to each other (EXO 18:7; 1SA 1:17; PSA 129:8).</span>
+            </p>
             <p />
             <p>
                 <bold>Research suggesions</bold>
@@ -62,7 +77,7 @@
             </ul>
         </Contents>
     </Comment>
-    <Comment Date="2017-06-12T15:44:51.880002-04:00" Language="en" Thread="OCM 203" User="Biblical Culture Notes_en" VerseRef="">
+    <Comment Date="2017-06-12T15:48:00.108003-04:00" Language="en" Thread="OCM 203" User="Biblical Culture Notes_en" VerseRef="RUT 1:19-22">
         <StartPosition>0</StartPosition>
         <Status />
         <Type />
@@ -78,7 +93,10 @@
             <p>
                 <bold>Application to biblical source</bold>
             </p>
-            <p>In small societies where people know each other well, and know about almost everyone, information spreads quickly. People talk about what is happening in the town and region. In Ruth’s time, the people who lived in Bethlehem would have known that Elimelech had left with his wife and sons, and now his widow had returned with her Moabite daughter-in-law.</p>
+            <p class="scrtext">
+                <span class="verseref">RUT 1:19-22</span>
+                <span class="commentary">In small societies where people know each other well, and know about almost everyone, information spreads quickly. People talk about what is happening in the town and region. In Ruth’s time, the people who lived in Bethlehem would have known that Elimelech had left with his wife and sons, and now his widow had returned with her Moabite daughter-in-law.</span>
+            </p>
             <p />
             <p>
                 <bold>Research suggesions</bold>
@@ -94,7 +112,7 @@
             </ul>
         </Contents>
     </Comment>
-    <Comment Date="2017-06-12T15:44:51.880003-04:00" Language="en" Thread="OCM 243" User="Biblical Culture Notes_en" VerseRef="">
+    <Comment Date="2017-06-12T15:48:00.109004-04:00" Language="en" Thread="OCM 243" User="Biblical Culture Notes_en" VerseRef="RUT 2:1-7">
         <StartPosition>0</StartPosition>
         <Status />
         <Type />
@@ -115,9 +133,18 @@
             <p>
                 <bold>Application to biblical source</bold>
             </p>
-            <p>Gleaning was the process of picking up the stalks of grain or other produce that were left on the ground or left uncut by the people harvesting the grain, grapes, olives and other fruit. It was a means of social solidarity and sharing with the whole group the blessings from God to his people (DEU 24:19-20).</p>
-            <p>After the grain was cut it was taken to the threshing floor, an open space near the fields where rocks have been removed and the ground made hard. Often the threshing floor was slightly elevated above the level of the fields to take advantage of wind for winnowing. The grain was threshed by laying it out on the threshing floor and beating it or having a donkey walk on it. This caused the outer covering of the grain to break open. After threshing, the grain was winnowed, that is, separated from the chaff (the broken outer coating and straw) by tossing it into the air with specially made tools. The grain was then stored separately from the straw.</p>
-            <p>The gleaning process took a few days, so people slept at the threshing floor. Their presence probably prevented thefts of grain (1SA 23:1). They ate and drank at the threshing floor as a kind of holiday from normal routine. Women were there helping with the work, and probably also cooked meals.</p>
+            <p class="scrtext">
+                <span class="verseref">RUT 2:1-7</span>
+                <span class="commentary">Gleaning was the process of picking up the stalks of grain or other produce that were left on the ground or left uncut by the people harvesting the grain, grapes, olives and other fruit. It was a means of social solidarity and sharing with the whole group the blessings from God to his people (DEU 24:19-20).</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 3:1-5</span>
+                <span class="commentary">After the grain was cut it was taken to the threshing floor, an open space near the fields where rocks have been removed and the ground made hard. Often the threshing floor was slightly elevated above the level of the fields to take advantage of wind for winnowing. The grain was threshed by laying it out on the threshing floor and beating it or having a donkey walk on it. This caused the outer covering of the grain to break open. After threshing, the grain was winnowed, that is, separated from the chaff (the broken outer coating and straw) by tossing it into the air with specially made tools. The grain was then stored separately from the straw.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 3:1-5</span>
+                <span class="commentary">The gleaning process took a few days, so people slept at the threshing floor. Their presence probably prevented thefts of grain (1SA 23:1). They ate and drank at the threshing floor as a kind of holiday from normal routine. Women were there helping with the work, and probably also cooked meals.</span>
+            </p>
             <p />
             <p>
                 <bold>Application to Biblical Source</bold>
@@ -132,7 +159,19 @@
             <p>Learn the terms used for the seasons and their associated activities.</p>
         </Contents>
     </Comment>
-    <Comment Date="2017-06-12T15:44:51.881004-04:00" Language="en" Thread="OCM 290" User="Biblical Culture Notes_en" VerseRef="">
+    <Comment Date="2017-06-12T15:48:00.110005-04:00" Language="en" Thread="OCM 243" User="Biblical Culture Notes_en" VerseRef="RUT 2:1-7">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 3:1-5</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.110006-04:00" Language="en" Thread="OCM 243" User="Biblical Culture Notes_en" VerseRef="RUT 2:1-7">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 3:1-5</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.110007-04:00" Language="en" Thread="OCM 290" User="Biblical Culture Notes_en" VerseRef="RUT 3:1-5">
         <StartPosition>0</StartPosition>
         <Status />
         <Type />
@@ -155,8 +194,14 @@
             <p>
                 <bold>Application to biblical source</bold>
             </p>
-            <p>Washing and putting on perfume was done before celebrations, such as marriage ceremonies or at the end of a mourning period for a dead relative (EZE 16:8-10; 2SA 12:20). Perfume consisted of olive oil with spices added to make it smell good. Anointing was part of getting dressed to go out of the house (2SA 14:2). Naomi is probably telling Ruth to dress well, not in ordinary clothes she would use for gleaning.</p>
-            <p>Anointing was also part of a ceremony to indicate someone was chose for a special job. Priests and kings were anointed to indicate their special position in society (EXO 28:41, 1SA 9:16).</p>
+            <p class="scrtext">
+                <span class="verseref">RUT 3:1-5</span>
+                <span class="commentary">Washing and putting on perfume was done before celebrations, such as marriage ceremonies or at the end of a mourning period for a dead relative (EZE 16:8-10; 2SA 12:20). Perfume consisted of olive oil with spices added to make it smell good. Anointing was part of getting dressed to go out of the house (2SA 14:2). Naomi is probably telling Ruth to dress well, not in ordinary clothes she would use for gleaning.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 3:1-5</span>
+                <span class="commentary">Anointing was also part of a ceremony to indicate someone was chose for a special job. Priests and kings were anointed to indicate their special position in society (EXO 28:41, 1SA 9:16).</span>
+            </p>
             <p />
             <p>
                 <bold>Research suggesions</bold>
@@ -177,7 +222,13 @@
             </ul>
         </Contents>
     </Comment>
-    <Comment Date="2017-06-12T15:44:51.882005-04:00" Language="en" Thread="OCM 432" User="Biblical Culture Notes_en" VerseRef="">
+    <Comment Date="2017-06-12T15:48:00.111008-04:00" Language="en" Thread="OCM 290" User="Biblical Culture Notes_en" VerseRef="RUT 3:1-5">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 3:1-5</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.111009-04:00" Language="en" Thread="OCM 432" User="Biblical Culture Notes_en" VerseRef="RUT 4:1-6">
         <StartPosition>0</StartPosition>
         <Status />
         <Type />
@@ -194,7 +245,10 @@
             <p>
                 <bold>Application to biblical source</bold>
             </p>
-            <p>Business and legal transactions were done at the city gates, a place where many people gathered. People went from their homes in the city to the fields and to get water, and merchants went in and out. Whoever was present when transactions took place became witnesses. These transactions were public knowledge.</p>
+            <p class="scrtext">
+                <span class="verseref">RUT 4:1-6</span>
+                <span class="commentary">Business and legal transactions were done at the city gates, a place where many people gathered. People went from their homes in the city to the fields and to get water, and merchants went in and out. Whoever was present when transactions took place became witnesses. These transactions were public knowledge.</span>
+            </p>
             <p />
             <p>
                 <bold>Research suggesions</bold>
@@ -210,7 +264,7 @@
             </ul>
         </Contents>
     </Comment>
-    <Comment Date="2017-06-12T15:44:51.883006-04:00" Language="en" Thread="OCM 428" User="Biblical Culture Notes_en" VerseRef="">
+    <Comment Date="2017-06-12T15:48:00.1120010-04:00" Language="en" Thread="OCM 428" User="Biblical Culture Notes_en" VerseRef="RUT 4:1-6">
         <StartPosition>0</StartPosition>
         <Status />
         <Type />
@@ -231,7 +285,10 @@
             <p>
                 <bold>Application to biblical source</bold>
             </p>
-            <p>In societies where men inherit but women do not inherit, often women have the right of use of the land until they die. Thus the land is called Naomi’s land even though she didn’t own it. It belonged to her husband, and his sons, even though they were dead, because there was a woman belonging to the family who could produce sons for them (see the section on levirate marriage).</p>
+            <p class="scrtext">
+                <span class="verseref">RUT 4:1-6</span>
+                <span class="commentary">In societies where men inherit but women do not inherit, often women have the right of use of the land until they die. Thus the land is called Naomi’s land even though she didn’t own it. It belonged to her husband, and his sons, even though they were dead, because there was a woman belonging to the family who could produce sons for them (see the section on levirate marriage).</span>
+            </p>
             <p />
             <p>
                 <bold>Research suggesions</bold>
@@ -245,7 +302,7 @@
             </ul>
         </Contents>
     </Comment>
-    <Comment Date="2017-06-12T15:44:51.883007-04:00" Language="en" Thread="OCM 527" User="Biblical Culture Notes_en" VerseRef="">
+    <Comment Date="2017-06-12T15:48:00.1120011-04:00" Language="en" Thread="OCM 527" User="Biblical Culture Notes_en" VerseRef="RUT 3:14-18">
         <StartPosition>0</StartPosition>
         <Status />
         <Type />
@@ -261,8 +318,14 @@
             <p>
                 <bold>Application to biblical source</bold>
             </p>
-            <p>In Israelite culture, as in many others, there is a celebration at the end of the harvest. Sometimes whole families went to the threshing floor and cook there.</p>
-            <p>Wine was the common drink at meals, often with water added. Boaz was not necessarily drunk, he had just eaten a good meal and had wine with it. He was celebrating the end of the harvest and threshing.</p>
+            <p class="scrtext">
+                <span class="verseref">RUT 3:14-18</span>
+                <span class="commentary">In Israelite culture, as in many others, there is a celebration at the end of the harvest. Sometimes whole families went to the threshing floor and cook there.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 3:14-18</span>
+                <span class="commentary">Wine was the common drink at meals, often with water added. Boaz was not necessarily drunk, he had just eaten a good meal and had wine with it. He was celebrating the end of the harvest and threshing.</span>
+            </p>
             <p />
             <p>
                 <bold>Research suggesions</bold>
@@ -274,7 +337,13 @@
             </ul>
         </Contents>
     </Comment>
-    <Comment Date="2017-06-12T15:44:51.883008-04:00" Language="en" Thread="OCM 554" User="Biblical Culture Notes_en" VerseRef="">
+    <Comment Date="2017-06-12T15:48:00.1120012-04:00" Language="en" Thread="OCM 527" User="Biblical Culture Notes_en" VerseRef="RUT 3:14-18">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 3:14-18</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1140013-04:00" Language="en" Thread="OCM 554" User="Biblical Culture Notes_en" VerseRef="RUT 2:17-23">
         <StartPosition>0</StartPosition>
         <Status />
         <Type />
@@ -292,19 +361,52 @@
             <p>
                 <bold>Application to biblical source</bold>
             </p>
-            <p>Boaz instructed his workers to respect Ruth and not bother her. Lower status people could be abused by higher status people, and gleaners were poor with very low status. Workers could take advantage of them, such as yelling at gleaners (or worse) if they got in the way of harvesting or took more than the leftover grain.</p>
-            <p>In communal and face-to-face societies a person’s character and reputation was publicly known. The whole village recognized Ruth as a loyal woman. They were probably wondering why the nearer *go’el* (redeemer) had not acted yet to help Naomi.</p>
-            <p>Ruth was a foreigner, but had lived with Naomi in Bethlehem for a while, so she had gained her status of a resident foreigner and had the right to be treated as an Israelite (LEV 19:34).</p>
-            <p>Having a ‘name’ or being ‘renowned in Israel’ meant people had a lot of honor. They were important people who others looked up to. Men tried to make a name for themselves through being good soldiers (see note in RUT 2:1-7). ‘Men of renown’ refers to warriors who fought in the war with the original inhabitants.</p>
-            <p>Boaz asks his workers about Ruth. He had probably never met her since he had high status and she had low status. But he had heard about her without recognizing her. He praised her loyalty to Naomi, which he probably had heard about from other people in Bethlehem.</p>
-            <p>Boaz is called a ‘man of reputation, of noble character’. This word often refers to a military man, brave and physically strong (JUD 6:12). In the time of the judges Israel was still fighting against the people who had lived in the land before them. Israelites valued brave warriors who could fight well.
- Boaz shows his character by treating his workers well, providing shelter and food for them during the harvest. The sun could be very hot during the day in spring in that part of the world.</p>
-            <p>The ‘servant’ means someone of lesser status and probably was a younger family member. The whole family worked together and younger members would call themselves servants of the older family members (GEN 33:5; DEU 24:14) as a way to show respect to the elders.</p>
-            <p>Boaz warns Ruth to stay in his field and not go to other fields to glean. He instructed his workers to respect her and not bother her. Lower status people could be abused by higher status people, and gleaners were poor, of very low status. Workers could take advantage of them, such as yelling at gleaners if they got in the way of harvesting or took more than the left over grain (RUT 2:15-16).
- By using the term ‘my daughter’, Boaz shows respect to Ruth. Inviting her to eat with his people raised her status and protected her.</p>
-            <p>In Israelite society everyone was identified by their relationships to their family. Foreigners had no family among the people of Israel and so had low status. Some Israelites thought they could take advantage of foreigners because they had no family to speak up for them or protect them</p>
-            <p>High status people had more wealth and power, and could take advantage of people with lower status. Low status people would abase themselves to higher status people, bowing and calling themselves servants, showing they recognized the power high status people had over them.</p>
-            <p>Ruth bows to Boaz and reminds him she is a foreigner, someone of low status without family to protect her. He responds by praising her for her loyalty to Naomi, and so placing her in a family, and for seeking refuge in YHWH the Hebrew God instead of the god of Moab, Chemosh.</p>
+            <p class="scrtext">
+                <span class="verseref">RUT 2:17-23</span>
+                <span class="commentary">Boaz instructed his workers to respect Ruth and not bother her. Lower status people could be abused by higher status people, and gleaners were poor with very low status. Workers could take advantage of them, such as yelling at gleaners (or worse) if they got in the way of harvesting or took more than the leftover grain.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 3:6-13</span>
+                <span class="commentary">In communal and face-to-face societies a person’s character and reputation was publicly known. The whole village recognized Ruth as a loyal woman. They were probably wondering why the nearer *go’el* (redeemer) had not acted yet to help Naomi.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 3:6-13</span>
+                <span class="commentary">Ruth was a foreigner, but had lived with Naomi in Bethlehem for a while, so she had gained her status of a resident foreigner and had the right to be treated as an Israelite (LEV 19:34).</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 4:18-22</span>
+                <span class="commentary">Having a ‘name’ or being ‘renowned in Israel’ meant people had a lot of honor. They were important people who others looked up to. Men tried to make a name for themselves through being good soldiers (see note in RUT 2:1-7). ‘Men of renown’ refers to warriors who fought in the war with the original inhabitants.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 2:1-7</span>
+                <span class="commentary">Boaz asks his workers about Ruth. He had probably never met her since he had high status and she had low status. But he had heard about her without recognizing her. He praised her loyalty to Naomi, which he probably had heard about from other people in Bethlehem.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 2:1-7</span>
+                <span class="commentary">Boaz is called a ‘man of reputation, of noble character’. This word often refers to a military man, brave and physically strong (JUD 6:12). In the time of the judges Israel was still fighting against the people who had lived in the land before them. Israelites valued brave warriors who could fight well.
+ Boaz shows his character by treating his workers well, providing shelter and food for them during the harvest. The sun could be very hot during the day in spring in that part of the world.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 2:1-7</span>
+                <span class="commentary">The ‘servant’ means someone of lesser status and probably was a younger family member. The whole family worked together and younger members would call themselves servants of the older family members (GEN 33:5; DEU 24:14) as a way to show respect to the elders.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 2:8-13</span>
+                <span class="commentary">Boaz warns Ruth to stay in his field and not go to other fields to glean. He instructed his workers to respect her and not bother her. Lower status people could be abused by higher status people, and gleaners were poor, of very low status. Workers could take advantage of them, such as yelling at gleaners if they got in the way of harvesting or took more than the left over grain (RUT 2:15-16).
+ By using the term ‘my daughter’, Boaz shows respect to Ruth. Inviting her to eat with his people raised her status and protected her.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 2:8-13</span>
+                <span class="commentary">In Israelite society everyone was identified by their relationships to their family. Foreigners had no family among the people of Israel and so had low status. Some Israelites thought they could take advantage of foreigners because they had no family to speak up for them or protect them</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 2:8-13</span>
+                <span class="commentary">High status people had more wealth and power, and could take advantage of people with lower status. Low status people would abase themselves to higher status people, bowing and calling themselves servants, showing they recognized the power high status people had over them.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 2:8-13</span>
+                <span class="commentary">Ruth bows to Boaz and reminds him she is a foreigner, someone of low status without family to protect her. He responds by praising her for her loyalty to Naomi, and so placing her in a family, and for seeking refuge in YHWH the Hebrew God instead of the god of Moab, Chemosh.</span>
+            </p>
             <p />
             <p>
                 <bold>Research suggesions</bold>
@@ -318,7 +420,67 @@
             </ul>
         </Contents>
     </Comment>
-    <Comment Date="2017-06-12T15:44:51.884009-04:00" Language="en" Thread="OCM 571" User="Biblical Culture Notes_en" VerseRef="">
+    <Comment Date="2017-06-12T15:48:00.1140014-04:00" Language="en" Thread="OCM 554" User="Biblical Culture Notes_en" VerseRef="RUT 2:17-23">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 3:6-13</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1140015-04:00" Language="en" Thread="OCM 554" User="Biblical Culture Notes_en" VerseRef="RUT 2:17-23">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 3:6-13</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1140016-04:00" Language="en" Thread="OCM 554" User="Biblical Culture Notes_en" VerseRef="RUT 2:17-23">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 4:18-22</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1140017-04:00" Language="en" Thread="OCM 554" User="Biblical Culture Notes_en" VerseRef="RUT 2:17-23">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 2:1-7</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1140018-04:00" Language="en" Thread="OCM 554" User="Biblical Culture Notes_en" VerseRef="RUT 2:17-23">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 2:1-7</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1140019-04:00" Language="en" Thread="OCM 554" User="Biblical Culture Notes_en" VerseRef="RUT 2:17-23">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 2:1-7</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1160020-04:00" Language="en" Thread="OCM 554" User="Biblical Culture Notes_en" VerseRef="RUT 2:17-23">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 2:8-13</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1160021-04:00" Language="en" Thread="OCM 554" User="Biblical Culture Notes_en" VerseRef="RUT 2:17-23">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 2:8-13</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1160022-04:00" Language="en" Thread="OCM 554" User="Biblical Culture Notes_en" VerseRef="RUT 2:17-23">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 2:8-13</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1160023-04:00" Language="en" Thread="OCM 554" User="Biblical Culture Notes_en" VerseRef="RUT 2:17-23">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 2:8-13</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1160024-04:00" Language="en" Thread="OCM 571" User="Biblical Culture Notes_en" VerseRef="RUT 2:14-16">
         <StartPosition>0</StartPosition>
         <Status />
         <Type />
@@ -335,11 +497,23 @@
             <p>
                 <bold>Application to biblical source</bold>
             </p>
-            <p>The Hebrew law instructed harvesters to leave some of the grain, grapes and olives for the poor people. At harvest time the edges of the fields were not to be cut, and some grapes and olives were to be left on the vines and trees (LEV 19:9, 10). What was left in the fields was for the poor and those who had no one to take care of them: the foreigner, the fatherless and the widow. It was a means of social solidarity and sharing with the whole group God’s blessings of food to his people (DEU 24:19-20).</p>
-            <p>The term often translated in English as ‘kindness’ is the work for loyalty, *hesed*. This is the loyalty God extends to his people and expects from them in return (EXO 15:13; DEU 5:8-10). The same term is used when people are loyal to each other (GEN 21:23).
- Ruth is being loyal to her dead husband and his family, to Naomi, by not going after young men and marrying outside Elimelech’s family line.</p>
-            <p>In a face-to-face society people know all about what everyone does. Boaz keeps Ruth with him until dawn to insure she is not seen. At dawn other people would be out of their homes starting their business of the day, and her being out in public on the path from the threshing floor to Bethlehem would not be unusual.</p>
-            <p>People would talk if they knew she had spent the night beside him. People would assume that they had sex together. This would dishonor both of them, and could jeopardize the legal transaction of next day. Boaz wants to maintain his reputation as well as Ruth’s.</p>
+            <p class="scrtext">
+                <span class="verseref">RUT 2:14-16</span>
+                <span class="commentary">The Hebrew law instructed harvesters to leave some of the grain, grapes and olives for the poor people. At harvest time the edges of the fields were not to be cut, and some grapes and olives were to be left on the vines and trees (LEV 19:9, 10). What was left in the fields was for the poor and those who had no one to take care of them: the foreigner, the fatherless and the widow. It was a means of social solidarity and sharing with the whole group God’s blessings of food to his people (DEU 24:19-20).</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 3:6-13</span>
+                <span class="commentary">The term often translated in English as ‘kindness’ is the work for loyalty, *hesed*. This is the loyalty God extends to his people and expects from them in return (EXO 15:13; DEU 5:8-10). The same term is used when people are loyal to each other (GEN 21:23).
+ Ruth is being loyal to her dead husband and his family, to Naomi, by not going after young men and marrying outside Elimelech’s family line.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 3:14-18</span>
+                <span class="commentary">In a face-to-face society people know all about what everyone does. Boaz keeps Ruth with him until dawn to insure she is not seen. At dawn other people would be out of their homes starting their business of the day, and her being out in public on the path from the threshing floor to Bethlehem would not be unusual.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 3:14-18</span>
+                <span class="commentary">People would talk if they knew she had spent the night beside him. People would assume that they had sex together. This would dishonor both of them, and could jeopardize the legal transaction of next day. Boaz wants to maintain his reputation as well as Ruth’s.</span>
+            </p>
             <p />
             <p>
                 <bold>Research suggesions</bold>
@@ -352,7 +526,25 @@
             </ul>
         </Contents>
     </Comment>
-    <Comment Date="2017-06-12T15:44:51.8840010-04:00" Language="en" Thread="OCM 574" User="Biblical Culture Notes_en" VerseRef="">
+    <Comment Date="2017-06-12T15:48:00.1160025-04:00" Language="en" Thread="OCM 571" User="Biblical Culture Notes_en" VerseRef="RUT 2:14-16">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 3:6-13</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1160026-04:00" Language="en" Thread="OCM 571" User="Biblical Culture Notes_en" VerseRef="RUT 2:14-16">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 3:14-18</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1160027-04:00" Language="en" Thread="OCM 571" User="Biblical Culture Notes_en" VerseRef="RUT 2:14-16">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 3:14-18</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1170028-04:00" Language="en" Thread="OCM 574" User="Biblical Culture Notes_en" VerseRef="RUT 2:14-16">
         <StartPosition>0</StartPosition>
         <Status />
         <Type />
@@ -374,7 +566,10 @@
             <p>
                 <bold>Application to biblical source</bold>
             </p>
-            <p>Boaz goes beyond kindness, inviting Ruth to eat and making sure she gets enough. He treats her like a family member, showing real hospitality by taking care of her.</p>
+            <p class="scrtext">
+                <span class="verseref">RUT 2:14-16</span>
+                <span class="commentary">Boaz goes beyond kindness, inviting Ruth to eat and making sure she gets enough. He treats her like a family member, showing real hospitality by taking care of her.</span>
+            </p>
             <p />
             <p>
                 <bold>Research suggesions</bold>
@@ -397,7 +592,7 @@
             </ul>
         </Contents>
     </Comment>
-    <Comment Date="2017-06-12T15:44:51.8850011-04:00" Language="en" Thread="OCM 582" User="Biblical Culture Notes_en" VerseRef="">
+    <Comment Date="2017-06-12T15:48:00.1180029-04:00" Language="en" Thread="OCM 582" User="Biblical Culture Notes_en" VerseRef="RUT 1:1-5">
         <StartPosition>0</StartPosition>
         <Status />
         <Type />
@@ -413,7 +608,10 @@
             <p>
                 <bold>Application to biblical source</bold>
             </p>
-            <p>It was unusual for Naomi’s sons to marry Moabite women who were outside the family. Men married women in their tribes to keep the land property in the family. They didn’t like to marry women from other Israelite tribes, much less foreign women (NUM 36). Another purpose for marrying inside the tribe was to maintain loyalty to the God of Israel, YHWH. Husbands and wives from other groups trapped the Israelites into worshipping other gods (JOS 23:12-13).</p>
+            <p class="scrtext">
+                <span class="verseref">RUT 1:1-5</span>
+                <span class="commentary">It was unusual for Naomi’s sons to marry Moabite women who were outside the family. Men married women in their tribes to keep the land property in the family. They didn’t like to marry women from other Israelite tribes, much less foreign women (NUM 36). Another purpose for marrying inside the tribe was to maintain loyalty to the God of Israel, YHWH. Husbands and wives from other groups trapped the Israelites into worshipping other gods (JOS 23:12-13).</span>
+            </p>
             <p />
             <p>
                 <bold>Research suggesions</bold>
@@ -429,7 +627,7 @@
             </ul>
         </Contents>
     </Comment>
-    <Comment Date="2017-06-12T15:44:51.8860012-04:00" Language="en" Thread="OCM 584" User="Biblical Culture Notes_en" VerseRef="">
+    <Comment Date="2017-06-12T15:48:00.1190030-04:00" Language="en" Thread="OCM 584" User="Biblical Culture Notes_en" VerseRef="RUT 3:6-13">
         <StartPosition>0</StartPosition>
         <Status />
         <Type />
@@ -445,8 +643,14 @@
             <p>
                 <bold>Application to biblical source</bold>
             </p>
-            <p>Going to Boaz dressed in festive clothing and sitting beside him in the dark may seem like Ruth is acting like a prostitute or proposing marriage to Boaz. The word ‘feet’ is one euphemism for male sexual organs, but is also used literally to refer to a person’s feet (ISA 7:20; GEN 24:32). Here the reference is ambiguous.</p>
-            <p>In Israel when a woman got married, her family was given a brideprice, a payment of goods or money. The grain Boaz gives Ruth is like a brideprice a promise to her that he will marry her if he can. In many societies, the brideprice helps insure that the bride stayed with her husband because the brideprice would have to be returned if she left him. It is a way of compensating the bride’s family or loss of her labor and help in the family.</p>
+            <p class="scrtext">
+                <span class="verseref">RUT 3:6-13</span>
+                <span class="commentary">Going to Boaz dressed in festive clothing and sitting beside him in the dark may seem like Ruth is acting like a prostitute or proposing marriage to Boaz. The word ‘feet’ is one euphemism for male sexual organs, but is also used literally to refer to a person’s feet (ISA 7:20; GEN 24:32). Here the reference is ambiguous.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 3:14-18</span>
+                <span class="commentary">In Israel when a woman got married, her family was given a brideprice, a payment of goods or money. The grain Boaz gives Ruth is like a brideprice a promise to her that he will marry her if he can. In many societies, the brideprice helps insure that the bride stayed with her husband because the brideprice would have to be returned if she left him. It is a way of compensating the bride’s family or loss of her labor and help in the family.</span>
+            </p>
             <p />
             <p>
                 <bold>Research suggesions</bold>
@@ -454,7 +658,13 @@
             <p>Research how decisions about marriage are made. Sometimes only a few people are involved, other times a lot may be involved.</p>
         </Contents>
     </Comment>
-    <Comment Date="2017-06-12T15:44:51.8860013-04:00" Language="en" Thread="OCM 582" User="Biblical Culture Notes_en" VerseRef="">
+    <Comment Date="2017-06-12T15:48:00.1190031-04:00" Language="en" Thread="OCM 584" User="Biblical Culture Notes_en" VerseRef="RUT 3:6-13">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 3:14-18</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1190032-04:00" Language="en" Thread="OCM 582" User="Biblical Culture Notes_en" VerseRef="">
         <StartPosition>0</StartPosition>
         <Status />
         <Type />
@@ -469,7 +679,7 @@
             </ul>
         </Contents>
     </Comment>
-    <Comment Date="2017-06-12T15:44:51.8860014-04:00" Language="en" Thread="OCM 584" User="Biblical Culture Notes_en" VerseRef="">
+    <Comment Date="2017-06-12T15:48:00.1190033-04:00" Language="en" Thread="OCM 584" User="Biblical Culture Notes_en" VerseRef="">
         <StartPosition>0</StartPosition>
         <Status />
         <Type />
@@ -479,7 +689,7 @@
             </p>
         </Contents>
     </Comment>
-    <Comment Date="2017-06-12T15:44:51.8860015-04:00" Language="en" Thread="OCM 585" User="Biblical Culture Notes_en" VerseRef="">
+    <Comment Date="2017-06-12T15:48:00.1190034-04:00" Language="en" Thread="OCM 585" User="Biblical Culture Notes_en" VerseRef="RUT 3:6-13">
         <StartPosition>0</StartPosition>
         <Status />
         <Type />
@@ -495,10 +705,16 @@
             <p>
                 <bold>Application to biblical source</bold>
             </p>
-            <p>The cloak of a man was put on the bride during the marriage ceremony (EZK 16:8) expressing his intention to take care of her. The action is symbolic of the husband providing protection to his wife. This is the kind of protection Israel expect
+            <p class="scrtext">
+                <span class="verseref">RUT 3:6-13</span>
+                <span class="commentary">The cloak of a man was put on the bride during the marriage ceremony (EZK 16:8) expressing his intention to take care of her. The action is symbolic of the husband providing protection to his wife. This is the kind of protection Israel expect
  ed from God when he put his wings over them (see notes from RUT 2:11).
- Ruth asks Boaz to put his cloak over her, asking him to marry her, to do the action of a man to his bride.</p>
-            <p>The community blessed those who got married because it meant the whole community benefitted. Israelite blessings at weddings asked God for many children for the family (GEN 24:60). In this way, the husband’s name and honor would continue through his sons. The woman would be cared for all her life if she had sons.</p>
+ Ruth asks Boaz to put his cloak over her, asking him to marry her, to do the action of a man to his bride.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 4:7-12</span>
+                <span class="commentary">The community blessed those who got married because it meant the whole community benefitted. Israelite blessings at weddings asked God for many children for the family (GEN 24:60). In this way, the husband’s name and honor would continue through his sons. The woman would be cared for all her life if she had sons.</span>
+            </p>
             <p />
             <p>
                 <bold>Research suggesions</bold>
@@ -512,7 +728,13 @@
             </ul>
         </Contents>
     </Comment>
-    <Comment Date="2017-06-12T15:44:51.8860016-04:00" Language="en" Thread="OCM 593" User="Biblical Culture Notes_en" VerseRef="">
+    <Comment Date="2017-06-12T15:48:00.1200035-04:00" Language="en" Thread="OCM 585" User="Biblical Culture Notes_en" VerseRef="RUT 3:6-13">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 4:7-12</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1200036-04:00" Language="en" Thread="OCM 593" User="Biblical Culture Notes_en" VerseRef="RUT 1:1-5">
         <StartPosition>0</StartPosition>
         <Status />
         <Type />
@@ -534,16 +756,46 @@
             <p>
                 <bold>Application to biblical source</bold>
             </p>
-            <p>The God of Israel was concerned for widows and orphans (EXO 22:22; DEU 10:18). The land belonged to men so women were dependent on men to survive. Before marriage, a woman depended on her father or brothers. After marriage her husband was responsible for her. If he died, she depended on her sons. If she had no sons she had no one to take care of her. So Naomi was really destitute with no husband and no sons.</p>
-            <p>Women depended on men to provide for them, either a father or a husband or a son. When Naomi left Moab, her daughters-in-law didn’t have to go with her, but they had no one else to take care of them. They had married into Naomi’s family, so her family was responsible for them. They became loyal to the husband’s family rather than their fathers’ families. Naomi wants to give them the opportunity to have sons in another marriage so tells them to go back to their mothers to get another husband.</p>
-            <p>Ruth is being loyal to both the living (Naomi) and to the dead (her dead husband). Instead of having children for another husband, she goes to Bethlehem with Naomi to take care of her in her old age since Naomi has no one else, neither husband nor son.</p>
-            <p>When a man died without having any sons, his name and importance and honor would die with him. To make sure each man’s name continued, Israel had a system of levirate marriage. One of the man’s brothers would marry his widow and her first son would be considered the son of the dead first husband and carry on the name of the dead man. Other children the widow had with in the second marriage would belong to the second husband (DEU 25:5-10).</p>
-            <p>Naomi says to her son’s widows that she is too old to have other sons who will marry them. So there is no way they can have sons to carry on the name of their dead husbands.</p>
-            <p>When Naomi returned to Bethlehem, her family did not take care of her so Ruth had to go glean in the fields to get food as other poor people did. She was looking for a patron who would help Naomi and her. She ended up in Boaz’ field by chance.</p>
-            <p>Loyalty to the family was highly valued in Hebrew society. Younger family members respected and obeyed the older men, women respected and obeyed the men. Boaz praises Ruth for being loyal to both the living and dead, to both Naomi (by coming with her to Bethlehem) and to her husband’s family (by not getting another husband).</p>
-            <p>The ‘kinsman redeemer’ (*go’el*) is a family member who serves other family members in need. In cases of the murder of a man, the *go’el* as ‘redeemer of blood’ is responsible to find the killer and take revenge. If money is paid to the family of the dead man, the head of a clan acts as *go’el* and receives the blood money from the killer’s family, or other restitution for a wrong done to a family member. (NUM 5.8, 35:19-21)</p>
-            <p>Other kinds of help of a *go’el* include gaining justice in court and financial help to destitute family members. When a family member has to sell his land, the *go’el* buys it back, or redeems it as a means of keeping the land in the family. (Lev 25:25)</p>
-            <p>More than one family member could be the *go’el* for another family member. God claims that He himself is a *go’el* for orphans who takes up their cause to keep their land when it is taken away by other family members ( PRO 23:10-11).</p>
+            <p class="scrtext">
+                <span class="verseref">RUT 1:1-5</span>
+                <span class="commentary">The God of Israel was concerned for widows and orphans (EXO 22:22; DEU 10:18). The land belonged to men so women were dependent on men to survive. Before marriage, a woman depended on her father or brothers. After marriage her husband was responsible for her. If he died, she depended on her sons. If she had no sons she had no one to take care of her. So Naomi was really destitute with no husband and no sons.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 1:6-10</span>
+                <span class="commentary">Women depended on men to provide for them, either a father or a husband or a son. When Naomi left Moab, her daughters-in-law didn’t have to go with her, but they had no one else to take care of them. They had married into Naomi’s family, so her family was responsible for them. They became loyal to the husband’s family rather than their fathers’ families. Naomi wants to give them the opportunity to have sons in another marriage so tells them to go back to their mothers to get another husband.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 1:6-10</span>
+                <span class="commentary">Ruth is being loyal to both the living (Naomi) and to the dead (her dead husband). Instead of having children for another husband, she goes to Bethlehem with Naomi to take care of her in her old age since Naomi has no one else, neither husband nor son.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 1:11-14</span>
+                <span class="commentary">When a man died without having any sons, his name and importance and honor would die with him. To make sure each man’s name continued, Israel had a system of levirate marriage. One of the man’s brothers would marry his widow and her first son would be considered the son of the dead first husband and carry on the name of the dead man. Other children the widow had with in the second marriage would belong to the second husband (DEU 25:5-10).</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 1:11-14</span>
+                <span class="commentary">Naomi says to her son’s widows that she is too old to have other sons who will marry them. So there is no way they can have sons to carry on the name of their dead husbands.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 2:1-7</span>
+                <span class="commentary">When Naomi returned to Bethlehem, her family did not take care of her so Ruth had to go glean in the fields to get food as other poor people did. She was looking for a patron who would help Naomi and her. She ended up in Boaz’ field by chance.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 2:17-23</span>
+                <span class="commentary">Loyalty to the family was highly valued in Hebrew society. Younger family members respected and obeyed the older men, women respected and obeyed the men. Boaz praises Ruth for being loyal to both the living and dead, to both Naomi (by coming with her to Bethlehem) and to her husband’s family (by not getting another husband).</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 3:1-5</span>
+                <span class="commentary">The ‘kinsman redeemer’ (*go’el*) is a family member who serves other family members in need. In cases of the murder of a man, the *go’el* as ‘redeemer of blood’ is responsible to find the killer and take revenge. If money is paid to the family of the dead man, the head of a clan acts as *go’el* and receives the blood money from the killer’s family, or other restitution for a wrong done to a family member. (NUM 5.8, 35:19-21)</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 3:1-5</span>
+                <span class="commentary">Other kinds of help of a *go’el* include gaining justice in court and financial help to destitute family members. When a family member has to sell his land, the *go’el* buys it back, or redeems it as a means of keeping the land in the family. (Lev 25:25)</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 3:1-5</span>
+                <span class="commentary">More than one family member could be the *go’el* for another family member. God claims that He himself is a *go’el* for orphans who takes up their cause to keep their land when it is taken away by other family members ( PRO 23:10-11).</span>
+            </p>
             <p />
             <p>
                 <bold>Research suggesions</bold>
@@ -572,7 +824,61 @@
             </ul>
         </Contents>
     </Comment>
-    <Comment Date="2017-06-12T15:44:51.8870017-04:00" Language="en" Thread="OCM 602" User="Biblical Culture Notes_en" VerseRef="">
+    <Comment Date="2017-06-12T15:48:00.1210037-04:00" Language="en" Thread="OCM 593" User="Biblical Culture Notes_en" VerseRef="RUT 1:1-5">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 1:6-10</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1210038-04:00" Language="en" Thread="OCM 593" User="Biblical Culture Notes_en" VerseRef="RUT 1:1-5">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 1:6-10</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1210039-04:00" Language="en" Thread="OCM 593" User="Biblical Culture Notes_en" VerseRef="RUT 1:1-5">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 1:11-14</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1210040-04:00" Language="en" Thread="OCM 593" User="Biblical Culture Notes_en" VerseRef="RUT 1:1-5">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 1:11-14</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1210041-04:00" Language="en" Thread="OCM 593" User="Biblical Culture Notes_en" VerseRef="RUT 1:1-5">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 2:1-7</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1210042-04:00" Language="en" Thread="OCM 593" User="Biblical Culture Notes_en" VerseRef="RUT 1:1-5">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 2:17-23</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1210043-04:00" Language="en" Thread="OCM 593" User="Biblical Culture Notes_en" VerseRef="RUT 1:1-5">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 3:1-5</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1210044-04:00" Language="en" Thread="OCM 593" User="Biblical Culture Notes_en" VerseRef="RUT 1:1-5">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 3:1-5</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1210045-04:00" Language="en" Thread="OCM 593" User="Biblical Culture Notes_en" VerseRef="RUT 1:1-5">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 3:1-5</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1220046-04:00" Language="en" Thread="OCM 602" User="Biblical Culture Notes_en" VerseRef="RUT 3:14-18">
         <StartPosition>0</StartPosition>
         <Status />
         <Type />
@@ -589,13 +895,34 @@
             <p>
                 <bold>Application to biblical source</bold>
             </p>
-            <p>In many societies, it is common for women to refer to their husbands and the men in their family with pronouns or other phrases, and never say their names. Naomi and Ruth do this with Boaz. They never refer to him by his name, only as ‘he’.</p>
-            <p>Redeeming land (LEV 25:25-28) and levirate marriage (DEU25:5-10) were related responsibilities within a family. Boaz talked about the land redemption first to the other *go’el*. After that he talked about the levirate marriage to Ruth.</p>
-            <p>The term ‘brother’ often refers to any two men who share the same male ancestors. Boaz probably was willing to marry Ruth because he was a good man and wanted to provide for Naomi and Ruth.</p>
-            <p>Another possibility is that the closer *go’el* was waiting for Naomi to die so he could get the land without taking Ruth as a wife. Boaz challenges this attitude, showing his good character by being willing to care for the widow and the foreigner as instructed in DEU 24:17.</p>
-            <p>Ruth’s son becomes Naomi’s (grand)son due to levirate marriage. The son carries the name of his mother’s dead husband. Naomi was still alive with no sons, so he became her ‘son’ as her son’s son. The boy was expected to take care of Naomi when he grew older.</p>
-            <p>The women of Bethlehem congratulated Naomi who now had a *go’el*, her grandson. She now had a male to take care of her, and to provide descendants for her husband.</p>
-            <p>Naomi became her grandson’s nurse and caregiver. This boy was from her husband’s line so she could claim him. Bringing him up also created ties of affection so he would want to take care of her. Eusebius (writing in the 3rd century AD) claimed that the child born of a levirate marriage could choose which people to include in his genealogy, that of his mother’s first husband or that of his biological father.</p>
+            <p class="scrtext">
+                <span class="verseref">RUT 3:14-18</span>
+                <span class="commentary">In many societies, it is common for women to refer to their husbands and the men in their family with pronouns or other phrases, and never say their names. Naomi and Ruth do this with Boaz. They never refer to him by his name, only as ‘he’.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 4:1-6</span>
+                <span class="commentary">Redeeming land (LEV 25:25-28) and levirate marriage (DEU25:5-10) were related responsibilities within a family. Boaz talked about the land redemption first to the other *go’el*. After that he talked about the levirate marriage to Ruth.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 4:1-6</span>
+                <span class="commentary">The term ‘brother’ often refers to any two men who share the same male ancestors. Boaz probably was willing to marry Ruth because he was a good man and wanted to provide for Naomi and Ruth.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 4:1-6</span>
+                <span class="commentary">Another possibility is that the closer *go’el* was waiting for Naomi to die so he could get the land without taking Ruth as a wife. Boaz challenges this attitude, showing his good character by being willing to care for the widow and the foreigner as instructed in DEU 24:17.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 4:13-17</span>
+                <span class="commentary">Ruth’s son becomes Naomi’s (grand)son due to levirate marriage. The son carries the name of his mother’s dead husband. Naomi was still alive with no sons, so he became her ‘son’ as her son’s son. The boy was expected to take care of Naomi when he grew older.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 4:13-17</span>
+                <span class="commentary">The women of Bethlehem congratulated Naomi who now had a *go’el*, her grandson. She now had a male to take care of her, and to provide descendants for her husband.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 4:13-17</span>
+                <span class="commentary">Naomi became her grandson’s nurse and caregiver. This boy was from her husband’s line so she could claim him. Bringing him up also created ties of affection so he would want to take care of her. Eusebius (writing in the 3rd century AD) claimed that the child born of a levirate marriage could choose which people to include in his genealogy, that of his mother’s first husband or that of his biological father.</span>
+            </p>
             <p />
             <p>
                 <bold>Research suggesions</bold>
@@ -610,7 +937,43 @@
             </ul>
         </Contents>
     </Comment>
-    <Comment Date="2017-06-12T15:44:51.8880018-04:00" Language="en" Thread="OCM 610" User="Biblical Culture Notes_en" VerseRef="">
+    <Comment Date="2017-06-12T15:48:00.1220047-04:00" Language="en" Thread="OCM 602" User="Biblical Culture Notes_en" VerseRef="RUT 3:14-18">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 4:1-6</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1220048-04:00" Language="en" Thread="OCM 602" User="Biblical Culture Notes_en" VerseRef="RUT 3:14-18">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 4:1-6</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1220049-04:00" Language="en" Thread="OCM 602" User="Biblical Culture Notes_en" VerseRef="RUT 3:14-18">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 4:1-6</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1220050-04:00" Language="en" Thread="OCM 602" User="Biblical Culture Notes_en" VerseRef="RUT 3:14-18">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 4:13-17</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1220051-04:00" Language="en" Thread="OCM 602" User="Biblical Culture Notes_en" VerseRef="RUT 3:14-18">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 4:13-17</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1220052-04:00" Language="en" Thread="OCM 602" User="Biblical Culture Notes_en" VerseRef="RUT 3:14-18">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 4:13-17</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1240053-04:00" Language="en" Thread="OCM 610" User="Biblical Culture Notes_en" VerseRef="RUT 1:1-5">
         <StartPosition>0</StartPosition>
         <Status />
         <Type />
@@ -626,8 +989,14 @@
             <p>
                 <bold>Application to biblical source</bold>
             </p>
-            <p>The Israelites were divided into tribes, each with its own territory and elders. Within each tribe were clans of people who were related to each other, who were part of the same family.</p>
-            <p>Ephrathites could be one of the clans of Judah who lived in the territory around Bethlehem, or it could be the territory of the tribe that lived there. (GEN 35:16, GEN4 8:7)</p>
+            <p class="scrtext">
+                <span class="verseref">RUT 1:1-5</span>
+                <span class="commentary">The Israelites were divided into tribes, each with its own territory and elders. Within each tribe were clans of people who were related to each other, who were part of the same family.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 1:1-5</span>
+                <span class="commentary">Ephrathites could be one of the clans of Judah who lived in the territory around Bethlehem, or it could be the territory of the tribe that lived there. (GEN 35:16, GEN4 8:7)</span>
+            </p>
             <p />
             <p>
                 <bold>Research suggesions</bold>
@@ -639,7 +1008,13 @@
             </ul>
         </Contents>
     </Comment>
-    <Comment Date="2017-06-12T15:44:51.8880019-04:00" Language="en" Thread="OCM 611" User="Biblical Culture Notes_en" VerseRef="">
+    <Comment Date="2017-06-12T15:48:00.1240054-04:00" Language="en" Thread="OCM 610" User="Biblical Culture Notes_en" VerseRef="RUT 1:1-5">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 1:1-5</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1240055-04:00" Language="en" Thread="OCM 611" User="Biblical Culture Notes_en" VerseRef="RUT 2:1-7">
         <StartPosition>0</StartPosition>
         <Status />
         <Type />
@@ -655,9 +1030,18 @@
             <p>
                 <bold>Application to biblical source</bold>
             </p>
-            <p>The Hebrews had a patrilineal family structure where descent was traced through the male line. Men who shared a father, grandfather, or male ancestor were part of the same family. They shared responsibilities to take care of each other and their wives and children. The more recent the shared male ancestor, the closer the family tie and the greater the responsibility to take of a family member.</p>
-            <p>The Hebrew word for kinsman means “one who is known”. The society was small and people knew each other, especially they knew family members. They knew about the close family members; what they were up to and how they were doing.</p>
-            <p>It is interesting that Elimelech is not included in this genealogy of David. Boaz is included. Boaz is the biological father but Eusebius (see note for RUT 4:13-17) says the son of a levirate marriage could choose who to include in his genealogy. It appears that Boaz is a more important ancestor than Elimelech.</p>
+            <p class="scrtext">
+                <span class="verseref">RUT 2:1-7</span>
+                <span class="commentary">The Hebrews had a patrilineal family structure where descent was traced through the male line. Men who shared a father, grandfather, or male ancestor were part of the same family. They shared responsibilities to take care of each other and their wives and children. The more recent the shared male ancestor, the closer the family tie and the greater the responsibility to take of a family member.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 2:1-7</span>
+                <span class="commentary">The Hebrew word for kinsman means “one who is known”. The society was small and people knew each other, especially they knew family members. They knew about the close family members; what they were up to and how they were doing.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 4:18-22</span>
+                <span class="commentary">It is interesting that Elimelech is not included in this genealogy of David. Boaz is included. Boaz is the biological father but Eusebius (see note for RUT 4:13-17) says the son of a levirate marriage could choose who to include in his genealogy. It appears that Boaz is a more important ancestor than Elimelech.</span>
+            </p>
             <p />
             <p>
                 <bold>Research suggesions</bold>
@@ -671,7 +1055,19 @@
             </ul>
         </Contents>
     </Comment>
-    <Comment Date="2017-06-12T15:44:51.8890020-04:00" Language="en" Thread="OCM 627" User="Biblical Culture Notes_en" VerseRef="">
+    <Comment Date="2017-06-12T15:48:00.1240056-04:00" Language="en" Thread="OCM 611" User="Biblical Culture Notes_en" VerseRef="RUT 2:1-7">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 2:1-7</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1240057-04:00" Language="en" Thread="OCM 611" User="Biblical Culture Notes_en" VerseRef="RUT 2:1-7">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 4:18-22</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1240058-04:00" Language="en" Thread="OCM 627" User="Biblical Culture Notes_en" VerseRef="RUT 4:7-12">
         <StartPosition>0</StartPosition>
         <Status />
         <Type />
@@ -687,8 +1083,14 @@
             <p>
                 <bold>Application to biblical source</bold>
             </p>
-            <p>The agreement of who would take care of Naomi was made between the two men. The sandal was given to show the agreement was finished. This was a public act that everyone could see and remember. The ten elders and all the other people were witnesses to the agreement. People watched because it was an interesting event. The witnesses all agreed it was the right thing to do, that Boaz was acting rightly. This could imply the other *go’el* was shamed for not doing the right thing of taking Ruth as a wife.</p>
-            <p>In Israelite law, when a man refused to take his dead brothers wife in levirate marriage the widow could shame him by taking his sandal off and in front of the elders and spitting in his face, and condemning him (DEU 25:9).</p>
+            <p class="scrtext">
+                <span class="verseref">RUT 4:7-12</span>
+                <span class="commentary">The agreement of who would take care of Naomi was made between the two men. The sandal was given to show the agreement was finished. This was a public act that everyone could see and remember. The ten elders and all the other people were witnesses to the agreement. People watched because it was an interesting event. The witnesses all agreed it was the right thing to do, that Boaz was acting rightly. This could imply the other *go’el* was shamed for not doing the right thing of taking Ruth as a wife.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 4:7-12</span>
+                <span class="commentary">In Israelite law, when a man refused to take his dead brothers wife in levirate marriage the widow could shame him by taking his sandal off and in front of the elders and spitting in his face, and condemning him (DEU 25:9).</span>
+            </p>
             <p />
             <p>
                 <bold>Research suggesions</bold>
@@ -701,7 +1103,13 @@
             </ul>
         </Contents>
     </Comment>
-    <Comment Date="2017-06-12T15:44:51.8890021-04:00" Language="en" Thread="OCM 629" User="Biblical Culture Notes_en" VerseRef="">
+    <Comment Date="2017-06-12T15:48:00.1250059-04:00" Language="en" Thread="OCM 627" User="Biblical Culture Notes_en" VerseRef="RUT 4:7-12">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 4:7-12</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1250060-04:00" Language="en" Thread="OCM 629" User="Biblical Culture Notes_en" VerseRef="RUT 1:1-5">
         <StartPosition>0</StartPosition>
         <Status />
         <Type />
@@ -717,7 +1125,10 @@
             <p>
                 <bold>Application to biblical source</bold>
             </p>
-            <p>Foreigners living with the Israelites didn’t have the same rights to land or access to the holy places. But God was concerned about foreigners and instructed the Israelites that foreigners should not be mistreated. (DEU 10:18-19; 27:19)</p>
+            <p class="scrtext">
+                <span class="verseref">RUT 1:1-5</span>
+                <span class="commentary">Foreigners living with the Israelites didn’t have the same rights to land or access to the holy places. But God was concerned about foreigners and instructed the Israelites that foreigners should not be mistreated. (DEU 10:18-19; 27:19)</span>
+            </p>
             <p />
             <p>
                 <bold>Research suggesions</bold>
@@ -730,7 +1141,7 @@
             </ul>
         </Contents>
     </Comment>
-    <Comment Date="2017-06-12T15:44:51.8890022-04:00" Language="en" Thread="OCM 642" User="Biblical Culture Notes_en" VerseRef="">
+    <Comment Date="2017-06-12T15:48:00.1250061-04:00" Language="en" Thread="OCM 642" User="Biblical Culture Notes_en" VerseRef="RUT 1:1-5">
         <StartPosition>0</StartPosition>
         <Status />
         <Type />
@@ -750,7 +1161,10 @@
             <p>
                 <bold>Application to biblical source</bold>
             </p>
-            <p>After arriving in Canaan from Egypt, the Israelites settled into regions according to tribes. There was no central government. Each tribe had elders that made decisions, settled disagreements, and kept order. The Israelites were still fighting neighboring people like Ammonites and Philistines. Certain men called by God would lead temporary armies when there was need for military action. These leaders were called judges. Besides being military leaders they also gave advice to the elders and made judgements in disputes between people. There were a few women judges as well. The book of Ruth calls this the time when the judges ruled. No judges governed the whole region where Israelites lived. This was before the time when Israel had kings.</p>
+            <p class="scrtext">
+                <span class="verseref">RUT 1:1-5</span>
+                <span class="commentary">After arriving in Canaan from Egypt, the Israelites settled into regions according to tribes. There was no central government. Each tribe had elders that made decisions, settled disagreements, and kept order. The Israelites were still fighting neighboring people like Ammonites and Philistines. Certain men called by God would lead temporary armies when there was need for military action. These leaders were called judges. Besides being military leaders they also gave advice to the elders and made judgements in disputes between people. There were a few women judges as well. The book of Ruth calls this the time when the judges ruled. No judges governed the whole region where Israelites lived. This was before the time when Israel had kings.</span>
+            </p>
             <p />
             <p>
                 <bold>Research suggesions</bold>
@@ -765,7 +1179,7 @@
             </ul>
         </Contents>
     </Comment>
-    <Comment Date="2017-06-12T15:44:51.8900023-04:00" Language="en" Thread="OCM 648" User="Biblical Culture Notes_en" VerseRef="">
+    <Comment Date="2017-06-12T15:48:00.1270062-04:00" Language="en" Thread="OCM 648" User="Biblical Culture Notes_en" VerseRef="RUT 1:1-5">
         <StartPosition>0</StartPosition>
         <Status />
         <Type />
@@ -782,8 +1196,14 @@
             <p>
                 <bold>Application to biblical source</bold>
             </p>
-            <p>Moab was the name of a territory next to Israel, across the Jordan River to the east. The Israelites and Moabites has similar cultures; they were farmers and sheep and goat headers. There was political tension between the two groups which traced back to when the Israelites came to Canaan from Egypt.</p>
-            <p>Israelites considered the Moabites to be descended from an incestuous relationship between Lot, the nephew of Abraham, and his own daughters. (GEN 19:30-38) Later, Moabite women married Israelite men and the men started worshiping the Moabite god, Baal of Peor, instead of the Israelite God YHWH. No Moabite was allowed to be part of Israel, to the 10th generation. (NUM 22-25, DEU 23:3,4). Moab conquered part of Israel during the time of the judges (JUD 3:12-14) so Moab was considered an enemy.</p>
+            <p class="scrtext">
+                <span class="verseref">RUT 1:1-5</span>
+                <span class="commentary">Moab was the name of a territory next to Israel, across the Jordan River to the east. The Israelites and Moabites has similar cultures; they were farmers and sheep and goat headers. There was political tension between the two groups which traced back to when the Israelites came to Canaan from Egypt.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 1:1-5</span>
+                <span class="commentary">Israelites considered the Moabites to be descended from an incestuous relationship between Lot, the nephew of Abraham, and his own daughters. (GEN 19:30-38) Later, Moabite women married Israelite men and the men started worshiping the Moabite god, Baal of Peor, instead of the Israelite God YHWH. No Moabite was allowed to be part of Israel, to the 10th generation. (NUM 22-25, DEU 23:3,4). Moab conquered part of Israel during the time of the judges (JUD 3:12-14) so Moab was considered an enemy.</span>
+            </p>
             <p />
             <p>
                 <bold>Research suggesions</bold>
@@ -796,7 +1216,13 @@
             </ul>
         </Contents>
     </Comment>
-    <Comment Date="2017-06-12T15:44:51.8900024-04:00" Language="en" Thread="OCM 675" User="Biblical Culture Notes_en" VerseRef="">
+    <Comment Date="2017-06-12T15:48:00.1270063-04:00" Language="en" Thread="OCM 648" User="Biblical Culture Notes_en" VerseRef="RUT 1:1-5">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 1:1-5</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1270064-04:00" Language="en" Thread="OCM 675" User="Biblical Culture Notes_en" VerseRef="RUT 1:15-18">
         <StartPosition>0</StartPosition>
         <Status />
         <Type />
@@ -813,8 +1239,14 @@
             <p>
                 <bold>Application to biblical source</bold>
             </p>
-            <p>Oaths were statements people made promising to do something, even calling a curse on themselves is they didn’t do what they promised. Oaths also were a way of blessing someone (1SA 25:26), or giving important information (1SA 20:21). Some people made oaths swearing by YHWH or another god or a king (GEN 42:16; 1SA 14:45). YHWH even swears by himself (NUM 14:28) when he makes promises to people or nations. This was a way to put emphasis on the promise or information being given.</p>
-            <p>Oaths often took the form of “As surely as the YHWH lives I will do such and such” (1SA 19:6) or “May YHWH do to me [a gesture could be included here to show that God would kill the person] if I don’t do such and such” (RUT 1:17).</p>
+            <p class="scrtext">
+                <span class="verseref">RUT 1:15-18</span>
+                <span class="commentary">Oaths were statements people made promising to do something, even calling a curse on themselves is they didn’t do what they promised. Oaths also were a way of blessing someone (1SA 25:26), or giving important information (1SA 20:21). Some people made oaths swearing by YHWH or another god or a king (GEN 42:16; 1SA 14:45). YHWH even swears by himself (NUM 14:28) when he makes promises to people or nations. This was a way to put emphasis on the promise or information being given.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 1:15-18</span>
+                <span class="commentary">Oaths often took the form of “As surely as the YHWH lives I will do such and such” (1SA 19:6) or “May YHWH do to me [a gesture could be included here to show that God would kill the person] if I don’t do such and such” (RUT 1:17).</span>
+            </p>
             <p />
             <p>
                 <bold>Research suggesions</bold>
@@ -830,7 +1262,13 @@
             </ul>
         </Contents>
     </Comment>
-    <Comment Date="2017-06-12T15:44:51.8910025-04:00" Language="en" Thread="OCM 770" User="Biblical Culture Notes_en" VerseRef="">
+    <Comment Date="2017-06-12T15:48:00.1270065-04:00" Language="en" Thread="OCM 675" User="Biblical Culture Notes_en" VerseRef="RUT 1:15-18">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 1:15-18</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1280066-04:00" Language="en" Thread="OCM 770" User="Biblical Culture Notes_en" VerseRef="RUT 1:1-5">
         <StartPosition>0</StartPosition>
         <Status />
         <Type />
@@ -846,7 +1284,10 @@
             <p>
                 <bold>Application to biblical source</bold>
             </p>
-            <p>Famine was often viewed as punishment of YHWH on Israel for disobedience or not doing what was right (LEV 26:18-20; HAG 1:9-11). YHWH also ended famines when Israel changed their behavior and became obedient.</p>
+            <p class="scrtext">
+                <span class="verseref">RUT 1:1-5</span>
+                <span class="commentary">Famine was often viewed as punishment of YHWH on Israel for disobedience or not doing what was right (LEV 26:18-20; HAG 1:9-11). YHWH also ended famines when Israel changed their behavior and became obedient.</span>
+            </p>
             <p />
             <p>
                 <bold>Research suggesions</bold>
@@ -859,7 +1300,7 @@
             </ul>
         </Contents>
     </Comment>
-    <Comment Date="2017-06-12T15:44:51.8910026-04:00" Language="en" Thread="OCM 782.1" User="Biblical Culture Notes_en" VerseRef="">
+    <Comment Date="2017-06-12T15:48:00.1290067-04:00" Language="en" Thread="OCM 782.1" User="Biblical Culture Notes_en" VerseRef="RUT 1:6-10">
         <StartPosition>0</StartPosition>
         <Status />
         <Type />
@@ -876,7 +1317,10 @@
             <p>
                 <bold>Application to biblical source</bold>
             </p>
-            <p>When the famine was over, the Israelites believed God had come back and ‘visited’. He was active again to provide for the Israelites as he had promised to do in his covenant with them. He had blessed them again.</p>
+            <p class="scrtext">
+                <span class="verseref">RUT 1:6-10</span>
+                <span class="commentary">When the famine was over, the Israelites believed God had come back and ‘visited’. He was active again to provide for the Israelites as he had promised to do in his covenant with them. He had blessed them again.</span>
+            </p>
             <p />
             <p>
                 <bold>Research suggesions</bold>
@@ -890,7 +1334,7 @@
             </ul>
         </Contents>
     </Comment>
-    <Comment Date="2017-06-12T15:44:51.8920027-04:00" Language="en" Thread="OCM 776" User="Biblical Culture Notes_en" VerseRef="">
+    <Comment Date="2017-06-12T15:48:00.1300068-04:00" Language="en" Thread="OCM 776" User="Biblical Culture Notes_en" VerseRef="RUT 2:8-13">
         <StartPosition>0</StartPosition>
         <Status />
         <Type />
@@ -906,11 +1350,26 @@
             <p>
                 <bold>Application to biblical source</bold>
             </p>
-            <p>One of the expectations people had of their gods was protection from evil. A metaphor often used in Scripture was taking shelter under the wings of YHWH (EXO 19:4; PSA 57:1; 61:4) like baby birds are protected by their parents’ wings.</p>
-            <p>The covenant box of the Israelites had cherubim with wings, a physical representation of God’s care for his people (EXO 37:9). Egyptians and several other cultures of the time of the Old Testament had idols with wings.</p>
-            <p>One of the reasons the Israelites hated the Moabites was that they worshipped different gods. The Moabite god Chemosh required human sacrifices (2KI 3:27; NUM 21:29).</p>
-            <p>Each group of people in the Old Testament believed in their own gods, called territorial gods. Thus YHWH was called the God of Abraham, Isaac and Jacob, since that was the family that worshipped Him (EXO 3:16). Many people had idols in their houses where they worshipped their gods. These were called household gods (GEN 31:19-35).</p>
-            <p>Naomi sends her daughter-in-law back to their people and their gods. She doesn’t expect the women to become worshippers of her God, YHWH.</p>
+            <p class="scrtext">
+                <span class="verseref">RUT 2:8-13</span>
+                <span class="commentary">One of the expectations people had of their gods was protection from evil. A metaphor often used in Scripture was taking shelter under the wings of YHWH (EXO 19:4; PSA 57:1; 61:4) like baby birds are protected by their parents’ wings.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 2:8-13</span>
+                <span class="commentary">The covenant box of the Israelites had cherubim with wings, a physical representation of God’s care for his people (EXO 37:9). Egyptians and several other cultures of the time of the Old Testament had idols with wings.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 1:1-5</span>
+                <span class="commentary">One of the reasons the Israelites hated the Moabites was that they worshipped different gods. The Moabite god Chemosh required human sacrifices (2KI 3:27; NUM 21:29).</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 1:15-18</span>
+                <span class="commentary">Each group of people in the Old Testament believed in their own gods, called territorial gods. Thus YHWH was called the God of Abraham, Isaac and Jacob, since that was the family that worshipped Him (EXO 3:16). Many people had idols in their houses where they worshipped their gods. These were called household gods (GEN 31:19-35).</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 1:15-18</span>
+                <span class="commentary">Naomi sends her daughter-in-law back to their people and their gods. She doesn’t expect the women to become worshippers of her God, YHWH.</span>
+            </p>
             <p />
             <p>
                 <bold>Research suggesions</bold>
@@ -924,7 +1383,31 @@
             </ul>
         </Contents>
     </Comment>
-    <Comment Date="2017-06-12T15:44:51.8930028-04:00" Language="en" Thread="OCM 776.1" User="Biblical Culture Notes_en" VerseRef="">
+    <Comment Date="2017-06-12T15:48:00.1300069-04:00" Language="en" Thread="OCM 776" User="Biblical Culture Notes_en" VerseRef="RUT 2:8-13">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 2:8-13</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1300070-04:00" Language="en" Thread="OCM 776" User="Biblical Culture Notes_en" VerseRef="RUT 2:8-13">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 1:1-5</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1300071-04:00" Language="en" Thread="OCM 776" User="Biblical Culture Notes_en" VerseRef="RUT 2:8-13">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 1:15-18</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1300072-04:00" Language="en" Thread="OCM 776" User="Biblical Culture Notes_en" VerseRef="RUT 2:8-13">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 1:15-18</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1310073-04:00" Language="en" Thread="OCM 776.1" User="Biblical Culture Notes_en" VerseRef="RUT 1:19-22">
         <StartPosition>0</StartPosition>
         <Status />
         <Type />
@@ -940,7 +1423,10 @@
             <p>
                 <bold>Application to biblical source</bold>
             </p>
-            <p>The Hebrew believed God was active in the life of the whole group as well as the lives of the individuals. When the people disobeyed God’s instructions or commandments, or when they complained, God punished them (NUM 11:11) God blessed people by providing for them and giving them abundance of goods and children (GEN 33:5, 11). Naomi is expressing in her change of name that God has taken away what he had given her before she left.</p>
+            <p class="scrtext">
+                <span class="verseref">RUT 1:19-22</span>
+                <span class="commentary">The Hebrew believed God was active in the life of the whole group as well as the lives of the individuals. When the people disobeyed God’s instructions or commandments, or when they complained, God punished them (NUM 11:11) God blessed people by providing for them and giving them abundance of goods and children (GEN 33:5, 11). Naomi is expressing in her change of name that God has taken away what he had given her before she left.</span>
+            </p>
             <p />
             <p>
                 <bold>Research suggesions</bold>
@@ -953,7 +1439,7 @@
             </ul>
         </Contents>
     </Comment>
-    <Comment Date="2017-06-12T15:44:51.8940029-04:00" Language="en" Thread="OCM 800" User="Biblical Culture Notes_en" VerseRef="">
+    <Comment Date="2017-06-12T15:48:00.1320074-04:00" Language="en" Thread="OCM 800" User="Biblical Culture Notes_en" VerseRef="">
         <StartPosition>0</StartPosition>
         <Status />
         <Type />
@@ -967,7 +1453,7 @@
             <p>You need to learn about the numbering and measuring system–or systems–people use in your area. This is the study of numeration. You also need to learn about the beliefs people may have about certain numbers, that they are lucky, unlucky, or otherwise symbolic. This is the study of numerology. You’ll be using the local system of numbers and measures</p>
         </Contents>
     </Comment>
-    <Comment Date="2017-06-12T15:44:51.8940030-04:00" Language="en" Thread="OCM 800" User="Biblical Culture Notes_en" VerseRef="">
+    <Comment Date="2017-06-12T15:48:00.1320075-04:00" Language="en" Thread="OCM 800" User="Biblical Culture Notes_en" VerseRef="RUT 2:17-23">
         <StartPosition>0</StartPosition>
         <Status />
         <Type />
@@ -990,8 +1476,14 @@
             <p>
                 <bold>Application to biblical source</bold>
             </p>
-            <p>An ephah was a measure for grain and flour. It equals about 22 liters, or 3/5 of a bushel.</p>
-            <p>The size of the measure is not specified. It was an amount that Ruth could carry home.</p>
+            <p class="scrtext">
+                <span class="verseref">RUT 2:17-23</span>
+                <span class="commentary">An ephah was a measure for grain and flour. It equals about 22 liters, or 3/5 of a bushel.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 3:14-18</span>
+                <span class="commentary">The size of the measure is not specified. It was an amount that Ruth could carry home.</span>
+            </p>
             <p />
             <p>
                 <bold>Research suggesions</bold>
@@ -1017,7 +1509,13 @@
             </ul>
         </Contents>
     </Comment>
-    <Comment Date="2017-06-12T15:44:51.8950031-04:00" Language="en" Thread="OCM 805" User="Biblical Culture Notes_en" VerseRef="">
+    <Comment Date="2017-06-12T15:48:00.1320076-04:00" Language="en" Thread="OCM 800" User="Biblical Culture Notes_en" VerseRef="RUT 2:17-23">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 3:14-18</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1320077-04:00" Language="en" Thread="OCM 805" User="Biblical Culture Notes_en" VerseRef="RUT 1:19-22">
         <StartPosition>0</StartPosition>
         <Status />
         <Type />
@@ -1036,8 +1534,14 @@
             <p>
                 <bold>Application to biblical source</bold>
             </p>
-            <p>Time was determined by seasonal events like spring planting and rains, by festivals like the firstfruits harvest festival (LEV 23:9-14), or by holy days like Passover (LEV 23:4-8). The beginning of barley harvest happened in mid-April.</p>
-            <p>The Hebrew calendar was based on the moon’s phases, but also on the sun. Some festivals like Passover were counted by the solar year. Other festivals and events were counted by the moon, such as the planting and harvest festivals. Days were counted from sundown to sundown, so the Sabbath day started at sundown of Friday and ended sundown of Saturday (the last day of the week).</p>
+            <p class="scrtext">
+                <span class="verseref">RUT 1:19-22</span>
+                <span class="commentary">Time was determined by seasonal events like spring planting and rains, by festivals like the firstfruits harvest festival (LEV 23:9-14), or by holy days like Passover (LEV 23:4-8). The beginning of barley harvest happened in mid-April.</span>
+            </p>
+            <p class="scrtext">
+                <span class="verseref">RUT 1:19-22</span>
+                <span class="commentary">The Hebrew calendar was based on the moon’s phases, but also on the sun. Some festivals like Passover were counted by the solar year. Other festivals and events were counted by the moon, such as the planting and harvest festivals. Days were counted from sundown to sundown, so the Sabbath day started at sundown of Friday and ended sundown of Saturday (the last day of the week).</span>
+            </p>
             <p />
             <p>
                 <bold>Research suggesions</bold>
@@ -1050,7 +1554,13 @@
             </ul>
         </Contents>
     </Comment>
-    <Comment Date="2017-06-12T15:44:51.8960032-04:00" Language="en" Thread="OCM 823" User="Biblical Culture Notes_en" VerseRef="">
+    <Comment Date="2017-06-12T15:48:00.1340078-04:00" Language="en" Thread="OCM 805" User="Biblical Culture Notes_en" VerseRef="RUT 1:19-22">
+        <StartPosition>0</StartPosition>
+        <Status />
+        <Type />
+        <Reattached>RUT 1:19-22</Reattached>
+    </Comment>
+    <Comment Date="2017-06-12T15:48:00.1340079-04:00" Language="en" Thread="OCM 823" User="Biblical Culture Notes_en" VerseRef="RUT 3:1-5">
         <StartPosition>0</StartPosition>
         <Status />
         <Type />
@@ -1068,7 +1578,10 @@
             <p>
                 <bold>Application to biblical source</bold>
             </p>
-            <p>The countryside around Bethlehem is hilly with valleys between hills. Some valleys have rivers or streams running through them. Towns were usually built on hills with fields on the flat areas below them. The Hebrew word *har* means hill or mountain.</p>
+            <p class="scrtext">
+                <span class="verseref">RUT 3:1-5</span>
+                <span class="commentary">The countryside around Bethlehem is hilly with valleys between hills. Some valleys have rivers or streams running through them. Towns were usually built on hills with fields on the flat areas below them. The Hebrew word *har* means hill or mountain.</span>
+            </p>
             <p />
             <p>
                 <bold>Research suggesions</bold>

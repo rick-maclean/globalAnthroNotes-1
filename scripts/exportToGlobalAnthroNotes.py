@@ -57,7 +57,7 @@ def export_csv_to_global_anthro_notes(language='en'):
         else:
             bullet_processing = False
         previously_processed_bullet = False
-        if section_topic == '3 Application to Biblical source':
+        if section_topic == '3 Application to biblical source':
             ref = row['refs']
             p = ET.SubElement(contents, "p", attrib={'class': 'scrtext'})
             span_ref = ET.SubElement(p, "span", attrib={'class': 'verseref'})
