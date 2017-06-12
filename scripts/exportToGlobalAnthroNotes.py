@@ -8,6 +8,7 @@ import unicode_utils
 
 
 def export_csv_to_global_anthro_notes(language='en'):
+    orc_char = u"\uFFFC"
     comment_list = ET.Element("CommentList")
     csv_rows = unicode_utils.load_unicode_csv_file_rows('scripts/data/Biblical Culture Notes Content.csv')
     ocm_choice_processing = ''
@@ -71,7 +72,7 @@ def export_csv_to_global_anthro_notes(language='en'):
                 reattached_comment = create_comment(comment_list, thread, increment, language, first_ref)
                 increment += 1
                 comment = reattached_comment
-                ET.SubElement(reattached_comment, "Reattached").text = ref
+                ET.SubElement(reattached_comment, "Reattached").text = orc_char.join([ref, '', str(0), '', ''])
             comment.set("VerseRef", first_ref)
             continue
         p = ET.SubElement(contents, "p")
