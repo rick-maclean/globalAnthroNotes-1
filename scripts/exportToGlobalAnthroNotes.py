@@ -1,6 +1,9 @@
 # coding=utf-8
 import xml.etree.ElementTree as ET
 import datetime
+
+import vkbeautify
+
 import unicode_utils
 
 
@@ -76,6 +79,11 @@ def export_csv_to_global_anthro_notes(language='en'):
     tree = ET.ElementTree(comment_list)
     filepath = "scripts/data/Notes_Biblical Culture Notes_{}.xml".format(language)
     tree.write(filepath, encoding="utf-8", xml_declaration=True)
+    with open(filepath, 'r') as f:
+        text = f.read()
+    text = vkbeautify.xml(text)
+    with open(filepath, 'wb') as f:
+        f.write(text.replace('\r', '').replace('\n', '\r\n'))
     print "Output: " + filepath
 
 
