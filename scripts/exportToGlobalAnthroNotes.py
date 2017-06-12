@@ -5,15 +5,8 @@ import unicode_utils
 
 
 def export_csv_to_global_anthro_notes(language='en'):
-    orc_char = u"\uFFFC"
     comment_list = ET.Element("CommentList")
-
-    ocms_to_publish = ['203 Dissemination of News and Information', '801 Numerology', '243 Cereal Agriculture',
-                       '764 Burial Practices and Funerals', '821 Ethnometeorology', '290 Clothing',
-                       '787 Revelation and Divination']
-    section_topics_to_publish = ['2 Description', '3 Application to Biblical source', '5 Research Suggestions']
-
-    csv_rows = unicode_utils.load_unicode_csv_file_rows('scripts/data/anthroNoteContent.csv')
+    csv_rows = unicode_utils.load_unicode_csv_file_rows('scripts/data/Biblical Culture Notes Content.csv')
     ocm_choice_processing = ''
     increment = 0
     section_topic_processing = ''
@@ -21,8 +14,9 @@ def export_csv_to_global_anthro_notes(language='en'):
     previously_processed_bullet = False
     for row in csv_rows:
         ocm_choice = row['ocm_choice']
-        if not ocm_choice or ocm_choice not in ocms_to_publish:
+        if not ocm_choice:
             continue
+
         print (unicode(row['refs']), unicode(row['ocm_choice']), unicode(row['¶_content_' + language]))
         if ocm_choice != ocm_choice_processing:
             ocm_choice_processing = ocm_choice
@@ -36,8 +30,6 @@ def export_csv_to_global_anthro_notes(language='en'):
             title = " ".join(ocm_choice.split()[1:])
             bold.text = u"{}".format(title)
         section_topic = row['section_topic']
-        if section_topic not in section_topics_to_publish:
-            continue
         if section_topic != section_topic_processing:
             section_topic_processing = section_topic
             if not previously_processed_bullet:
@@ -82,7 +74,7 @@ def export_csv_to_global_anthro_notes(language='en'):
         p = ET.SubElement(contents, "p")
         p.text = content
     tree = ET.ElementTree(comment_list)
-    filepath = "scripts/data/Notes_Global Anthro Notes_{}.xml".format(language)
+    filepath = "scripts/data/Notes_Biblical Culture Notes_{}.xml".format(language)
     tree.write(filepath, encoding="utf-8", xml_declaration=True)
     print "Output: " + filepath
 
@@ -91,7 +83,7 @@ def create_comment(comment_list, thread, increment, language, verse_ref=''):
     time = datetime.datetime.now().isoformat()
     time = time[:-1] + str(increment)
     date = time + "-04:00"
-    attributes = {"Thread": thread, "User": "Global Anthro Notes", "Date": date, "VerseRef": verse_ref,
+    attributes = {"Thread": thread, "User": "Biblical Culture Notes_" + language, "Date": date, "VerseRef": verse_ref,
                     "Language": language}
     comment = ET.SubElement(comment_list, "Comment", attrib=attributes)
     ET.SubElement(comment, "StartPosition").text = '0'
