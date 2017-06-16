@@ -23,7 +23,7 @@ def export_csv_to_global_anthro_notes(language='en'):
             continue
 
         print (unicode(row['refs']), unicode(row['ocm_choice']), unicode(row['¶_content_' + language]))
-        if ocm_choice != ocm_choice_processing:
+        if ocm_choice.lower() != ocm_choice_processing.lower():
             append_references_section(contents)
             ocm_choice_processing = ocm_choice
             thread = 'OCM ' + ocm_choice.split()[0]
@@ -35,15 +35,15 @@ def export_csv_to_global_anthro_notes(language='en'):
             ET.SubElement(ocm_title, "a", {'href': 'toggle:{}'.format(thread)})
             bold = ET.SubElement(ocm_title, "bold")
             title = " ".join(ocm_choice.split()[1:])
-            bold.text = u"{}".format(title)
+            bold.text = u"{}".format(title.capitalize())
         section_topic = row['section_topic']
         is_app_biblical_source = section_topic.lower() == APPLICATION_TO_BIBLICAL_SOURCE.lower()
-        if section_topic != section_topic_processing:
+        if section_topic.lower() != section_topic_processing.lower():
             section_topic_processing = section_topic
             section_title = ET.SubElement(contents, "div", {'class': 'section-title'})
             ET.SubElement(section_title, "a", {'href': 'cancel:{}'.format(thread)})
             bold = ET.SubElement(section_title, "b")
-            bold.text = u" ".join(section_topic.split()[1:])
+            bold.text = u" ".join(section_topic.split()[1:]).capitalize()
             extra_classes = ' active' if is_app_biblical_source else ''
             section_content = ET.SubElement(contents, "div", {'class': 'section-content{}'.format(extra_classes)})
         if not row['¶_content_' + language]:
