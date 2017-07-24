@@ -1,0 +1,24 @@
+See Tutorial here
+Flask Web Development Tutorial #2: HTML Files and Jinja2 Templating
+
+https://www.youtube.com/watch?v=OuDOr32ZHE0
+
+
+=========================================================
+This is the second tutorial in the Flask web development series. I'll show you how to add HTML 
+files to your web app and create dynamic content using Jinja2 templates.
+==========================================================
+add some dynamic content to display some data for example
+display in HTML
+flask uses jinja2 templating to pass info from a python file (app logic) to an html file that will display
+
+1) in app folder create templates
+2) create index.html (very simple
+3)   add to app.py
+tv_show = "The office"
+4) Now send that to index.html instead of saying Hello World
+   modify app.py
+       return render_template("index.html", show=tv_show)
+       from flask import Flask, render_template
+   modify index.html  (to use jinga2 templating)
+        <h1>Grrrr! new thing. My favorite TV show is {{ show }}</h1>

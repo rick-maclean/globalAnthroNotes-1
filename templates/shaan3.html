@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+</head>
+<body>
+  <h3>Press Send to Run export_csv_to_global_anthro_notes</h3>
+  <form method="POST" actions="/send"> <!-- /send is the route in the python file.....-->
+      <div class="form-group">
+          <input type="text" name="agefrm">
+      </div>
+      <input class="btn btn-primary" type="submit" value="submit">
+  </form>
+</body>
+</html>

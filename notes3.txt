@@ -1,0 +1,29 @@
+
+Shaantam Chawla      #3
+https://www.youtube.com/watch?v=IIi6e5oDZ68&t=3s
+
+This is the 3rd tutorial in the Flask web development series.
+I'll show you how to create web forms and process input in a Flask web application.
+
+1) going to add bootstrap
+Bootstrap: getbootstrap.com/getting-started/
+
+copy Bootsrap CDN
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+crossorigin="anonymous">
+
+
+2)  REMEMBER THIS
+https://web-app-anthro-notes.herokuapp.com/send
+or
+http://127.0.0.1:5000/send
+
+
+3) To update Heroku and run the new changes do this
+$ git add .
+$ git commit -am "make it better"
+git push heroku master
+

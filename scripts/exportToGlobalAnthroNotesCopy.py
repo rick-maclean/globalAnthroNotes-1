@@ -1,5 +1,8 @@
 # coding=utf-8
+# import bisect
+import uuid
 import xml.etree.ElementTree as ET
+# import json
 import datetime
 
 import vkbeautify
@@ -79,13 +82,13 @@ def export_csv_to_global_anthro_notes(language='en'):
         para.text = content
     append_references_section(contents)
     tree = ET.ElementTree(comment_list)
-    filepath = "scripts/data/Notes_Biblical Culture Notes_2017-07-12blah{}.xml".format(language)
+    filepath = "scripts/data/Notes_Biblical Culture Notes_2017_07_12_{}.xml".format(language)
     tree.write(filepath, encoding="utf-8", xml_declaration=True)
-    #with open(filepath, 'r') as f:
-    #    text = f.read()
-    #text = vkbeautify.xml(text)
-    #with open(filepath, 'wb') as f:
-    #    f.write(text.replace('\r', '').replace('\n', '\r\n'))
+    with open(filepath, 'r') as f:
+        text = f.read()
+    text = vkbeautify.xml(text)
+    with open(filepath, 'wb') as f:
+        f.write(text.replace('\r', '').replace('\n', '\r\n'))
     print "Output: " + filepath
 
 

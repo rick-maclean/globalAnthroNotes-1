@@ -1,0 +1,13 @@
+click==6.7
+dj-database-url==0.4.2
+Flask==0.12.2
+gunicorn==19.7.1
+itsdangerous==0.24
+Jinja2==2.9.6
+MarkupSafe==1.0
+pytz==2017.2
+virtualenv==15.1.0
+virtualenvwrapper-win==1.2.1
+vkbeautify==0.3.0
+Werkzeug==0.12.2
+whitenoise==3.3.0

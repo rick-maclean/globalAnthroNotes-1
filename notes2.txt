@@ -1,0 +1,171 @@
+See Tutorial here
+Flask on Windows
+https://www.youtube.com/watch?v=4mrq8PYQ0Zg
+
+he has more videos too.....
+
+and Flash on Heroku
+https://www.youtube.com/watch?v=pmRT8QQLIqk
+
+==================================================================
+================================================================== pyCharm Windows
+==================================================================
+make sure for the project that I select   python2.7
+pycharm: File : Settings : Projet Interpreter
+1) select Python27
+2) install vkbeautify  if it is not installed
+
+In Python Console run these commands
+import scripts.exportToGlobalAnthroNotesCopy
+scripts.exportToGlobalAnthroNotesCopy.export_csv_to_global_anthro_notes(language='en')
+reload(scripts.exportToGlobalAnthroNotesCopy)   if things have changed
+
+==================================================================
+================================================================== flask locally on Windows
+==================================================================
+1)  go to C:\Python27\Scripts
+pip install virtualenv
+
+2) go to C:\Users\MacLean\Documents\UBS\Python\flaskEx2
+virtualenv virtRickEnv
+
+3) 
+cd virtRickEnv
+which creates the folder with 
+-Include
+-Lib
+-Scripts
+-tcl
+pip-selfcheck.json
+
+4) This will contain all the files for our project
+mkdir appRick
+
+create
+app.py
+requirements.txt
+Procfile  (for Heroku) has ==> web: gunicorn app:app
+
+5) we need to activate our virtual environment to need to do that this way
+(NOTE: when you see  (virtRickEnv) you know it is active)
+go to Scripts
+activate
+
+eg
+C:\Users\MacLean\Documents\UBS\Python\flaskEx2\anthroNotesWebFork\Scripts> activate
+C:\Users\MacLean\Documents\UBS\Python\flaskEx2\anthroNotesWebUI\Scripts> activate
+
+eg
+C:\Users\MacLean\Documents\UBS\Python\flaskEx2\virtRickEnv\Scripts>activate
+(virtRickEnv) C:\Users\MacLean\Documents\UBS\Python\flaskEx2\virtRickEnv\Scripts>
+
+
+5)  we need to install flask
+go to Scripts
+pip install flask
+
+(also for this project needed to do this
+pip install vkbeautify
+
+6) now to run this
+go to appRick
+
+$    python app.py
+ctrl-C to stop it
+
+in chrome put
+http://127.0.0.1:5000/
+or
+http://localhost:5000/
+
+==============================================
+============================================== How to change what runs locally on my system
+==============================================
+$ export FLASK_APP=hello.py
+$ flask run
+ * Running on http://127.0.0.1:5000/
+
+ If you are on Windows you need to use set instead of export.
+$ set FLASK_APP=appMinimal.py
+$ flask run
+
+HELP HELP IKES   (clear the browing history in Chrome to fix this problem
+You should be able to "fix" the issue by clearing your browser caches, and you can confirm
+this by trying another browser which you've never used to look at the wiki app.
+
+==============================================
+============================================== Heroku
+==============================================
+
+1)  create flask app  in app.py
+
+2) pip freeze  shows which python applications we have installed.
+need   flask and gunicorn
+
+(do this in my virtual env )
+$ pip install flask gunicorn
+
+(virtRickEnv) C:\Users\MacLean\Documents\UBS\Python\flaskEx2\virtRickEnv\appRick>pip freeze
+click==6.7
+Flask==0.12.2
+itsdangerous==0.24
+Jinja2==2.9.6
+MarkupSafe==1.0
+Werkzeug==0.12.2
+
+(virtRickEnv) C:\Users\MacLean\Documents\UBS\Python\flaskEx2\virtRickEnv\appRick>pip install gunicorn
+Collecting gunicorn
+  Using cached gunicorn-19.7.1-py2.py3-none-any.whl
+Installing collected packages: gunicorn
+Successfully installed gunicorn-19.7.1
+
+(virtRickEnv) C:\Users\MacLean\Documents\UBS\Python\flaskEx2\virtRickEnv\appRick>pip freeze
+click==6.7
+Flask==0.12.2
+gunicorn==19.7.1
+itsdangerous==0.24
+Jinja2==2.9.6
+MarkupSafe==1.0
+Werkzeug==0.12.2
+
+(virtRickEnv) C:\Users\MacLean\Documents\UBS\Python\flaskEx2\virtRickEnv\appRick>
+
+3) store the requirements for Heroku
+go to ...flaskEx2\virtRickEnv\appRick>
+pip freeze > requirements.txt
+
+
+3)  create Procfile
+gunicorn allows flask to receive multiple parralel requests on Heroku
+web: gunicorn app:app
+
+4) test it will run locally
+python app.py
+
+5) create an application on Heroku
+https://dashboard.heroku.com/apps
+https://dashboard.heroku.com/new-app
+
+flaskex2-virtrickenv-apprick
+
+6) heroku login
+
+7) make it a git repo
+cd C:\Users\MacLean\Documents\UBS\Python\flaskEx2\virtRickEnv\appRick
+
+$ cd my-project/
+$ git init
+$ heroku git:remote -a flaskex2-virtrickenv-apprick
+
+$ git add .
+$ git commit -am "make it better"
+$ git push heroku master   (this pushes it and heroku builds and launches the app)
+
+8)
+We can now run the app from 
+https://flaskex2-virtrickenv-apprick.herokuapp.com/
+
+
+==============================================
+============================================== Heroku
+==============================================
